@@ -1,0 +1,393 @@
+{
+  "lastUpdated": "2025-01-27T00:00:00Z",
+  "contactEmail": "sandrewxu@gmail.com",
+  "electionData": {
+    "NJ": {
+      "stateName": "New Jersey",
+      "registrationWebsite": "https://voter.svrs.nj.gov/register",
+      "registrationDeadline": "October 14, 2025",
+      "elections": [
+        {
+          "title": "Governor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Republican",
+              "incumbent": false
+            },
+            {
+              "name": "TBD",
+              "party": "Democratic",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Open seat gubernatorial race. Current governor Phil Murphy (D) is term-limited. This race will determine New Jersey's next governor.",
+          "chamberImpact": "State",
+          "competitive": true
+        },
+        {
+          "title": "State Senate",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "Various",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "State Senate elections across New Jersey districts.",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "VA": {
+      "stateName": "Virginia",
+      "registrationWebsite": "https://www.elections.virginia.gov/citizen-portal/",
+      "registrationDeadline": "October 13, 2025",
+      "elections": [
+        {
+          "title": "Governor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Republican",
+              "incumbent": false
+            },
+            {
+              "name": "TBD",
+              "party": "Democratic",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Open seat gubernatorial race. Current governor Glenn Youngkin (R) is term-limited. This race will determine Virginia's next governor.",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "TN": {
+      "stateName": "Tennessee",
+      "registrationWebsite": "https://ovr.govote.tn.gov/",
+      "registrationDeadline": "November 1, 2025",
+      "elections": [
+        {
+          "title": "U.S. House - 7 Districts",
+          "date": "December 2, 2025",
+          "type": "Special Election",
+          "candidates": [
+            {
+              "name": "Various",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Special election for 7 House districts in Middle-West Tennessee. These races could impact House control.",
+          "chamberImpact": "House",
+          "competitive": true
+        }
+      ]
+    },
+    "TX": {
+      "stateName": "Texas",
+      "registrationWebsite": "https://www.votetexas.gov/register-to-vote/",
+      "registrationDeadline": "October 6, 2025",
+      "elections": [
+        {
+          "title": "U.S. House - 18 Districts",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "Various",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "House elections in 18 districts, primarily inner city Houston and surrounding areas. These races could impact House control.",
+          "chamberImpact": "House",
+          "competitive": true
+        },
+        {
+          "title": "State Constitutional Amendments",
+          "date": "November 4, 2025",
+          "type": "Referendum",
+          "candidates": [
+            {
+              "name": "17 Amendments",
+              "party": "N/A",
+              "incumbent": false
+            }
+          ],
+          "stakes": "17 state constitutional amendments on the ballot covering various policy issues.",
+          "chamberImpact": "State",
+          "competitive": false
+        },
+        {
+          "title": "Fort Worth Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for Fort Worth, Texas's 5th largest city.",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "San Antonio Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for San Antonio, Texas's 2nd largest city.",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "OK": {
+      "stateName": "Oklahoma",
+      "registrationWebsite": "https://okvoterportal.okelections.us/",
+      "registrationDeadline": "November 7, 2025",
+      "elections": [
+        {
+          "title": "State Representatives",
+          "date": "December 9, 2025",
+          "type": "Special Election",
+          "candidates": [
+            {
+              "name": "Various",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Special election for state representative seats in Oklahoma.",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "MI": {
+      "stateName": "Michigan",
+      "registrationWebsite": "https://mvic.sos.state.mi.us/",
+      "registrationDeadline": "October 20, 2025",
+      "elections": [
+        {
+          "title": "Detroit Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for Detroit, Michigan's largest city and economic center.",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Lansing Mayor & City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "Various",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral and city council elections in Lansing, Michigan's capital city.",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "PA": {
+      "stateName": "Pennsylvania",
+      "registrationWebsite": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
+      "registrationDeadline": "October 20, 2025",
+      "elections": [
+        {
+          "title": "Pittsburgh Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for Pittsburgh, Pennsylvania's second-largest city.",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Allegheny County Special Election",
+          "date": "November 4, 2025",
+          "type": "Special Election",
+          "candidates": [
+            {
+              "name": "Various",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Special election for Allegheny County positions, including Pittsburgh area.",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "FL": {
+      "stateName": "Florida",
+      "registrationWebsite": "https://registertovote.fl.gov/",
+      "registrationDeadline": "October 6, 2025",
+      "elections": [
+        {
+          "title": "Miami Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for Miami, Florida's major metropolitan center.",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "OH": {
+      "stateName": "Ohio",
+      "registrationWebsite": "https://olvr.ohiosos.gov/",
+      "registrationDeadline": "October 6, 2025",
+      "elections": [
+        {
+          "title": "Cincinnati Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for Cincinnati, Ohio's third-largest city.",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Cleveland Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for Cleveland, Ohio's second-largest city.",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "ME": {
+      "stateName": "Maine",
+      "registrationWebsite": "https://www1.maine.gov/online/ovr/",
+      "registrationDeadline": "October 14, 2025",
+      "elections": [
+        {
+          "title": "Voter ID Referendum",
+          "date": "November 4, 2025",
+          "type": "Referendum",
+          "candidates": [
+            {
+              "name": "Voter ID Law",
+              "party": "N/A",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Referendum on implementing voter ID requirements in Maine elections.",
+          "chamberImpact": "State",
+          "competitive": false
+        },
+        {
+          "title": "Red Flag Gun Law Referendum",
+          "date": "November 4, 2025",
+          "type": "Referendum",
+          "candidates": [
+            {
+              "name": "Red Flag Law",
+              "party": "N/A",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Referendum on implementing red flag gun laws in Maine.",
+          "chamberImpact": "State",
+          "competitive": false
+        }
+      ]
+    },
+    "CA": {
+      "stateName": "California",
+      "registrationWebsite": "https://registertovote.ca.gov/",
+      "registrationDeadline": "October 20, 2025",
+      "elections": [
+        {
+          "title": "Redistricting Referendum",
+          "date": "November 4, 2025",
+          "type": "Referendum",
+          "candidates": [
+            {
+              "name": "Redistricting Measure",
+              "party": "N/A",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Referendum on redistricting processes and procedures in California.",
+          "chamberImpact": "State",
+          "competitive": false
+        },
+        {
+          "title": "Oakland Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [
+            {
+              "name": "TBD",
+              "party": "Mixed",
+              "incumbent": false
+            }
+          ],
+          "stakes": "Mayoral election for Oakland, California's 8th largest city.",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    }
+  }
+} 

@@ -1,0 +1,3 @@
+- Update map to have state labels on there
+- Update elections.json, make it easier to update, or create a backend
+- Create an AI agent to scrape daily / at some point in time to update??
