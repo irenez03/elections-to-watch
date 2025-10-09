@@ -1,0 +1,94 @@
+{
+  "lastUpdated": "2025-10-06T00:00:00Z",
+  "electionData": {
+    "NJ": {
+      "stateName": "New Jersey",
+      "registrationWebsite": "https://voter.svrs.nj.gov/register",
+      "registrationDeadline": "October 14, 2025",
+      "elections": [
+        {"title": "Governor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Open seat gubernatorial race.", "chamberImpact": "State", "competitive": true},
+        {"title": "State Senate", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "State Senate across districts.", "chamberImpact": "State", "competitive": true}
+      ]
+    },
+    "VA": {
+      "stateName": "Virginia",
+      "registrationWebsite": "https://www.elections.virginia.gov/citizen-portal/",
+      "registrationDeadline": "October 13, 2025",
+      "elections": [
+        {"title": "Governor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Open seat gubernatorial race.", "chamberImpact": "State", "competitive": true}
+      ]
+    },
+    "TN": {
+      "stateName": "Tennessee",
+      "registrationWebsite": "https://ovr.govote.tn.gov/",
+      "registrationDeadline": "November 1, 2025",
+      "elections": [
+        {"title": "U.S. House - 7 Districts", "date": "December 2, 2025", "type": "Special Election", "candidates": [], "stakes": "7 House districts in Middle-West TN.", "chamberImpact": "House", "competitive": true}
+      ]
+    },
+    "TX": {
+      "stateName": "Texas",
+      "registrationWebsite": "https://www.votetexas.gov/register-to-vote/",
+      "registrationDeadline": "October 6, 2025",
+      "elections": [
+        {"title": "U.S. House - 18 Districts", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "18 House districts (Houston area).", "chamberImpact": "House", "competitive": true},
+        {"title": "17 State Constitutional Amendments", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Statewide ballot measures.", "chamberImpact": "State", "competitive": false},
+        {"title": "Fort Worth Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
+        {"title": "San Antonio Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
+      ]
+    },
+    "PA": {
+      "stateName": "Pennsylvania",
+      "registrationWebsite": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
+      "registrationDeadline": "October 20, 2025",
+      "elections": [
+        {"title": "Pittsburgh Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
+        {"title": "Allegheny County Special Election", "date": "November 4, 2025", "type": "Special Election", "candidates": [], "stakes": "County special election.", "chamberImpact": "Local", "competitive": true}
+      ]
+    },
+    "MI": {
+      "stateName": "Michigan",
+      "registrationWebsite": "https://mvic.sos.state.mi.us/",
+      "registrationDeadline": "October 20, 2025",
+      "elections": [
+        {"title": "Detroit Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
+        {"title": "Lansing Mayor & City Council", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral & council elections.", "chamberImpact": "Local", "competitive": true}
+      ]
+    },
+    "FL": {
+      "stateName": "Florida",
+      "registrationWebsite": "https://registertovote.fl.gov/",
+      "registrationDeadline": "October 6, 2025",
+      "elections": [
+        {"title": "Miami Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
+      ]
+    },
+    "OH": {
+      "stateName": "Ohio",
+      "registrationWebsite": "https://olvr.ohiosos.gov/",
+      "registrationDeadline": "October 6, 2025",
+      "elections": [
+        {"title": "Cincinnati Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
+        {"title": "Cleveland Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
+      ]
+    },
+    "ME": {
+      "stateName": "Maine",
+      "registrationWebsite": "https://www1.maine.gov/online/ovr/",
+      "registrationDeadline": "October 14, 2025",
+      "elections": [
+        {"title": "Voter ID Referendum", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Voter ID law.", "chamberImpact": "State", "competitive": false},
+        {"title": "Red Flag Gun Law Referendum", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Red Flag law.", "chamberImpact": "State", "competitive": false}
+      ]
+    },
+    "CA": {
+      "stateName": "California",
+      "registrationWebsite": "https://registertovote.ca.gov/",
+      "registrationDeadline": "October 20, 2025",
+      "elections": [
+        {"title": "Redistricting Referendum", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Redistricting process.", "chamberImpact": "State", "competitive": false},
+        {"title": "Oakland Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
+      ]
+    }
+  }
+}
