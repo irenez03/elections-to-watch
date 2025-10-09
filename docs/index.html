@@ -6,19 +6,32 @@
   <title>Elections to Watch 2025</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='8' y='20' width='48' height='36' rx='4' fill='none' stroke='%23000' stroke-width='4'/><rect x='16' y='10' width='32' height='16' rx='3' fill='none' stroke='%23000' stroke-width='4'/><line x1='20' y1='18' x2='44' y2='18' stroke='%23000' stroke-width='4'/></svg>">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/NewSignature/us-map@master/jquery.usmap.min.js"></script>
 </head>
 <body>
   <header>
     <h1>Elections to Watch 2025</h1>
-    <p>Off-year gubernatorial, mayoral, referendums, and special races.</p>
+    <p>Hover a state for a summary. Click for details.</p>
   </header>
 
   <main>
     <section id="content">
       <div id="status">Loading election data…</div>
-      <div id="states"></div>
+      <div class="map-container"><div id="map"></div></div>
     </section>
   </main>
+
+  <div id="info-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-state-name"></h2>
+      <div id="modal-elections-list"></div>
+    </div>
+  </div>
+  <div id="tooltip"></div>
 
   <footer>
     <small>&copy; 2025 Elections to Watch 2025</small>
