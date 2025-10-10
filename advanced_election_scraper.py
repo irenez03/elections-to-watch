@@ -11,6 +11,7 @@ Comprehensive scraper that gathers election data from multiple sources including
 import json
 import time
 import re
+import csv
 import requests
 from datetime import datetime, timedelta
 from selenium import webdriver
@@ -29,10 +30,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class AdvancedElectionScraper:
-    def __init__(self, headless=True):
+    def __init__(self, headless=True, logistics_csv="2025 Off-Year Elections - Logistics.csv"):
         """Initialize the advanced scraper."""
+        self.logistics_csv = logistics_csv
         self.setup_driver(headless)
         self.setup_data_sources()
+        self.load_logistics_data()
         
     def setup_driver(self, headless=True):
         """Set up Chrome WebDriver with proper configuration."""
@@ -66,6 +69,7 @@ class AdvancedElectionScraper:
             "CO": {"name": "Colorado", "fec_id": "CO"},
             "CT": {"name": "Connecticut", "fec_id": "CT"},
             "DE": {"name": "Delaware", "fec_id": "DE"},
+            "DC": {"name": "District of Columbia", "fec_id": "DC"},
             "FL": {"name": "Florida", "fec_id": "FL"},
             "GA": {"name": "Georgia", "fec_id": "GA"},
             "HI": {"name": "Hawaii", "fec_id": "HI"},
@@ -109,6 +113,10 @@ class AdvancedElectionScraper:
             "WI": {"name": "Wisconsin", "fec_id": "WI"},
             "WY": {"name": "Wyoming", "fec_id": "WY"}
         }
+        
+        # Initialize dictionaries that will be populated from CSV
+        self.state_election_sites = {}
+        self.registration_deadlines = {}
 
         # Registration websites
         self.registration_sites = {
@@ -163,6 +171,48 @@ class AdvancedElectionScraper:
             "WI": "https://myvote.wi.gov/",
             "WY": "https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx"
         }
+    
+    def load_logistics_data(self):
+        """Load state election websites and logistics data from CSV."""
+        try:
+            with open(self.logistics_csv, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    state_name = row.get('State', '').strip()
+                    
+                    # Skip empty rows
+                    if not state_name or state_name.startswith('**'):
+                        continue
+                    
+                    # Handle special cases like "DC (District of Columbia)"
+                    if state_name == "DC (District of Columbia)":
+                        state_code = "DC"
+                    else:
+                        # Convert state name to code
+                        state_code = self.get_state_code_by_name(state_name)
+                    
+                    if state_code:
+                        # Store elections website
+                        elections_site = row.get('Elections website?', '').strip()
+                        if elections_site and elections_site.startswith('http'):
+                            self.state_election_sites[state_code] = elections_site
+                        
+                        # Update registration site from CSV if available
+                        registration_site = row.get('Check registration?', '').strip()
+                        if registration_site and registration_site.startswith('http'):
+                            self.registration_sites[state_code] = registration_site
+                        
+                        # Store registration deadline
+                        deadline = row.get('Registration Deadline', '').strip()
+                        if deadline:
+                            self.registration_deadlines[state_code] = deadline
+            
+            logger.info(f"Loaded logistics data for {len(self.state_election_sites)} states")
+            logger.info(f"Sample election sites: {list(self.state_election_sites.items())[:3]}")
+            
+        except Exception as e:
+            logger.error(f"Error loading logistics data from CSV: {e}")
+            logger.warning("Using hardcoded registration sites")
 
     def scrape_ballotpedia_senate_races(self):
         """Scrape Senate race information from Ballotpedia."""
@@ -205,7 +255,7 @@ class AdvancedElectionScraper:
                                 senate_races[state_code] = {
                                     "stateName": self.states[state_code]["name"],
                                     "registrationWebsite": self.registration_sites.get(state_code, ""),
-                                    "registrationDeadline": self.calculate_registration_deadline(),
+                                    "registrationDeadline": self.calculate_registration_deadline(state_code),
                                     "elections": [election]
                                 }
                                 
@@ -306,7 +356,7 @@ class AdvancedElectionScraper:
                                 house_races[state_code] = {
                                     "stateName": self.states[state_code]["name"],
                                     "registrationWebsite": self.registration_sites.get(state_code, ""),
-                                    "registrationDeadline": self.calculate_registration_deadline(),
+                                    "registrationDeadline": self.calculate_registration_deadline(state_code),
                                     "elections": []
                                 }
                             
@@ -363,9 +413,13 @@ class AdvancedElectionScraper:
                 return code
         return None
 
-    def calculate_registration_deadline(self):
-        """Calculate registration deadline (typically 30 days before election)."""
-        election_date = datetime(2025, 11, 4)
+    def calculate_registration_deadline(self, state_code=None):
+        """Get registration deadline from CSV data or calculate default."""
+        if state_code and state_code in self.registration_deadlines:
+            return self.registration_deadlines[state_code]
+        
+        # Default calculation if not in CSV
+        election_date = datetime(2025, 11, 4)  # November 4, 2025
         deadline = election_date - timedelta(days=30)
         return deadline.strftime("%B %d, %Y")
 

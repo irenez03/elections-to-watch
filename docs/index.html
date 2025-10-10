@@ -19,14 +19,41 @@
 
   <main>
     <section id="content">
-      <div id="status">Loading election data…</div>
+      <section id="summary" aria-label="Election summary" class="summary">
+        <div class="summary-card">
+          <div class="summary-item">
+            <div class="summary-number" id="sum-states">0</div>
+            <div class="summary-label">States Tracked</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number" id="sum-elections">0</div>
+            <div class="summary-label">Total Elections</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number" id="sum-local">0</div>
+            <div class="summary-sub">Local</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number" id="sum-state">0</div>
+            <div class="summary-sub">State</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number" id="sum-house">0</div>
+            <div class="summary-sub">U.S. House</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number" id="sum-ref">0</div>
+            <div class="summary-sub">Referendums</div>
+          </div>
+        </div>
+      </section>
       <div class="map-container"><div id="map"></div></div>
     </section>
   </main>
 
   <div id="info-modal" class="modal">
     <div class="modal-content">
-      <span class="close-btn">&times;</span>
+      <span class="close-btn" aria-label="Close">&times;</span>
       <h2 id="modal-state-name"></h2>
       <div id="modal-elections-list"></div>
     </div>
@@ -34,6 +61,10 @@
   <div id="tooltip"></div>
 
   <footer>
+    <div class="footer-content">
+      <p class="feedback-line">See something wrong? <a href="https://www.evcnational.org/contact" target="_blank" rel="noopener">Tell us!</a></p>
+      <p class="last-updated">Last updated: October 10, 2025</p>
+    </div>
     <small>&copy; 2025 Elections to Watch 2025</small>
   </footer>
 
