@@ -193,21 +193,22 @@
     .summary-card {
       display: grid;
       gap: .5rem;
-      grid-template-columns: repeat(6, minmax(6.875rem, 1fr)); /* 110px */
+      grid-template-columns: repeat(6, minmax(5rem, 1fr)); /* Reduced from 110px to 80px for better mobile fit */
       border: 2px solid var(--cerulean);
       background: var(--surface);
       padding: .75rem;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-1);
+      overflow: hidden; /* Prevent overflow on mobile */
     }
     
     /* Fallback for browsers without container query support */
     @supports not (container-type: inline-size) {
       @media (max-width: 50rem) {
-        .summary-card { grid-template-columns: repeat(3, minmax(7.5rem, 1fr)); }
+        .summary-card { grid-template-columns: repeat(3, 1fr); }
       }
-      @media (max-width: 30rem) {
-        .summary-card { grid-template-columns: repeat(2, minmax(8.5rem, 1fr)); }
+      @media (max-width: 40rem) {
+        .summary-card { grid-template-columns: repeat(2, 1fr); }
       }
     }
     
@@ -217,10 +218,10 @@
         container-type: inline-size;
       }
       @container (max-width: 50rem) {
-        .summary-card { grid-template-columns: repeat(3, minmax(7.5rem, 1fr)); }
+        .summary-card { grid-template-columns: repeat(3, 1fr); }
       }
-      @container (max-width: 30rem) {
-        .summary-card { grid-template-columns: repeat(2, minmax(8.5rem, 1fr)); }
+      @container (max-width: 40rem) {
+        .summary-card { grid-template-columns: repeat(2, 1fr); }
       }
     }
    
@@ -682,14 +683,106 @@
      .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
    }
    
-   /* ========================================
-      RESPONSIVE (VIEWPORT)
-      ======================================== */
-   @media (max-width: 48rem) {
-     header h1 { font-size: clamp(1.8rem, 4vw, 2.25rem); }
-     header > p { font-size: var(--fs-sm); }
-     .footer-content { flex-direction: column; text-align: center; }
-     .map-container { padding: 1.25rem; }
-     #map { padding: .9375rem; }
-   }
+  /* ========================================
+     RESPONSIVE (VIEWPORT)
+     ======================================== */
+  
+  /* Tablet and below */
+  @media (max-width: 48rem) {
+    header h1 { font-size: clamp(1.8rem, 4vw, 2.25rem); }
+    header > p { font-size: var(--fs-sm); }
+    .footer-content { flex-direction: column; text-align: center; }
+    .map-container { padding: 1.25rem; }
+    #map { padding: .9375rem; }
+    
+    /* Better summary card spacing on tablet */
+    .summary-card {
+      padding: 0.5rem;
+      gap: 0.4rem;
+    }
+  }
+  
+  /* Mobile - Small screens */
+  @media (max-width: 40rem) {
+    main {
+      padding-inline: 0.75rem;
+    }
+    
+    header {
+      padding: 1.5rem 0.75rem;
+    }
+    
+    .summary-card {
+      grid-template-columns: repeat(2, 1fr) !important;
+      padding: 0.4rem;
+      gap: 0.35rem;
+    }
+    
+    .summary-item {
+      padding: 0.5rem 0.25rem;
+      min-width: 0; /* Allow items to shrink */
+    }
+    
+    .summary-number {
+      font-size: 1.25rem;
+    }
+    
+    .summary-label,
+    .summary-sub {
+      font-size: 0.65rem;
+    }
+    
+    .map-container {
+      padding: 0.75rem;
+      margin-block: 1rem;
+    }
+  }
+  
+  /* Mobile - Very small screens */
+  @media (max-width: 30rem) {
+    body {
+      font-size: 0.9rem;
+    }
+    
+    main {
+      padding-inline: 0.5rem;
+    }
+    
+    header {
+      padding: 1.25rem 0.5rem;
+    }
+    
+    header h1 {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+    
+    .summary-card {
+      grid-template-columns: repeat(2, 1fr) !important;
+      padding: 0.3rem;
+      gap: 0.25rem;
+      border-width: 1px;
+    }
+    
+    .summary-item {
+      padding: 0.4rem 0.2rem;
+    }
+    
+    .summary-number {
+      font-size: 1.1rem;
+    }
+    
+    .summary-label,
+    .summary-sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.03em;
+    }
+    
+    .map-container {
+      padding: 0.5rem;
+    }
+    
+    #map {
+      padding: 0.5rem;
+    }
+  }
    
