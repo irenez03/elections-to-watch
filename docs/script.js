@@ -92,11 +92,11 @@ $(function () {
         
         /* DEFAULT STATE COLOR
            Edit this color to change what states WITHOUT elections look like */
-        let fill = '#e8f5f7'; // Very light blue (almost honeydew)
+        let fill = '#8a817c'; // dark gray
         
         /* STATES WITH ELECTIONS
            Edit this color to change what states WITH elections look like */
-        if (hasElections) fill = '#1d3557'; // Dark blue
+        if (hasElections) fill = '#7b2cbf'; // Dark blue
         
         /* ALTERNATIVE: Color by election type (uncomment to use)
            This will color states differently based on type of election:
@@ -146,7 +146,7 @@ $(function () {
       $('#map').usmap({
         // Default styles for ALL states (if not overridden by stateSpecificStyles)
         stateStyles: { 
-          fill: '#e8f5f7',                // Default state color (very light blue)
+          fill: '#8a817c',                // Default state color (dark gray)
           stroke: '#ffffff',              // Border color (WHITE - hardcoded)
           'stroke-width': 2,              // Border thickness
           'stroke-linejoin': 'round',     // Rounded corners at borders
