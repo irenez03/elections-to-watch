@@ -241,7 +241,6 @@ $(function () {
             list.append(`
               <div class="registration-info">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                  <span style="font-size: 1.5rem;">🗳️</span>
                   <h4 style="margin: 0; font-size: 1rem; color: var(--berkeley-blue);">Voter Registration</h4>
                 </div>
                 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.5rem;">
@@ -281,20 +280,11 @@ $(function () {
             };
             const badgeStyle = badgeColors[e.chamberImpact] || 'background: linear-gradient(135deg, #6c757d, #495057); color: white;';
             
-            // Icon based on type
-            const icons = {
-              'Local': '🏛️',
-              'State': '🏢',
-              'House': '🏛️',
-              'Senate': '⚖️'
-            };
-            const icon = icons[e.chamberImpact] || '📋';
-            
             list.append(`
               <div class="election-card">
                 <div style="display: flex; justify-content: space-between; align-items: start; gap: 0.75rem; margin-bottom: 0.5rem;">
                   <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--berkeley-blue); flex: 1;">
-                    ${icon} ${e.title}
+                    ${e.title}
                   </h4>
                   <span class="election-badge" style="${badgeStyle}">
                     ${e.chamberImpact}
@@ -311,7 +301,6 @@ $(function () {
                   </div>
                   
                   <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="font-size: 1rem;">🗳️</span>
                     <div>
                       <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Type</span>
                       <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${e.type}</p>
@@ -320,7 +309,6 @@ $(function () {
                   
                   ${e.stakes ? `
                     <div style="display: flex; align-items: start; gap: 0.5rem; margin-top: 0.25rem;">
-                      <span style="font-size: 1rem;">ℹ️</span>
                       <p style="margin: 0; font-size: 0.875rem; color: var(--fg); line-height: 1.5;">
                         ${e.stakes}
                       </p>
@@ -337,7 +325,6 @@ $(function () {
             list.append(`
               <div class="registration-info">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                  <span style="font-size: 1.5rem;">🗳️</span>
                   <h4 style="margin: 0; font-size: 1rem; color: var(--berkeley-blue);">Voter Registration</h4>
                 </div>
                 <p style="margin: 0.5rem 0; font-size: 0.9rem;">
