@@ -1,93 +1,755 @@
 {
-  "lastUpdated": "2025-10-06T00:00:00Z",
+  "lastUpdated": "2025-10-15T23:52:33Z",
   "electionData": {
-    "NJ": {
-      "stateName": "New Jersey",
-      "registrationWebsite": "https://voter.svrs.nj.gov/register",
-      "registrationDeadline": "October 14, 2025",
+    "AL": {
+      "stateName": "Alabama",
+      "registrationWebsite": "https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action",
+      "registrationDeadline": "10/21/25",
       "elections": [
-        {"title": "Governor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Open seat gubernatorial race.", "chamberImpact": "State", "competitive": true},
-        {"title": "State Senate", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "State Senate across districts.", "chamberImpact": "State", "competitive": true}
+        {
+          "title": "State House of Reps",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "State House of Reps",
+          "chamberImpact": "State",
+          "competitive": true
+        }
       ]
     },
-    "VA": {
-      "stateName": "Virginia",
-      "registrationWebsite": "https://www.elections.virginia.gov/citizen-portal/",
-      "registrationDeadline": "October 13, 2025",
+    "CA": {
+      "stateName": "California",
+      "registrationWebsite": "https://covr.sos.ca.gov/",
+      "registrationDeadline": "10/21/25",
       "elections": [
-        {"title": "Governor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Open seat gubernatorial race.", "chamberImpact": "State", "competitive": true}
+        {
+          "title": "Redistricting",
+          "date": "November 4, 2025",
+          "type": "Referendum",
+          "candidates": [],
+          "stakes": "Statewide ballot measures.",
+          "chamberImpact": "State",
+          "competitive": false
+        },
+        {
+          "title": "Oakland Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Oakland Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
       ]
     },
-    "TN": {
-      "stateName": "Tennessee",
-      "registrationWebsite": "https://ovr.govote.tn.gov/",
-      "registrationDeadline": "November 1, 2025",
+    "CO": {
+      "stateName": "Colorado",
+      "registrationWebsite": "https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml",
+      "registrationDeadline": "10/27/25",
       "elections": [
-        {"title": "U.S. House - 7 Districts", "date": "December 2, 2025", "type": "Special Election", "candidates": [], "stakes": "7 House districts in Middle-West TN.", "chamberImpact": "House", "competitive": true}
+        {
+          "title": "Coorinated Statewide Election",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Coorinated Statewide Election",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
       ]
     },
-    "TX": {
-      "stateName": "Texas",
-      "registrationWebsite": "https://www.votetexas.gov/register-to-vote/",
-      "registrationDeadline": "October 6, 2025",
+    "CT": {
+      "stateName": "Connecticut",
+      "registrationWebsite": "https://voterregistration.ct.gov/OLVR/welcome.do",
+      "registrationDeadline": "10/17/25",
       "elections": [
-        {"title": "U.S. House - 18 Districts", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "18 House districts (Houston area).", "chamberImpact": "House", "competitive": true},
-        {"title": "17 State Constitutional Amendments", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Statewide ballot measures.", "chamberImpact": "State", "competitive": false},
-        {"title": "Fort Worth Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
-        {"title": "San Antonio Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
-      ]
-    },
-    "PA": {
-      "stateName": "Pennsylvania",
-      "registrationWebsite": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
-      "registrationDeadline": "October 20, 2025",
-      "elections": [
-        {"title": "Pittsburgh Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
-        {"title": "Allegheny County Special Election", "date": "November 4, 2025", "type": "Special Election", "candidates": [], "stakes": "County special election.", "chamberImpact": "Local", "competitive": true}
-      ]
-    },
-    "MI": {
-      "stateName": "Michigan",
-      "registrationWebsite": "https://mvic.sos.state.mi.us/",
-      "registrationDeadline": "October 20, 2025",
-      "elections": [
-        {"title": "Detroit Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
-        {"title": "Lansing Mayor & City Council", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral & council elections.", "chamberImpact": "Local", "competitive": true}
+        {
+          "title": "New Haven Ward 1 General",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "New Haven Ward 1 General",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
       ]
     },
     "FL": {
       "stateName": "Florida",
-      "registrationWebsite": "https://registertovote.fl.gov/",
-      "registrationDeadline": "October 6, 2025",
+      "registrationWebsite": "https://registertovoteflorida.gov/home",
+      "registrationDeadline": "10/6/25",
       "elections": [
-        {"title": "Miami Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
+        {
+          "title": "Miami Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Miami Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "GA": {
+      "stateName": "Georgia",
+      "registrationWebsite": "https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true",
+      "registrationDeadline": "10/6/25",
+      "elections": [
+        {
+          "title": "Atlanta Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Atlanta Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "State Senate",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "State Senate",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "ID": {
+      "stateName": "Idaho",
+      "registrationWebsite": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
+      "registrationDeadline": "10/5/25",
+      "elections": [
+        {
+          "title": "Boise City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Boise City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "IL": {
+      "stateName": "Illinois",
+      "registrationWebsite": "https://ova.elections.il.gov/",
+      "registrationDeadline": "10/19/25",
+      "elections": [
+        {
+          "title": "State Senate Elections",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "State Senate Elections",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "IA": {
+      "stateName": "Iowa",
+      "registrationWebsite": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
+      "registrationDeadline": "10/20/25",
+      "elections": [
+        {
+          "title": "Des Moines General",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Des Moines General",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "KS": {
+      "stateName": "Kansas",
+      "registrationWebsite": "https://www.kdor.ks.gov/Apps/VoterReg",
+      "registrationDeadline": "10/14/25",
+      "elections": [
+        {
+          "title": "Topeka Mayor & City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Topeka Mayor & City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Witchita City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Witchita City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "LA": {
+      "stateName": "Louisiana",
+      "registrationWebsite": "https://voterportal.sos.la.gov/VoterRegistration",
+      "registrationDeadline": "10/15/25",
+      "elections": [
+        {
+          "title": "New Orleans Mayoral",
+          "date": "November 15, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "New Orleans Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "ME": {
+      "stateName": "Maine",
+      "registrationWebsite": "https://registertovote.sos.maine.gov/",
+      "registrationDeadline": "11/4/25",
+      "elections": [
+        {
+          "title": "Voter ID + \"Red Flag\" Gun Law",
+          "date": "November 4, 2025",
+          "type": "Referendum",
+          "candidates": [],
+          "stakes": "Statewide ballot measures.",
+          "chamberImpact": "State",
+          "competitive": false
+        }
+      ]
+    },
+    "MA": {
+      "stateName": "Massachusetts",
+      "registrationWebsite": "https://www.sec.state.ma.us/OVR/Pages/CheckEligibility.aspx?&Action=Register",
+      "registrationDeadline": "10/25/25",
+      "elections": [
+        {
+          "title": "Boston Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Boston Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "MI": {
+      "stateName": "Michigan",
+      "registrationWebsite": "https://mvic.sos.state.mi.us/RegisterVoter/Index",
+      "registrationDeadline": "10/20/25",
+      "elections": [
+        {
+          "title": "Detroit Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Detroit Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Lansing Mayoral & City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Lansing Mayoral & City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "MN": {
+      "stateName": "Minnesota",
+      "registrationWebsite": "https://mnvotes.sos.mn.gov/VoterRegistration/index",
+      "registrationDeadline": "10/14/25",
+      "elections": [
+        {
+          "title": "Minneapolis Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Minneapolis Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "St. Paul Mayoral & City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "St. Paul Mayoral & City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "State Senate & House Elections",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "State Senate & House Elections",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "MS": {
+      "stateName": "Mississippi",
+      "registrationWebsite": "https://www.msegov.com/sos/voter_registration/amiregistered/Search",
+      "registrationDeadline": "10/6/25",
+      "elections": [
+        {
+          "title": "State Senate Elections",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "State Senate Elections",
+          "chamberImpact": "State",
+          "competitive": true
+        },
+        {
+          "title": "Jackson Mayoral & City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Jackson Mayoral & City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "MO": {
+      "stateName": "Missouri",
+      "registrationWebsite": "https://s1.sos.mo.gov/elections/voterregistration/",
+      "registrationDeadline": "10/8/25",
+      "elections": [
+        {
+          "title": "St. Louis Mayoral  County (Jefferson City) Ballot Measure & City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "St. Louis Mayoral  County (Jefferson City) Ballot Measure & City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "MT": {
+      "stateName": "Montana",
+      "registrationWebsite": "https://prodvoterportal.mt.gov/WhereToVote.aspx",
+      "registrationDeadline": "10/5/25",
+      "elections": [
+        {
+          "title": "Helena Mayoral & City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Helena Mayoral & City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Billings Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Billings Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Bozeman Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Bozeman Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Great Falls Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Great Falls Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Kalispell Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Kalispell Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "NE": {
+      "stateName": "Nebraska",
+      "registrationWebsite": "https://www.nebraska.gov/apps-sos-voter-registration/",
+      "registrationDeadline": "10/17/25",
+      "elections": [
+        {
+          "title": "Lincoln Nebraska City Council",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Lincoln Nebraska City Council",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Omaha",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Omaha",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Mayor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Mayor",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "NJ": {
+      "stateName": "New Jersey",
+      "registrationWebsite": "https://voter.svrs.nj.gov/register",
+      "registrationDeadline": "10/14/25",
+      "elections": [
+        {
+          "title": "Governor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Open seat gubernatorial race.",
+          "chamberImpact": "State",
+          "competitive": true
+        },
+        {
+          "title": "Jersey CIty",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Jersey CIty",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "State Senate",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "State Senate",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "NM": {
+      "stateName": "New Mexico",
+      "registrationWebsite": "https://portal.sos.state.nm.us/OVR/WebPages/InstructionsStep1.aspx?AspxAutoDetectCookieSupport=1",
+      "registrationDeadline": "10/7/25",
+      "elections": [
+        {
+          "title": "Albuquerque Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Albuquerque Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Santa Fe General",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Santa Fe General",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "NY": {
+      "stateName": "New York",
+      "registrationWebsite": "https://nyovr.elections.ny.gov/",
+      "registrationDeadline": "10/25/25",
+      "elections": [
+        {
+          "title": "NYC Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "NYC Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "NC": {
+      "stateName": "North Carolina",
+      "registrationWebsite": "https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx",
+      "registrationDeadline": "10/12/25",
+      "elections": [
+        {
+          "title": "Charlotte Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Charlotte Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Durham Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Durham Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Greensboro General",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Greensboro General",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
       ]
     },
     "OH": {
       "stateName": "Ohio",
       "registrationWebsite": "https://olvr.ohiosos.gov/",
-      "registrationDeadline": "October 6, 2025",
+      "registrationDeadline": "10/5/25",
       "elections": [
-        {"title": "Cincinnati Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true},
-        {"title": "Cleveland Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
+        {
+          "title": "Cincinnati & Cleveland Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Cincinnati & Cleveland Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
       ]
     },
-    "ME": {
-      "stateName": "Maine",
-      "registrationWebsite": "https://www1.maine.gov/online/ovr/",
-      "registrationDeadline": "October 14, 2025",
+    "OK": {
+      "stateName": "Oklahoma",
+      "registrationWebsite": "https://okvoterportal.okelections.us/Home/RegWizard",
+      "registrationDeadline": "10/10/25",
       "elections": [
-        {"title": "Voter ID Referendum", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Voter ID law.", "chamberImpact": "State", "competitive": false},
-        {"title": "Red Flag Gun Law Referendum", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Red Flag law.", "chamberImpact": "State", "competitive": false}
+        {
+          "title": "State Reps",
+          "date": "December 9, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "State Reps",
+          "chamberImpact": "State",
+          "competitive": true
+        }
       ]
     },
-    "CA": {
-      "stateName": "California",
-      "registrationWebsite": "https://registertovote.ca.gov/",
-      "registrationDeadline": "October 20, 2025",
+    "OR": {
+      "stateName": "Oregon",
+      "registrationWebsite": "https://sos.oregon.gov/voting/pages/registration.aspx?lang=en",
+      "registrationDeadline": "10/14/25",
       "elections": [
-        {"title": "Redistricting Referendum", "date": "November 4, 2025", "type": "Referendum", "candidates": [], "stakes": "Redistricting process.", "chamberImpact": "State", "competitive": false},
-        {"title": "Oakland Mayor", "date": "November 4, 2025", "type": "General Election", "candidates": [], "stakes": "Mayoral election.", "chamberImpact": "Local", "competitive": true}
+        {
+          "title": "Portland Special Election",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Portland Special Election",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "PA": {
+      "stateName": "Pennsylvania",
+      "registrationWebsite": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
+      "registrationDeadline": "10/20/25",
+      "elections": [
+        {
+          "title": "Pittsburg Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Pittsburg Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Allegheny County Special Election",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Allegheny County Special Election",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "RI": {
+      "stateName": "Rhode Island",
+      "registrationWebsite": "https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1",
+      "registrationDeadline": "10/5/25",
+      "elections": [
+        {
+          "title": "Providence City Coucil Ward 2",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Providence City Coucil Ward 2",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "SC": {
+      "stateName": "South Carolina",
+      "registrationWebsite": "https://vrems.scvotes.sc.gov/ovr/start",
+      "registrationDeadline": "10/5/25",
+      "elections": [
+        {
+          "title": "SC State Senate & Reps",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "SC State Senate & Reps",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "TN": {
+      "stateName": "Tennessee",
+      "registrationWebsite": "https://ovr.govote.tn.gov/",
+      "registrationDeadline": "10/5/25",
+      "elections": [
+        {
+          "title": "U.S. House - 7 (Middle-West Tennessee) (12/02)",
+          "date": "December 2, 2025",
+          "type": "Special Election",
+          "candidates": [],
+          "stakes": "7 (Middle-West Tennessee)",
+          "chamberImpact": "House",
+          "competitive": true
+        }
+      ]
+    },
+    "TX": {
+      "stateName": "Texas",
+      "registrationWebsite": "https://www.votetexas.gov/register-to-vote/index.html",
+      "registrationDeadline": "10/5/25",
+      "elections": [
+        {
+          "title": "U.S. House - 18 (inner city Houston and the surrounding area)",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "18 (inner city Houston and the surrounding area)",
+          "chamberImpact": "House",
+          "competitive": true
+        },
+        {
+          "title": "17 State Amendments",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "17 State Amendments",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "Fort Worth Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Fort Worth Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "San Antonio Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "San Antonio Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
+      ]
+    },
+    "VA": {
+      "stateName": "Virginia",
+      "registrationWebsite": "https://vote.elections.virginia.gov/Registration/DmvLookup",
+      "registrationDeadline": "11/4/25",
+      "elections": [
+        {
+          "title": "Governor",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Open seat gubernatorial race.",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "WA": {
+      "stateName": "Washington",
+      "registrationWebsite": "https://olvr.votewa.gov/olvr2024/landing.aspx",
+      "registrationDeadline": "11/4/25",
+      "elections": [
+        {
+          "title": "Seattle Mayoral",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Seattle Mayoral",
+          "chamberImpact": "Local",
+          "competitive": true
+        },
+        {
+          "title": "WA State Senate & Reps",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "WA State Senate & Reps",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ]
+    },
+    "WY": {
+      "stateName": "Wyoming",
+      "registrationWebsite": "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VoterRegistrationCheck.aspx",
+      "registrationDeadline": "11/3/25",
+      "elections": [
+        {
+          "title": "Statewide General",
+          "date": "November 4, 2025",
+          "type": "General Election",
+          "candidates": [],
+          "stakes": "Statewide General",
+          "chamberImpact": "Local",
+          "competitive": true
+        }
       ]
     }
   }

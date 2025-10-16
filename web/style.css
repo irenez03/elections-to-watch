@@ -1,99 +1,177 @@
+/* ========================================
+   CSS VARIABLES (Color Palette)
+   ========================================
+   Edit these to change colors throughout the site.
+   These variables can be used anywhere with var(--variable-name)
+*/
 :root {
-  --red-pantone: #e63946;
-  --honeydew: #f1faee;
-  --non-photo-blue: #a8dadc;
-  --cerulean: #457b9d;
-  --berkeley-blue: #1d3557;
+  --red-pantone: #e63946;      /* Bright red - used for accents */
+  --honeydew: #f1faee;          /* Soft off-white */
+  --non-photo-blue: #a8dadc;    /* Light blue */
+  --cerulean: #457b9d;          /* Medium blue */
+  --berkeley-blue: #1d3557;     /* Dark blue */
 }
 
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
 * { box-sizing: border-box; }
+
 body { 
   margin: 0; 
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; 
-  color: var(--berkeley-blue); 
-  background: #ffffff; 
+  color: var(--berkeley-blue);  /* Main text color */
+  background: #ffffff;          /* Page background */
 }
+
+/* ========================================
+   LINKS
+   ======================================== */
 a {
-  color: var(--cerulean);
+  color: var(--cerulean);       /* Link color */
   text-decoration: none;
   font-weight: 600;
 }
 a:hover {
-  color: var(--red-pantone);
+  color: var(--red-pantone);    /* Link hover color */
   text-decoration: underline;
 }
+
+/* ========================================
+   HEADER SECTION
+   ========================================
+   Top banner of the page
+*/
 header { 
   padding: 24px 16px; 
+  
+  /* GRADIENT BACKGROUND - Edit these colors to change header gradient */
   background: linear-gradient(135deg, #5a189a 0%, #7209b7 50%, #9d4edd 100%); 
+  /* Examples:
+     Red: linear-gradient(135deg, #c1121f 0%, #e63946 50%, #f77f00 100%)
+     Blue: linear-gradient(135deg, #1d3557 0%, #457b9d 50%, #a8dadc 100%)
+     Green: linear-gradient(135deg, #2d6a4f 0%, #40916c 50%, #52b788 100%)
+  */
+  
   color: white; 
-  border-bottom: 3px solid #7209b7;
+  border-bottom: 3px solid #7209b7;  /* Bottom border color */
 }
+
+/* Header Title */
 header h1 { 
   margin: 0 0 8px 0; 
-  font-size: 28px; 
+  font-size: 28px;              /* Title size */
   font-weight: 700;
 }
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
 main { 
   padding: 16px; 
-  max-width: 900px; 
-  margin: 0 auto; 
+  max-width: 900px;             /* Maximum width of content */
+  margin: 0 auto;               /* Center content */
 }
+
+/* ========================================
+   STATUS BOX
+   ========================================
+   The box at the top showing loading/info messages
+*/
 #status { 
   background: white; 
   border: 2px solid var(--non-photo-blue); 
   padding: 12px; 
-  border-radius: 8px; 
+  border-radius: 8px;           /* Rounded corners */
   margin-bottom: 16px; 
   box-shadow: 0 1px 3px rgba(29, 53, 87, 0.1);
 }
+
+/* ========================================
+   STATE CARDS
+   ========================================
+   Cards showing each state's elections
+*/
 .state { 
   background: white; 
-  border: 2px solid var(--cerulean); 
+  border: 2px solid var(--cerulean);  /* Card border color */
   border-radius: 8px; 
   padding: 16px; 
   margin-bottom: 16px; 
   box-shadow: 0 2px 4px rgba(29, 53, 87, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;  /* Smooth animation */
 }
+
 .state:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px);  /* Lifts up slightly on hover */
   box-shadow: 0 4px 8px rgba(29, 53, 87, 0.15);
 }
+
+/* State name heading */
 .state h3 { 
   margin: 0 0 8px 0; 
   font-size: 20px; 
   color: var(--berkeley-blue);
   font-weight: 700;
 }
+
+/* ========================================
+   ELECTION ITEMS
+   ========================================
+   Individual elections within state cards
+*/
 .election { 
   padding: 12px 0; 
-  border-top: 1px solid var(--non-photo-blue); 
+  border-top: 1px solid var(--non-photo-blue);  /* Divider line */
 }
-.election:first-child { border-top: 0; }
+.election:first-child { 
+  border-top: 0;                /* No border on first item */
+}
+
+/* ========================================
+   BADGES
+   ========================================
+   Colored labels showing election type
+   
+   CUSTOMIZE BADGE COLORS:
+   Edit the background colors below to change badge appearance
+*/
 .badge { 
   display: inline-block; 
   padding: 3px 10px; 
-  border-radius: 12px; 
+  border-radius: 12px;          /* Rounded pill shape */
   font-size: 12px; 
   margin-left: 6px; 
   font-weight: 600;
 }
+
+/* Local election badge */
 .badge.local { 
-  background: var(--non-photo-blue); 
-  color: var(--berkeley-blue); 
+  background: var(--non-photo-blue);  /* Light blue background */
+  color: var(--berkeley-blue);        /* Dark blue text */
 }
+
+/* State election badge */
 .badge.state { 
-  background: var(--cerulean); 
-  color: white; 
+  background: var(--cerulean);        /* Medium blue background */
+  color: white;                        /* White text */
 }
+
+/* House election badge */
 .badge.house { 
-  background: var(--red-pantone); 
-  color: white; 
+  background: var(--red-pantone);     /* Red background */
+  color: white;                        /* White text */
 }
+
+/* Referendum badge */
 .badge.ref { 
-  background: var(--berkeley-blue); 
-  color: white; 
+  background: var(--berkeley-blue);   /* Dark blue background */
+  color: white;                        /* White text */
 }
+
+/* ========================================
+   FOOTER
+   ======================================== */
 footer { 
   padding: 24px 16px; 
   text-align: center; 

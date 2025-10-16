@@ -2,7 +2,8 @@
   const statusEl = document.getElementById('status');
   const statesEl = document.getElementById('states');
 
-  fetch('elections.json')
+  // Add timestamp to prevent caching of JSON file
+  fetch(`elections.json?v=${Date.now()}`)
     .then(r => r.json())
     .then(data => {
       statusEl.textContent = `Last updated: ${new Date(data.lastUpdated).toLocaleString()}`;

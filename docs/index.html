@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Elections to Watch 2025</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='8' y='20' width='48' height='36' rx='4' fill='none' stroke='%23000' stroke-width='4'/><rect x='16' y='10' width='32' height='16' rx='3' fill='none' stroke='%23000' stroke-width='4'/><line x1='20' y1='18' x2='44' y2='18' stroke='%23000' stroke-width='4'/></svg>">
   <link rel="stylesheet" href="style.css">
@@ -29,19 +32,19 @@
             <div class="summary-number" id="sum-elections">0</div>
             <div class="summary-label">Total Elections</div>
           </div>
-          <div class="summary-item">
+          <div class="summary-item clickable-stat" data-filter="Local" role="button" tabindex="0" aria-label="View states with local elections">
             <div class="summary-number" id="sum-local">0</div>
             <div class="summary-sub">Local</div>
           </div>
-          <div class="summary-item">
+          <div class="summary-item clickable-stat" data-filter="State" role="button" tabindex="0" aria-label="View states with state elections">
             <div class="summary-number" id="sum-state">0</div>
             <div class="summary-sub">State</div>
           </div>
-          <div class="summary-item">
+          <div class="summary-item clickable-stat" data-filter="House" role="button" tabindex="0" aria-label="View states with House elections">
             <div class="summary-number" id="sum-house">0</div>
             <div class="summary-sub">U.S. House</div>
           </div>
-          <div class="summary-item">
+          <div class="summary-item clickable-stat" data-filter="Other" role="button" tabindex="0" aria-label="View states with referendums">
             <div class="summary-number" id="sum-ref">0</div>
             <div class="summary-sub">Referendums</div>
           </div>
@@ -52,10 +55,15 @@
   </main>
 
   <div id="info-modal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title"><span id="modal-state-name"></span> — Upcoming Elections</h3>
+      </div>
       <span class="close-btn" aria-label="Close">&times;</span>
-      <h2 id="modal-state-name"></h2>
-      <div id="modal-elections-list"></div>
+      
+      <div class="modal-body">
+        <div id="modal-elections-list"></div>
+      </div>
     </div>
   </div>
   <div id="tooltip"></div>
