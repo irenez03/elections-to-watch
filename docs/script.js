@@ -174,6 +174,9 @@ $(function () {
            Shows tooltip when hovering over a state
         */
         mouseover: function (event, data) {
+          // Don't show tooltip if modal is open
+          if (modal.attr('open') !== undefined) return;
+          
           const s = electionData[data.name];
           let html = `<strong>${s ? s.stateName : data.name}</strong><br/>`;
           
@@ -198,7 +201,9 @@ $(function () {
         },
         
         // Move tooltip with mouse
-        mousemove: function (event) { 
+        mousemove: function (event) {
+          // Don't move tooltip if modal is open
+          if (modal.attr('open') !== undefined) return;
           tooltip.css({ top: event.pageY - 40, left: event.pageX + 10 }); 
         },
         
@@ -223,6 +228,9 @@ $(function () {
       
       // Opens the modal and populates it with state data
       function openModal(stateName, stateData) {
+        // Hide tooltip when modal opens
+        tooltip.hide();
+        
         $('#modal-state-name').text(stateName);
         const list = $('#modal-elections-list');
         list.empty();
