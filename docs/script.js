@@ -52,7 +52,7 @@ $(function () {
       // CALCULATE SUMMARY STATISTICS
       // ========================================
       const statesTracked = Object.keys(electionData).length;
-      let total = 0, local = 0, state = 0, house = 0, ref = 0;
+      let total = 0, local = 0, state = 0, federal = 0;
       
       // Count each type of election
       Object.values(electionData).forEach(s => {
@@ -60,8 +60,8 @@ $(function () {
           total += 1;
           if (e.chamberImpact === 'Local') local += 1;
           else if (e.chamberImpact === 'State') state += 1;
-          else if (e.chamberImpact === 'House') house += 1;
-          else ref += 1;
+          else if (e.chamberImpact === 'House') federal += 1;
+          else federal += 1;
         });
       });
       
@@ -70,8 +70,8 @@ $(function () {
       setTimeout(() => animateNumber($('#sum-elections'), total, 1200), 100);
       setTimeout(() => animateNumber($('#sum-local'), local, 1000), 200);
       setTimeout(() => animateNumber($('#sum-state'), state, 1000), 300);
-      setTimeout(() => animateNumber($('#sum-house'), house, 1000), 400);
-      setTimeout(() => animateNumber($('#sum-ref'), ref, 1000), 500);
+      setTimeout(() => animateNumber($('#sum-federal'), federal, 1000), 400);
+      
 
       /* ========================================
          STATE COLORS CONFIGURATION
@@ -96,7 +96,7 @@ $(function () {
         
         /* STATES WITH ELECTIONS
            Edit this color to change what states WITH elections look like */
-        if (hasElections) fill = '#7b2cbf'; // Dark blue
+        if (hasElections) fill = '#0466c8'; // Dark blue
         
         /* ALTERNATIVE: Color by election type (uncomment to use)
            This will color states differently based on type of election:
@@ -371,8 +371,7 @@ $(function () {
         const filterLabels = {
           'Local': 'Local Elections',
           'State': 'State Elections',
-          'House': 'U.S. House Elections',
-          'Other': 'Referendums'
+          'Federal': 'Federal Elections'
         };
         
         $('#modal-state-name').text(filterLabels[filterType] || filterType);
@@ -386,8 +385,8 @@ $(function () {
           if (!stateData.elections || stateData.elections.length === 0) continue;
           
           const electionsOfType = stateData.elections.filter(e => {
-            if (filterType === 'Other') {
-              return e.chamberImpact !== 'Local' && e.chamberImpact !== 'State' && e.chamberImpact !== 'House';
+            if (filterType === 'Federal') {
+              return e.chamberImpact === 'House' || (e.chamberImpact !== 'Local' && e.chamberImpact !== 'State');
             }
             return e.chamberImpact === filterType;
           });
