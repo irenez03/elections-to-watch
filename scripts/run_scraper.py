@@ -19,7 +19,8 @@ from advanced_election_scraper import AdvancedElectionScraper
 
 def setup_logging():
     """Set up logging configuration."""
-    log_dir = Path("logs")
+    base_dir = Path(__file__).parent.parent
+    log_dir = base_dir / "logs"
     log_dir.mkdir(exist_ok=True)
     
     log_file = log_dir / f"scraper_{datetime.now().strftime('%Y%m%d')}.log"
@@ -55,9 +56,10 @@ def backup_existing_data():
     """Create a backup of the existing elections.json file."""
     logger = logging.getLogger(__name__)
     
-    elections_file = Path("electionstowatch/elections.json")
+    base_dir = Path(__file__).parent.parent
+    elections_file = base_dir / "docs" / "elections.json"
     if elections_file.exists():
-        backup_dir = Path("backups")
+        backup_dir = base_dir / "backups"
         backup_dir.mkdir(exist_ok=True)
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -125,7 +127,9 @@ def run_scraper():
         scraper.run_comprehensive_scraper()
         
         # Validate the updated data
-        with open('electionstowatch/elections.json', 'r') as f:
+        base_dir = Path(__file__).parent.parent
+        elections_file = base_dir / "docs" / "elections.json"
+        with open(elections_file, 'r') as f:
             updated_data = json.load(f)
         
         if validate_scraped_data(updated_data.get('electionData', {})):

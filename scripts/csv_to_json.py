@@ -24,6 +24,61 @@ STATE_CODES = {
     "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY"
 }
 
+# Default registration websites for all states
+DEFAULT_REGISTRATION_SITES = {
+    "AL": "https://www.alabamavotes.gov/voter-registration",
+    "AK": "https://voterregistration.alaska.gov/",
+    "AZ": "https://servicearizona.com/voterRegistration",
+    "AR": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration",
+    "CA": "https://registertovote.ca.gov/",
+    "CO": "https://www.sos.state.co.us/pubs/elections/vote/VoterHome.html",
+    "CT": "https://voterregistration.ct.gov/",
+    "DE": "https://ivote.de.gov/VoterView",
+    "DC": "https://www.dcboe.org/Voters/Register-To-Vote",
+    "FL": "https://registertovote.fl.gov/",
+    "GA": "https://registertovote.sos.ga.gov/",
+    "HI": "https://olvr.hawaii.gov/",
+    "ID": "https://voteidaho.gov/",
+    "IL": "https://ova.elections.il.gov/",
+    "IN": "https://indianavoters.in.gov/",
+    "IA": "https://mymvd.iowadot.gov/Account/Login",
+    "KS": "https://www.kdor.ks.gov/Apps/VoterReg/Default.aspx",
+    "KY": "https://vrsws.sos.ky.gov/ovrweb/",
+    "LA": "https://voterportal.sos.la.gov/",
+    "ME": "https://www1.maine.gov/online/ovr/",
+    "MD": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/",
+    "MA": "https://www.sec.state.ma.us/ovr/",
+    "MI": "https://mvic.sos.state.mi.us/",
+    "MN": "https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationMain",
+    "MS": "https://www.sos.ms.gov/elections-voting/voter-registration-information",
+    "MO": "https://s1.sos.mo.gov/elections/voterregistration/",
+    "MT": "https://app.mt.gov/voterinfo/",
+    "NE": "https://www.nebraska.gov/apps-sos-voter-registration/",
+    "NV": "https://www.nvsos.gov/sos/elections/voters/registering-to-vote",
+    "NH": "https://app.sos.nh.gov/Public/PartyInfo.aspx",
+    "NJ": "https://voter.svrs.nj.gov/register",
+    "NM": "https://portal.sos.state.nm.us/OVR/WebPages/InstructionsStep1.aspx",
+    "NY": "https://dmv.ny.gov/more-info/electronic-voter-registration-application",
+    "NC": "https://www.ncsbe.gov/registering/how-register",
+    "ND": "https://vip.sos.nd.gov/PortalListDetails.aspx?ptlhPKID=74&ptlPKID=7",
+    "OH": "https://olvr.ohiosos.gov/",
+    "OK": "https://okvoterportal.okelections.us/",
+    "OR": "https://sos.oregon.gov/voting/Pages/registration.aspx",
+    "PA": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
+    "RI": "https://vote.sos.ri.gov/",
+    "SC": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx",
+    "SD": "https://sdsos.gov/elections-voting/voting/register-to-vote.aspx",
+    "TN": "https://ovr.govote.tn.gov/",
+    "TX": "https://www.votetexas.gov/register-to-vote/",
+    "UT": "https://secure.utah.gov/voterreg/",
+    "VT": "https://olvr.vermont.gov/",
+    "VA": "https://www.elections.virginia.gov/citizen-portal/",
+    "WA": "https://voter.votewa.gov/",
+    "WV": "https://ovr.sos.wv.gov/Register/Landing",
+    "WI": "https://myvote.wi.gov/",
+    "WY": "https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx"
+}
+
 def parse_elections_csv(csv_path):
     """Parse the Elections CSV and extract election data by state."""
     elections_by_state = {}
@@ -185,18 +240,30 @@ def parse_logistics_csv(csv_path):
     return logistics_by_state
 
 def merge_data(elections_data, logistics_data):
-    """Merge elections and logistics data."""
+    """Merge elections and logistics data, including all states."""
     merged = {}
     
-    for state_code, election_info in elections_data.items():
+    # Start with ALL states from STATE_CODES
+    for state_name, state_code in STATE_CODES.items():
+        # Get logistics info if available
         logistics = logistics_data.get(state_code, {})
         
+        # Get registration website (CSV first, then default)
+        registration_website = logistics.get("registrationWebsite", "")
+        if not registration_website or not registration_website.startswith('http'):
+            registration_website = DEFAULT_REGISTRATION_SITES.get(state_code, "")
+        
         merged[state_code] = {
-            "stateName": election_info["stateName"],
-            "registrationWebsite": logistics.get("registrationWebsite", ""),
+            "stateName": state_name,
+            "registrationWebsite": registration_website,
             "registrationDeadline": logistics.get("registrationDeadline", "November 4, 2025"),
-            "elections": election_info["elections"]
+            "elections": []
         }
+    
+    # Then, add elections for states that have them
+    for state_code, election_info in elections_data.items():
+        if state_code in merged:
+            merged[state_code]["elections"] = election_info["elections"]
     
     return merged
 

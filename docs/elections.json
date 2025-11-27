@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-10-15T23:52:33Z",
+  "lastUpdated": "2025-11-27T01:15:36Z",
   "electionData": {
     "AL": {
       "stateName": "Alabama",
@@ -16,6 +16,24 @@
           "competitive": true
         }
       ]
+    },
+    "AK": {
+      "stateName": "Alaska",
+      "registrationWebsite": "https://voterregistration.alaska.gov/",
+      "registrationDeadline": "9/30/25",
+      "elections": []
+    },
+    "AZ": {
+      "stateName": "Arizona",
+      "registrationWebsite": "https://servicearizona.com/VoterRegistration/selectLanguage",
+      "registrationDeadline": "10/20/25",
+      "elections": []
+    },
+    "AR": {
+      "stateName": "Arkansas",
+      "registrationWebsite": "https://www.voterview.ar-nova.org/VoterView",
+      "registrationDeadline": "10/5/25",
+      "elections": []
     },
     "CA": {
       "stateName": "California",
@@ -74,6 +92,18 @@
         }
       ]
     },
+    "DE": {
+      "stateName": "Delaware",
+      "registrationWebsite": "https://ivote.de.gov/VoterView/registrant/newregistrant",
+      "registrationDeadline": "10/12/25",
+      "elections": []
+    },
+    "DC": {
+      "stateName": "District of Columbia",
+      "registrationWebsite": "https://dcboe.org/voters/register-to-vote/register-update-voter-registration",
+      "registrationDeadline": "November 4, 2025",
+      "elections": []
+    },
     "FL": {
       "stateName": "Florida",
       "registrationWebsite": "https://registertovoteflorida.gov/home",
@@ -115,6 +145,12 @@
         }
       ]
     },
+    "HI": {
+      "stateName": "Hawaii",
+      "registrationWebsite": "https://olvr.hawaii.gov/",
+      "registrationDeadline": "10/27/25",
+      "elections": []
+    },
     "ID": {
       "stateName": "Idaho",
       "registrationWebsite": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
@@ -146,6 +182,12 @@
           "competitive": true
         }
       ]
+    },
+    "IN": {
+      "stateName": "Indiana",
+      "registrationWebsite": "https://indianavoters.in.gov/",
+      "registrationDeadline": "10/6/25",
+      "elections": []
     },
     "IA": {
       "stateName": "Iowa",
@@ -188,6 +230,12 @@
         }
       ]
     },
+    "KY": {
+      "stateName": "Kentucky",
+      "registrationWebsite": "https://vrsws.sos.ky.gov/ovrweb/govoteky",
+      "registrationDeadline": "10/7/25",
+      "elections": []
+    },
     "LA": {
       "stateName": "Louisiana",
       "registrationWebsite": "https://voterportal.sos.la.gov/VoterRegistration",
@@ -219,6 +267,12 @@
           "competitive": false
         }
       ]
+    },
+    "MD": {
+      "stateName": "Maryland",
+      "registrationWebsite": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1",
+      "registrationDeadline": "10/14/25",
+      "elections": []
     },
     "MA": {
       "stateName": "Massachusetts",
@@ -422,6 +476,18 @@
         }
       ]
     },
+    "NV": {
+      "stateName": "Nevada",
+      "registrationWebsite": "https://www.nvsos.gov/SOSVoterServices/start.aspx",
+      "registrationDeadline": "11/4/25",
+      "elections": []
+    },
+    "NH": {
+      "stateName": "New Hampshire",
+      "registrationWebsite": "https://app.sos.nh.gov/voterinformation",
+      "registrationDeadline": "11/4/25",
+      "elections": []
+    },
     "NJ": {
       "stateName": "New Jersey",
       "registrationWebsite": "https://voter.svrs.nj.gov/register",
@@ -531,6 +597,12 @@
         }
       ]
     },
+    "ND": {
+      "stateName": "North Dakota",
+      "registrationWebsite": "https://vip.sos.nd.gov/PortalListDetails.aspx?ptlhPKID=74&ptlPKID=7",
+      "registrationDeadline": "10/5/25",
+      "elections": []
+    },
     "OH": {
       "stateName": "Ohio",
       "registrationWebsite": "https://olvr.ohiosos.gov/",
@@ -636,6 +708,12 @@
         }
       ]
     },
+    "SD": {
+      "stateName": "South Dakota",
+      "registrationWebsite": "https://vip.sdsos.gov/VIPLogin.aspx",
+      "registrationDeadline": "10/20/25",
+      "elections": []
+    },
     "TN": {
       "stateName": "Tennessee",
       "registrationWebsite": "https://ovr.govote.tn.gov/",
@@ -695,6 +773,18 @@
         }
       ]
     },
+    "UT": {
+      "stateName": "Utah",
+      "registrationWebsite": "https://vote.utah.gov/register-to-vote-or-update-your-voter-registration/",
+      "registrationDeadline": "10/24/25",
+      "elections": []
+    },
+    "VT": {
+      "stateName": "Vermont",
+      "registrationWebsite": "https://olvr.vermont.gov/",
+      "registrationDeadline": "11/4/25",
+      "elections": []
+    },
     "VA": {
       "stateName": "Virginia",
       "registrationWebsite": "https://vote.elections.virginia.gov/Registration/DmvLookup",
@@ -735,6 +825,18 @@
           "competitive": true
         }
       ]
+    },
+    "WV": {
+      "stateName": "West Virginia",
+      "registrationWebsite": "https://ovr.sos.wv.gov/Register/Landing#Qualifications",
+      "registrationDeadline": "10/5/25",
+      "elections": []
+    },
+    "WI": {
+      "stateName": "Wisconsin",
+      "registrationWebsite": "https://myvote.wi.gov/en-us/Register-To-Vote",
+      "registrationDeadline": "10/15/25",
+      "elections": []
     },
     "WY": {
       "stateName": "Wyoming",

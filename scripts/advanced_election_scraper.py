@@ -30,8 +30,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class AdvancedElectionScraper:
-    def __init__(self, headless=True, logistics_csv="2025 Off-Year Elections - Logistics.csv"):
+    def __init__(self, headless=True, logistics_csv=None):
         """Initialize the advanced scraper."""
+        if logistics_csv is None:
+            from pathlib import Path
+            base_dir = Path(__file__).parent.parent
+            logistics_csv = base_dir / "data" / "2025 Off-Year Elections - Logistics.csv"
         self.logistics_csv = logistics_csv
         self.setup_driver(headless)
         self.setup_data_sources()
@@ -446,8 +450,13 @@ class AdvancedElectionScraper:
     def update_elections_json(self, new_data):
         """Update the elections.json file with new data."""
         try:
+            from pathlib import Path
+            base_dir = Path(__file__).parent.parent
+            docs_json = base_dir / "docs" / "elections.json"
+            web_json = base_dir / "web" / "elections.json"
+            
             # Load existing data
-            with open('electionstowatch/elections.json', 'r') as f:
+            with open(docs_json, 'r') as f:
                 existing_data = json.load(f)
             
             # Update with new data
@@ -457,9 +466,11 @@ class AdvancedElectionScraper:
             # Update timestamp
             existing_data['lastUpdated'] = datetime.now().isoformat() + 'Z'
             
-            # Save updated data
-            with open('electionstowatch/elections.json', 'w') as f:
-                json.dump(existing_data, f, indent=2)
+            # Save updated data to both locations
+            for output_file in [docs_json, web_json]:
+                with open(output_file, 'w') as f:
+                    json.dump(existing_data, f, indent=2)
+                logger.info(f"Updated {output_file}")
             
             logger.info(f"Updated elections.json with data for {len(new_data)} states")
             
