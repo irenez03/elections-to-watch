@@ -5,6 +5,7 @@
       "stateName": "Alabama",
       "registrationWebsite": "https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action",
       "registrationDeadline": "10/21/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "State House of Reps",
@@ -39,6 +40,7 @@
       "stateName": "California",
       "registrationWebsite": "https://covr.sos.ca.gov/",
       "registrationDeadline": "10/21/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Redistricting",
@@ -64,6 +66,7 @@
       "stateName": "Colorado",
       "registrationWebsite": "https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml",
       "registrationDeadline": "10/27/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Coorinated Statewide Election",
@@ -80,6 +83,7 @@
       "stateName": "Connecticut",
       "registrationWebsite": "https://voterregistration.ct.gov/OLVR/welcome.do",
       "registrationDeadline": "10/17/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "New Haven Ward 1 General",
@@ -108,6 +112,7 @@
       "stateName": "Florida",
       "registrationWebsite": "https://registertovoteflorida.gov/home",
       "registrationDeadline": "10/6/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Miami Mayoral",
@@ -124,6 +129,7 @@
       "stateName": "Georgia",
       "registrationWebsite": "https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true",
       "registrationDeadline": "10/6/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Atlanta Mayoral",
@@ -155,6 +161,7 @@
       "stateName": "Idaho",
       "registrationWebsite": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Boise City Council",
@@ -171,6 +178,7 @@
       "stateName": "Illinois",
       "registrationWebsite": "https://ova.elections.il.gov/",
       "registrationDeadline": "10/19/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "State Senate Elections",
@@ -193,6 +201,7 @@
       "stateName": "Iowa",
       "registrationWebsite": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
       "registrationDeadline": "10/20/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Des Moines General",
@@ -209,6 +218,7 @@
       "stateName": "Kansas",
       "registrationWebsite": "https://www.kdor.ks.gov/Apps/VoterReg",
       "registrationDeadline": "10/14/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Topeka Mayor & City Council",
@@ -240,6 +250,7 @@
       "stateName": "Louisiana",
       "registrationWebsite": "https://voterportal.sos.la.gov/VoterRegistration",
       "registrationDeadline": "10/15/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "New Orleans Mayoral",
@@ -256,6 +267,7 @@
       "stateName": "Maine",
       "registrationWebsite": "https://registertovote.sos.maine.gov/",
       "registrationDeadline": "11/4/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Voter ID + \"Red Flag\" Gun Law",
@@ -278,6 +290,7 @@
       "stateName": "Massachusetts",
       "registrationWebsite": "https://www.sec.state.ma.us/OVR/Pages/CheckEligibility.aspx?&Action=Register",
       "registrationDeadline": "10/25/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Boston Mayoral",
@@ -294,6 +307,7 @@
       "stateName": "Michigan",
       "registrationWebsite": "https://mvic.sos.state.mi.us/RegisterVoter/Index",
       "registrationDeadline": "10/20/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Detroit Mayoral",
@@ -319,6 +333,7 @@
       "stateName": "Minnesota",
       "registrationWebsite": "https://mnvotes.sos.mn.gov/VoterRegistration/index",
       "registrationDeadline": "10/14/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Minneapolis Mayoral",
@@ -353,6 +368,7 @@
       "stateName": "Mississippi",
       "registrationWebsite": "https://www.msegov.com/sos/voter_registration/amiregistered/Search",
       "registrationDeadline": "10/6/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "State Senate Elections",
@@ -378,6 +394,7 @@
       "stateName": "Missouri",
       "registrationWebsite": "https://s1.sos.mo.gov/elections/voterregistration/",
       "registrationDeadline": "10/8/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "St. Louis Mayoral  County (Jefferson City) Ballot Measure & City Council",
@@ -394,6 +411,7 @@
       "stateName": "Montana",
       "registrationWebsite": "https://prodvoterportal.mt.gov/WhereToVote.aspx",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Helena Mayoral & City Council",
@@ -446,6 +464,7 @@
       "stateName": "Nebraska",
       "registrationWebsite": "https://www.nebraska.gov/apps-sos-voter-registration/",
       "registrationDeadline": "10/17/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Lincoln Nebraska City Council",
@@ -492,6 +511,7 @@
       "stateName": "New Jersey",
       "registrationWebsite": "https://voter.svrs.nj.gov/register",
       "registrationDeadline": "10/14/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Governor",
@@ -526,6 +546,7 @@
       "stateName": "New Mexico",
       "registrationWebsite": "https://portal.sos.state.nm.us/OVR/WebPages/InstructionsStep1.aspx?AspxAutoDetectCookieSupport=1",
       "registrationDeadline": "10/7/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Albuquerque Mayoral",
@@ -551,6 +572,7 @@
       "stateName": "New York",
       "registrationWebsite": "https://nyovr.elections.ny.gov/",
       "registrationDeadline": "10/25/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "NYC Mayoral",
@@ -567,6 +589,7 @@
       "stateName": "North Carolina",
       "registrationWebsite": "https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx",
       "registrationDeadline": "10/12/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Charlotte Mayoral",
@@ -607,6 +630,7 @@
       "stateName": "Ohio",
       "registrationWebsite": "https://olvr.ohiosos.gov/",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Cincinnati & Cleveland Mayoral",
@@ -623,6 +647,7 @@
       "stateName": "Oklahoma",
       "registrationWebsite": "https://okvoterportal.okelections.us/Home/RegWizard",
       "registrationDeadline": "10/10/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "State Reps",
@@ -639,6 +664,7 @@
       "stateName": "Oregon",
       "registrationWebsite": "https://sos.oregon.gov/voting/pages/registration.aspx?lang=en",
       "registrationDeadline": "10/14/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Portland Special Election",
@@ -655,6 +681,7 @@
       "stateName": "Pennsylvania",
       "registrationWebsite": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
       "registrationDeadline": "10/20/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Pittsburg Mayoral",
@@ -680,6 +707,7 @@
       "stateName": "Rhode Island",
       "registrationWebsite": "https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Providence City Coucil Ward 2",
@@ -696,6 +724,7 @@
       "stateName": "South Carolina",
       "registrationWebsite": "https://vrems.scvotes.sc.gov/ovr/start",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "SC State Senate & Reps",
@@ -718,7 +747,6 @@
       "stateName": "Tennessee",
       "registrationWebsite": "https://ovr.govote.tn.gov/",
       "registrationDeadline": "10/5/25",
-      "electionsOver": true,
       "elections": [
         {
           "title": "U.S. House - 7 (Middle-West Tennessee) (12/02)",
@@ -791,6 +819,7 @@
       "stateName": "Virginia",
       "registrationWebsite": "https://vote.elections.virginia.gov/Registration/DmvLookup",
       "registrationDeadline": "11/4/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Governor",
@@ -807,6 +836,7 @@
       "stateName": "Washington",
       "registrationWebsite": "https://olvr.votewa.gov/olvr2024/landing.aspx",
       "registrationDeadline": "11/4/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Seattle Mayoral",
@@ -844,6 +874,7 @@
       "stateName": "Wyoming",
       "registrationWebsite": "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VoterRegistrationCheck.aspx",
       "registrationDeadline": "11/3/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "Statewide General",
