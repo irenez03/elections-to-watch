@@ -94,9 +94,14 @@ $(function () {
            Edit this color to change what states WITHOUT elections look like */
         let fill = '#8a817c'; // dark gray
         
+        /* STATES WITH ELECTIONS OVER
+           Dark gray color for completed elections */
+        if (s.electionsOver) {
+          fill = '#4a4a4a'; // dark gray for completed elections
+        }
         /* STATES WITH ELECTIONS
            Edit this color to change what states WITH elections look like */
-        if (hasElections) fill = '#0466c8'; // Dark blue
+        else if (hasElections) fill = '#0466c8'; // Dark blue
         
         /* ALTERNATIVE: Color by election type (uncomment to use)
            This will color states differently based on type of election:
@@ -180,7 +185,9 @@ $(function () {
           const s = electionData[data.name];
           let html = `<strong>${s ? s.stateName : data.name}</strong><br/>`;
           
-          if (s && s.elections && s.elections.length) {
+          if (s && s.electionsOver) {
+            html += '✓ Elections are over';
+          } else if (s && s.elections && s.elections.length) {
             html += `${s.elections.length} election(s)`;
             
             /* OPTIONAL: Show election types in tooltip (uncomment to use)
@@ -235,7 +242,84 @@ $(function () {
         const list = $('#modal-elections-list');
         list.empty();
         
-        if (stateData && stateData.elections && stateData.elections.length) {
+        // Check if elections are over for this state
+        if (stateData && stateData.electionsOver) {
+          list.append(`
+            <div style="background: linear-gradient(135deg, rgba(74, 74, 74, 0.1), rgba(74, 74, 74, 0.05)); 
+                        padding: 1.5rem; border-radius: var(--radius-md); 
+                        border: 2px solid rgba(74, 74, 74, 0.3);
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                        text-align: center;">
+              <div style="font-size: 3rem; margin-bottom: 0.5rem;">✓</div>
+              <h3 style="margin: 0 0 0.5rem; color: #4a4a4a; font-size: 1.5rem; font-weight: 800;">
+                Elections Are Over
+              </h3>
+              <p style="margin: 0; color: var(--fg); font-size: 1rem; line-height: 1.6;">
+                The elections in ${stateName} have concluded.
+              </p>
+            </div>
+          `);
+          
+          // Still show the elections that were held
+          if (stateData.elections && stateData.elections.length) {
+            list.append(`
+              <div style="padding: 0.75rem 0 0.5rem; border-top: 2px dashed rgba(74, 74, 74, 0.3); margin-top: 1rem;">
+                <p style="margin: 0; font-size: 0.875rem; font-weight: 700; color: var(--cerulean); text-transform: uppercase; letter-spacing: 0.05em;">
+                  ${stateData.elections.length} Completed Election${stateData.elections.length !== 1 ? 's' : ''}
+                </p>
+              </div>
+            `);
+            
+            // Loop through each election
+            stateData.elections.forEach((e, index) => {
+              const badgeColors = {
+                'Local': 'background: linear-gradient(135deg, #a8dadc, #457b9d); color: white;',
+                'State': 'background: linear-gradient(135deg, #457b9d, #1d3557); color: white;',
+                'House': 'background: linear-gradient(135deg, #e63946, #c91c28); color: white;',
+                'Senate': 'background: linear-gradient(135deg, #7209b7, #5a189a); color: white;'
+              };
+              const badgeStyle = badgeColors[e.chamberImpact] || 'background: linear-gradient(135deg, #6c757d, #495057); color: white;';
+              
+              list.append(`
+                <div class="election-card" style="opacity: 0.8;">
+                  <div style="display: flex; justify-content: space-between; align-items: start; gap: 0.75rem; margin-bottom: 0.5rem;">
+                    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--berkeley-blue); flex: 1;">
+                      ${e.title}
+                    </h4>
+                    <span class="election-badge" style="${badgeStyle}">
+                      ${e.chamberImpact}
+                    </span>
+                  </div>
+                  
+                  <div style="display: grid; gap: 0.5rem; margin-top: 0.75rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span style="font-size: 1rem;">📅</span>
+                      <div>
+                        <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Date</span>
+                        <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${e.date}</p>
+                      </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <div>
+                        <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Type</span>
+                        <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${e.type}</p>
+                      </div>
+                    </div>
+                    
+                    ${e.stakes ? `
+                      <div style="display: flex; align-items: start; gap: 0.5rem; margin-top: 0.25rem;">
+                        <p style="margin: 0; font-size: 0.875rem; color: var(--fg); line-height: 1.5;">
+                          ${e.stakes}
+                        </p>
+                      </div>
+                    ` : ''}
+                  </div>
+                </div>
+              `);
+            });
+          }
+        } else if (stateData && stateData.elections && stateData.elections.length) {
           // State has elections - show registration info first with enhanced design
           if (stateData.registrationDeadline || stateData.registrationWebsite) {
             list.append(`

@@ -718,6 +718,7 @@
       "stateName": "Tennessee",
       "registrationWebsite": "https://ovr.govote.tn.gov/",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "U.S. House - 7 (Middle-West Tennessee) (12/02)",
@@ -734,6 +735,7 @@
       "stateName": "Texas",
       "registrationWebsite": "https://www.votetexas.gov/register-to-vote/index.html",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "U.S. House - 18 (inner city Houston and the surrounding area)",
