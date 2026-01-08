@@ -747,6 +747,7 @@
       "stateName": "Tennessee",
       "registrationWebsite": "https://ovr.govote.tn.gov/",
       "registrationDeadline": "10/5/25",
+      "electionsOver": true,
       "elections": [
         {
           "title": "U.S. House - 7 (Middle-West Tennessee) (12/02)",

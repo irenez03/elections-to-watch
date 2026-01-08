@@ -260,6 +260,30 @@ $(function () {
             </div>
           `);
           
+          // Show registration info even if elections are over
+          if (stateData.registrationDeadline || stateData.registrationWebsite) {
+            list.append(`
+              <div class="registration-info" style="margin-top: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <h4 style="margin: 0; font-size: 1rem; color: var(--berkeley-blue);">Voter Registration</h4>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.5rem;">
+                  <div>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Deadline</span>
+                    <p style="margin: 0.25rem 0 0; font-weight: 700; font-size: 1rem; color: var(--berkeley-blue);">
+                      ${stateData.registrationDeadline || '—'}
+                    </p>
+                  </div>
+                  ${stateData.registrationWebsite ? `
+                    <a href="${stateData.registrationWebsite}" target="_blank" rel="noopener" class="register-button">
+                      Register to Vote →
+                    </a>
+                  ` : ''}
+                </div>
+              </div>
+            `);
+          }
+
           // Still show the elections that were held
           if (stateData.elections && stateData.elections.length) {
             list.append(`

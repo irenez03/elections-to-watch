@@ -34,6 +34,7 @@
                 <strong>Elections Are Over</strong><br>
                 <small>The elections in ${s.stateName} have concluded. </small>
               </div>
+              <div style="margin-bottom: 0.5rem;"><small>Register by: ${s.registrationDeadline || '—'} — <a href="${s.registrationWebsite}" target="_blank" rel="noopener">Register</a></small></div>
               ${elections}
             </div>
           `;
