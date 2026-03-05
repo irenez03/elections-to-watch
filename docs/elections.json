@@ -1,106 +1,141 @@
 {
-  "lastUpdated": "2025-11-27T01:15:36Z",
+  "lastUpdated": "2026-03-05T15:38:41.190Z",
   "electionData": {
     "AL": {
       "stateName": "Alabama",
       "registrationWebsite": "https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action",
-      "registrationDeadline": "10/21/25",
-      "electionsOver": true,
+      "registrationDeadline": "06/01/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "State House of Reps",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "State House of Reps",
+          "title": "2026 Primary Election",
+          "date": "06/16/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.alabama.gov/alabama-votes"
     },
     "AK": {
       "stateName": "Alaska",
-      "registrationWebsite": "https://voterregistration.alaska.gov/",
-      "registrationDeadline": "9/30/25",
-      "elections": []
+      "registrationWebsite": "https://voterregistration.alaska.gov",
+      "registrationDeadline": "07/19/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "08/18/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.elections.alaska.gov/voter-information/#Reg",
+      "electionsOver": false
     },
     "AZ": {
       "stateName": "Arizona",
       "registrationWebsite": "https://servicearizona.com/VoterRegistration/selectLanguage",
-      "registrationDeadline": "10/20/25",
-      "elections": []
+      "registrationDeadline": "06/22/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "07/21/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://azsos.gov/elections",
+      "electionsOver": false
     },
     "AR": {
       "stateName": "Arkansas",
       "registrationWebsite": "https://www.voterview.ar-nova.org/VoterView",
-      "registrationDeadline": "10/5/25",
-      "elections": []
+      "registrationDeadline": "02/01/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "03/03/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.sos.arkansas.gov/elections/for-voters",
+      "electionsOver": false
     },
     "CA": {
       "stateName": "California",
-      "registrationWebsite": "https://covr.sos.ca.gov/",
-      "registrationDeadline": "10/21/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://covr.sos.ca.gov",
+      "registrationDeadline": "05/18/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Redistricting",
-          "date": "November 4, 2025",
-          "type": "Referendum",
-          "candidates": [],
-          "stakes": "Statewide ballot measures.",
+          "title": "2026 Primary Election",
+          "date": "06/02/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
-          "competitive": false
-        },
-        {
-          "title": "Oakland Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Oakland Mayoral",
-          "chamberImpact": "Local",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.ca.gov/elections"
     },
     "CO": {
       "stateName": "Colorado",
       "registrationWebsite": "https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml",
-      "registrationDeadline": "10/27/25",
-      "electionsOver": true,
+      "registrationDeadline": "06/30/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Coorinated Statewide Election",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Coorinated Statewide Election",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "06/30/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://docs.google.com/spreadsheets/d/17FhCtlspiaa65-ZXhXo853mlynPiSUMUCaQHUvv62Mw/edit?gid=53780384#gid=53780384"
     },
     "CT": {
       "stateName": "Connecticut",
-      "registrationWebsite": "https://voterregistration.ct.gov/OLVR/welcome.do",
-      "registrationDeadline": "10/17/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://voterregistration.ct.gov/OLVR/welcome.do?TSPD_101_R0=08ec0ef8bdab20000977204747af8d1af38f30db793d14f944387e8296d216451eb5cbc938e37ea0089ed0d42514300058d84151841ea9b35e0d536d5e2a4fd27dcd0c545327d3c4dfc1f38afe66c7377b0e962b6257099cd6985be5ac9e250c",
+      "registrationDeadline": "07/24/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "New Haven Ward 1 General",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "New Haven Ward 1 General",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "08/11/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://portal.ct.gov/sots/common-elements/v5-template---redesign/elections-and-voting"
     },
     "DE": {
       "stateName": "Delaware",
       "registrationWebsite": "https://ivote.de.gov/VoterView/registrant/newregistrant",
-      "registrationDeadline": "10/12/25",
-      "elections": []
+      "registrationDeadline": "08/22/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "09/15/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://elections.delaware.gov/elections/elections.shtml",
+      "electionsOver": false
     },
     "DC": {
       "stateName": "District of Columbia",
@@ -111,782 +146,716 @@
     "FL": {
       "stateName": "Florida",
       "registrationWebsite": "https://registertovoteflorida.gov/home",
-      "registrationDeadline": "10/6/25",
-      "electionsOver": true,
+      "registrationDeadline": "07/20/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Miami Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Miami Mayoral",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "08/18/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://dos.fl.gov/elections/"
     },
     "GA": {
       "stateName": "Georgia",
       "registrationWebsite": "https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true",
-      "registrationDeadline": "10/6/25",
-      "electionsOver": true,
+      "registrationDeadline": "04/20/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Atlanta Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Atlanta Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "State Senate",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "State Senate",
+          "title": "2026 Primary Election",
+          "date": "05/19/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sos.ga.gov/elections-division-georgia-secretary-states-office"
     },
     "HI": {
       "stateName": "Hawaii",
-      "registrationWebsite": "https://olvr.hawaii.gov/",
-      "registrationDeadline": "10/27/25",
-      "elections": []
+      "registrationWebsite": "https://olvr.hawaii.gov",
+      "registrationDeadline": "07/30/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "08/08/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://elections.hawaii.gov",
+      "electionsOver": false
     },
     "ID": {
       "stateName": "Idaho",
       "registrationWebsite": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
-      "registrationDeadline": "10/5/25",
-      "electionsOver": true,
+      "registrationDeadline": "04/25/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Boise City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Boise City Council",
-          "chamberImpact": "Local",
-          "competitive": true
-        }
-      ]
-    },
-    "IL": {
-      "stateName": "Illinois",
-      "registrationWebsite": "https://ova.elections.il.gov/",
-      "registrationDeadline": "10/19/25",
-      "electionsOver": true,
-      "elections": [
-        {
-          "title": "State Senate Elections",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "State Senate Elections",
+          "title": "2026 Primary Election",
+          "date": "05/19/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sos.idaho.gov/elections-division/"
+    },
+    "IL": {
+      "stateName": "Illinois",
+      "registrationWebsite": "https://ova.elections.il.gov",
+      "registrationDeadline": "02/18/2026",
+      "electionsOver": false,
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "03/17/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.elections.il.gov"
     },
     "IN": {
       "stateName": "Indiana",
-      "registrationWebsite": "https://indianavoters.in.gov/",
-      "registrationDeadline": "10/6/25",
-      "elections": []
+      "registrationWebsite": "https://indianavoters.in.gov",
+      "registrationDeadline": "04/06/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "05/05/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.in.gov/sos/elections/",
+      "electionsOver": false
     },
     "IA": {
       "stateName": "Iowa",
       "registrationWebsite": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
-      "registrationDeadline": "10/20/25",
-      "electionsOver": true,
+      "registrationDeadline": "05/18/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Des Moines General",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Des Moines General",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "06/02/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sos.iowa.gov/elections-voting"
     },
     "KS": {
       "stateName": "Kansas",
       "registrationWebsite": "https://www.kdor.ks.gov/Apps/VoterReg",
-      "registrationDeadline": "10/14/25",
-      "electionsOver": true,
+      "registrationDeadline": "07/14/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Topeka Mayor & City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Topeka Mayor & City Council",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Witchita City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Witchita City Council",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "08/04/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sos.ks.gov/elections/elections.html"
     },
     "KY": {
       "stateName": "Kentucky",
       "registrationWebsite": "https://vrsws.sos.ky.gov/ovrweb/govoteky",
-      "registrationDeadline": "10/7/25",
-      "elections": []
+      "registrationDeadline": "04/20/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "05/19/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://elect.ky.gov/Pages/default.aspx",
+      "electionsOver": false
     },
     "LA": {
       "stateName": "Louisiana",
-      "registrationWebsite": "https://voterportal.sos.la.gov/VoterRegistration",
-      "registrationDeadline": "10/15/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://www.sos.la.gov/ElectionsAndVoting/Pages/OnlineVoterRegistration.aspx?Referrer=https://www.google.com/",
+      "registrationDeadline": "04/16/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "New Orleans Mayoral",
-          "date": "November 15, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "New Orleans Mayoral",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "05/16/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.la.gov/electionsandvoting/Pages/default.aspx"
     },
     "ME": {
       "stateName": "Maine",
-      "registrationWebsite": "https://registertovote.sos.maine.gov/",
-      "registrationDeadline": "11/4/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://registertovote.sos.maine.govv",
+      "registrationDeadline": "05/19/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Voter ID + \"Red Flag\" Gun Law",
-          "date": "November 4, 2025",
-          "type": "Referendum",
-          "candidates": [],
-          "stakes": "Statewide ballot measures.",
+          "title": "2026 Primary Election",
+          "date": "06/09/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
-          "competitive": false
+          "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.maine.gov/sos/elections-voting"
     },
     "MD": {
       "stateName": "Maryland",
       "registrationWebsite": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1",
-      "registrationDeadline": "10/14/25",
-      "elections": []
+      "registrationDeadline": "06/02/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "06/23/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://elections.maryland.gov",
+      "electionsOver": false
     },
     "MA": {
       "stateName": "Massachusetts",
       "registrationWebsite": "https://www.sec.state.ma.us/OVR/Pages/CheckEligibility.aspx?&Action=Register",
-      "registrationDeadline": "10/25/25",
-      "electionsOver": true,
+      "registrationDeadline": "08/22/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Boston Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Boston Mayoral",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "09/01/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm"
     },
     "MI": {
       "stateName": "Michigan",
       "registrationWebsite": "https://mvic.sos.state.mi.us/RegisterVoter/Index",
-      "registrationDeadline": "10/20/25",
-      "electionsOver": true,
+      "registrationDeadline": "07/20/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Detroit Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Detroit Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Lansing Mayoral & City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Lansing Mayoral & City Council",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "08/04/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.michigan.gov/sos/elections"
     },
     "MN": {
       "stateName": "Minnesota",
       "registrationWebsite": "https://mnvotes.sos.mn.gov/VoterRegistration/index",
-      "registrationDeadline": "10/14/25",
-      "electionsOver": true,
+      "registrationDeadline": "07/21/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Minneapolis Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Minneapolis Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "St. Paul Mayoral & City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "St. Paul Mayoral & City Council",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "State Senate & House Elections",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "State Senate & House Elections",
+          "title": "2026 Primary Election",
+          "date": "08/11/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.mn.gov/elections-voting/"
     },
     "MS": {
       "stateName": "Mississippi",
       "registrationWebsite": "https://www.msegov.com/sos/voter_registration/amiregistered/Search",
-      "registrationDeadline": "10/6/25",
-      "electionsOver": true,
+      "registrationDeadline": "02/08/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "State Senate Elections",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "State Senate Elections",
+          "title": "2026 Primary Election",
+          "date": "03/10/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
-        },
-        {
-          "title": "Jackson Mayoral & City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Jackson Mayoral & City Council",
-          "chamberImpact": "Local",
-          "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.ms.gov/elections-voting"
     },
     "MO": {
       "stateName": "Missouri",
       "registrationWebsite": "https://s1.sos.mo.gov/elections/voterregistration/",
-      "registrationDeadline": "10/8/25",
-      "electionsOver": true,
+      "registrationDeadline": "07/08/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "St. Louis Mayoral  County (Jefferson City) Ballot Measure & City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "St. Louis Mayoral  County (Jefferson City) Ballot Measure & City Council",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "08/04/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.ms.gov/elections-voting"
     },
     "MT": {
       "stateName": "Montana",
-      "registrationWebsite": "https://prodvoterportal.mt.gov/WhereToVote.aspx",
-      "registrationDeadline": "10/5/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://voterportal.mt.gov/WhereToVote.aspx",
+      "registrationDeadline": "05/03/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Helena Mayoral & City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Helena Mayoral & City Council",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Billings Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Billings Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Bozeman Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Bozeman Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Great Falls Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Great Falls Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Kalispell Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Kalispell Mayoral",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "06/02/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sosmt.gov/elections/"
     },
     "NE": {
       "stateName": "Nebraska",
       "registrationWebsite": "https://www.nebraska.gov/apps-sos-voter-registration/",
-      "registrationDeadline": "10/17/25",
-      "electionsOver": true,
+      "registrationDeadline": "04/24/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Lincoln Nebraska City Council",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Lincoln Nebraska City Council",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Omaha",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Omaha",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Mayor",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Mayor",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "05/12/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.nebraska.gov/featured/elections-voting/"
     },
     "NV": {
       "stateName": "Nevada",
       "registrationWebsite": "https://www.nvsos.gov/SOSVoterServices/start.aspx",
-      "registrationDeadline": "11/4/25",
-      "elections": []
+      "registrationDeadline": "05/12/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "06/09/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.nvsos.gov/sos/elections",
+      "electionsOver": false
     },
     "NH": {
       "stateName": "New Hampshire",
       "registrationWebsite": "https://app.sos.nh.gov/voterinformation",
-      "registrationDeadline": "11/4/25",
-      "elections": []
+      "registrationDeadline": "08/26/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "09/08/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.sos.nh.gov/elections",
+      "electionsOver": false
     },
     "NJ": {
       "stateName": "New Jersey",
       "registrationWebsite": "https://voter.svrs.nj.gov/register",
-      "registrationDeadline": "10/14/25",
-      "electionsOver": true,
+      "registrationDeadline": "05/12/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Governor",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Open seat gubernatorial race.",
-          "chamberImpact": "State",
-          "competitive": true
-        },
-        {
-          "title": "Jersey CIty",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Jersey CIty",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "State Senate",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "State Senate",
+          "title": "2026 Primary Election",
+          "date": "06/02/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.nj.gov/state/elections/vote.shtml"
     },
     "NM": {
       "stateName": "New Mexico",
-      "registrationWebsite": "https://portal.sos.state.nm.us/OVR/WebPages/InstructionsStep1.aspx?AspxAutoDetectCookieSupport=1",
-      "registrationDeadline": "10/7/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://portal1.sos.nm.gov/OVR/(S(rbtqg3mb1svld02fuv4y1icv))/WebPages/InstructionsStep1.aspx",
+      "registrationDeadline": "05/05/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Albuquerque Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Albuquerque Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Santa Fe General",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Santa Fe General",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "06/02/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.nm.gov/voting-and-elections/"
     },
     "NY": {
       "stateName": "New York",
-      "registrationWebsite": "https://nyovr.elections.ny.gov/",
-      "registrationDeadline": "10/25/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://www.ny.gov/services/register-vote",
+      "registrationDeadline": "06/08/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "NYC Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "NYC Mayoral",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "06/23/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://elections.ny.gov/election-information"
     },
     "NC": {
       "stateName": "North Carolina",
       "registrationWebsite": "https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx",
-      "registrationDeadline": "10/12/25",
-      "electionsOver": true,
+      "registrationDeadline": "02/08/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Charlotte Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Charlotte Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Durham Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Durham Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Greensboro General",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Greensboro General",
-          "chamberImpact": "Local",
-          "competitive": true
-        }
-      ]
-    },
-    "ND": {
-      "stateName": "North Dakota",
-      "registrationWebsite": "https://vip.sos.nd.gov/PortalListDetails.aspx?ptlhPKID=74&ptlPKID=7",
-      "registrationDeadline": "10/5/25",
-      "elections": []
-    },
-    "OH": {
-      "stateName": "Ohio",
-      "registrationWebsite": "https://olvr.ohiosos.gov/",
-      "registrationDeadline": "10/5/25",
-      "electionsOver": true,
-      "elections": [
-        {
-          "title": "Cincinnati & Cleveland Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Cincinnati & Cleveland Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        }
-      ]
-    },
-    "OK": {
-      "stateName": "Oklahoma",
-      "registrationWebsite": "https://okvoterportal.okelections.us/Home/RegWizard",
-      "registrationDeadline": "10/10/25",
-      "electionsOver": true,
-      "elections": [
-        {
-          "title": "State Reps",
-          "date": "December 9, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "State Reps",
+          "title": "2026 Primary Election",
+          "date": "03/03/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.ncsbe.gov"
+    },
+    "ND": {
+      "stateName": "North Dakota",
+      "registrationWebsite": "https://vip.sos.nd.gov/WhereToVoteID.aspx",
+      "registrationDeadline": "Any time Before",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "06/09/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://vip.sos.nd.gov/PortalList.aspx",
+      "electionsOver": false
+    },
+    "OH": {
+      "stateName": "Ohio",
+      "registrationWebsite": "https://olvr.ohiosos.gov",
+      "registrationDeadline": "04/05 /2026",
+      "electionsOver": false,
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "05/05/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.ohiosos.gov/elections/"
+    },
+    "OK": {
+      "stateName": "Oklahoma",
+      "registrationWebsite": "https://okvoterportal.okelections.gov/Home/RegWizard",
+      "registrationDeadline": "05/27/2026",
+      "electionsOver": false,
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "06/16/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.oklahoma.gov/elections.html"
     },
     "OR": {
       "stateName": "Oregon",
-      "registrationWebsite": "https://sos.oregon.gov/voting/pages/registration.aspx?lang=en",
-      "registrationDeadline": "10/14/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://secure.sos.state.or.us/orestar/vr/register.do?lang=eng&source=SOS",
+      "registrationDeadline": "04/28/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Portland Special Election",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Portland Special Election",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "05/19/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sos.oregon.gov/voting-elections/Pages/default.aspx"
     },
     "PA": {
       "stateName": "Pennsylvania",
       "registrationWebsite": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
-      "registrationDeadline": "10/20/25",
-      "electionsOver": true,
+      "registrationDeadline": "05/04/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Pittsburg Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Pittsburg Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Allegheny County Special Election",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Allegheny County Special Election",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "05/19/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.pa.gov/agencies/vote/elections/upcoming-elections"
     },
     "RI": {
       "stateName": "Rhode Island",
       "registrationWebsite": "https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1",
-      "registrationDeadline": "10/5/25",
-      "electionsOver": true,
+      "registrationDeadline": "08/09/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Providence City Coucil Ward 2",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Providence City Coucil Ward 2",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "09/08/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://elections.ri.gov"
     },
     "SC": {
       "stateName": "South Carolina",
       "registrationWebsite": "https://vrems.scvotes.sc.gov/ovr/start",
-      "registrationDeadline": "10/5/25",
-      "electionsOver": true,
+      "registrationDeadline": "05/10/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "SC State Senate & Reps",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "SC State Senate & Reps",
+          "title": "2026 Primary Election",
+          "date": "06/09/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://scvotes.gov"
     },
     "SD": {
       "stateName": "South Dakota",
-      "registrationWebsite": "https://vip.sdsos.gov/VIPLogin.aspx",
-      "registrationDeadline": "10/20/25",
-      "elections": []
+      "registrationWebsite": "https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx",
+      "registrationDeadline": "05/18/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "06/02/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://sdsos.gov/elections-voting/default.aspx",
+      "electionsOver": false
     },
     "TN": {
       "stateName": "Tennessee",
-      "registrationWebsite": "https://ovr.govote.tn.gov/",
-      "registrationDeadline": "10/5/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://ovr.govote.tn.gov",
+      "registrationDeadline": "07/07/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "U.S. House - 7 (Middle-West Tennessee) (12/02)",
-          "date": "December 2, 2025",
-          "type": "Special Election",
-          "candidates": [],
-          "stakes": "7 (Middle-West Tennessee)",
-          "chamberImpact": "House",
+          "title": "2026 Primary Election",
+          "date": "08/06/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sos.tn.gov/elections"
     },
     "TX": {
       "stateName": "Texas",
-      "registrationWebsite": "https://www.votetexas.gov/register-to-vote/index.html",
-      "registrationDeadline": "10/5/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://vrrequest.sos.texas.gov/VoterApplication/ConfirmStatusEN",
+      "registrationDeadline": "02/02/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "U.S. House - 18 (inner city Houston and the surrounding area)",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "18 (inner city Houston and the surrounding area)",
-          "chamberImpact": "House",
-          "competitive": true
-        },
-        {
-          "title": "17 State Amendments",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "17 State Amendments",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "Fort Worth Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Fort Worth Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "San Antonio Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "San Antonio Mayoral",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "03/03/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.state.tx.us/elections/index.shtml"
     },
     "UT": {
       "stateName": "Utah",
       "registrationWebsite": "https://vote.utah.gov/register-to-vote-or-update-your-voter-registration/",
-      "registrationDeadline": "10/24/25",
-      "elections": []
-    },
-    "VT": {
-      "stateName": "Vermont",
-      "registrationWebsite": "https://olvr.vermont.gov/",
-      "registrationDeadline": "11/4/25",
-      "elections": []
-    },
-    "VA": {
-      "stateName": "Virginia",
-      "registrationWebsite": "https://vote.elections.virginia.gov/Registration/DmvLookup",
-      "registrationDeadline": "11/4/25",
-      "electionsOver": true,
+      "registrationDeadline": "06/12/2026",
       "elections": [
         {
-          "title": "Governor",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Open seat gubernatorial race.",
+          "title": "2026 Primary Election",
+          "date": "06/23/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://vote.utah.gov",
+      "electionsOver": false
+    },
+    "VT": {
+      "stateName": "Vermont",
+      "registrationWebsite": "https://vote.vermont.gov/public/dashboard",
+      "registrationDeadline": "08/11/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "08/11/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://sos.vermont.gov/elections/",
+      "electionsOver": false
+    },
+    "VA": {
+      "stateName": "Virginia",
+      "registrationWebsite": "https://www.elections.virginia.gov/citizen-portal/",
+      "registrationDeadline": "05/25/2026",
+      "electionsOver": false,
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "06/16/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://www.elections.virginia.gov"
     },
     "WA": {
       "stateName": "Washington",
       "registrationWebsite": "https://olvr.votewa.gov/olvr2024/landing.aspx",
-      "registrationDeadline": "11/4/25",
-      "electionsOver": true,
+      "registrationDeadline": "07/27/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Seattle Mayoral",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Seattle Mayoral",
-          "chamberImpact": "Local",
-          "competitive": true
-        },
-        {
-          "title": "WA State Senate & Reps",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "WA State Senate & Reps",
+          "title": "2026 Primary Election",
+          "date": "08/04/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
           "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://www.sos.wa.gov/elections"
     },
     "WV": {
       "stateName": "West Virginia",
       "registrationWebsite": "https://ovr.sos.wv.gov/Register/Landing#Qualifications",
-      "registrationDeadline": "10/5/25",
-      "elections": []
+      "registrationDeadline": "04/21/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "05/12/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://sos.wv.gov/elections/Pages/default.aspx",
+      "electionsOver": false
     },
     "WI": {
       "stateName": "Wisconsin",
       "registrationWebsite": "https://myvote.wi.gov/en-us/Register-To-Vote",
-      "registrationDeadline": "10/15/25",
-      "elections": []
+      "registrationDeadline": "07/20/2026",
+      "elections": [
+        {
+          "title": "2026 Primary Election",
+          "date": "08/11/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
+          "competitive": true
+        }
+      ],
+      "electionInfoUrl": "https://elections.wi.gov",
+      "electionsOver": false
     },
     "WY": {
       "stateName": "Wyoming",
-      "registrationWebsite": "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VoterRegistrationCheck.aspx",
-      "registrationDeadline": "11/3/25",
-      "electionsOver": true,
+      "registrationWebsite": "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx",
+      "registrationDeadline": "08/04/2026",
+      "electionsOver": false,
       "elections": [
         {
-          "title": "Statewide General",
-          "date": "November 4, 2025",
-          "type": "General Election",
-          "candidates": [],
-          "stakes": "Statewide General",
-          "chamberImpact": "Local",
+          "title": "2026 Primary Election",
+          "date": "08/18/2026",
+          "type": "Primary Election",
+          "stakes": "State & Local Primaries",
+          "chamberImpact": "State",
           "competitive": true
         }
-      ]
+      ],
+      "electionInfoUrl": "https://sos.wyo.gov/elections/"
     }
   }
 }
