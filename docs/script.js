@@ -64,56 +64,56 @@ $(function () {
       // General election data per state from CSV
       // senate/gov/court = 1 or 0 | reg = registration deadline | primaryDate | generalDate
       const csvElectionData = {
-        AL: { senate:1, gov:1, court:0, reg:'2026-06-01', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        AK: { senate:1, gov:1, court:0, reg:'2026-07-19', primaryDate:'2026-08-18', generalDate:'2026-11-03' },
-        AZ: { senate:0, gov:1, court:0, reg:'2026-06-22', primaryDate:'2026-07-21', generalDate:'2026-11-03' },
-        AR: { senate:1, gov:1, court:1, reg:'2026-02-01', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
-        CA: { senate:0, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        CO: { senate:1, gov:1, court:0, reg:'2026-06-30', primaryDate:'2026-06-30', generalDate:'2026-11-03' },
-        CT: { senate:0, gov:1, court:0, reg:'2026-07-24', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        DE: { senate:1, gov:0, court:0, reg:'2026-08-22', primaryDate:'2026-09-15', generalDate:'2026-11-03' },
-        FL: { senate:1, gov:1, court:0, reg:'2026-07-20', primaryDate:'2026-08-18', generalDate:'2026-11-03' },
-        GA: { senate:1, gov:1, court:1, reg:'2026-04-20', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        HI: { senate:0, gov:1, court:0, reg:'2026-07-30', primaryDate:'2026-08-08', generalDate:'2026-11-03' },
-        ID: { senate:1, gov:1, court:1, reg:'2026-04-25', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        IL: { senate:1, gov:1, court:0, reg:'2026-02-18', primaryDate:'2026-03-17', generalDate:'2026-11-03' },
-        IN: { senate:0, gov:0, court:0, reg:'2026-04-06', primaryDate:'2026-05-05', generalDate:'2026-11-03' },
-        IA: { senate:1, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        KS: { senate:1, gov:1, court:0, reg:'2026-07-14', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        KY: { senate:1, gov:0, court:1, reg:'2026-04-20', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        LA: { senate:1, gov:0, court:0, reg:'2026-04-16', primaryDate:'2026-05-16', generalDate:'2026-11-03' },
-        ME: { senate:1, gov:1, court:0, reg:'2026-05-19', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        MD: { senate:0, gov:1, court:0, reg:'2026-06-02', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
-        MA: { senate:1, gov:1, court:0, reg:'2026-08-22', primaryDate:'2026-09-01', generalDate:'2026-11-03' },
-        MI: { senate:1, gov:1, court:1, reg:'2026-07-20', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        MN: { senate:1, gov:1, court:1, reg:'2026-07-21', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        MS: { senate:1, gov:0, court:1, reg:'2026-02-08', primaryDate:'2026-03-10', generalDate:'2026-11-03' },
-        MO: { senate:0, gov:0, court:0, reg:'2026-07-08', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        MT: { senate:1, gov:0, court:1, reg:'2026-05-03', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        NE: { senate:1, gov:1, court:0, reg:'2026-04-24', primaryDate:'2026-05-12', generalDate:'2026-11-03' },
-        NV: { senate:0, gov:1, court:1, reg:'2026-05-12', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        NH: { senate:1, gov:1, court:0, reg:'2026-08-26', primaryDate:'2026-09-08', generalDate:'2026-11-03' },
-        NJ: { senate:1, gov:0, court:0, reg:'2026-05-12', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        NM: { senate:1, gov:1, court:0, reg:'2026-05-05', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        NY: { senate:0, gov:1, court:0, reg:'2026-06-08', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
-        NC: { senate:1, gov:0, court:0, reg:'2026-02-08', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
-        ND: { senate:0, gov:0, court:1, reg:'same-day',   primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        OH: { senate:1, gov:1, court:0, reg:'2026-04-05', primaryDate:'2026-05-05', generalDate:'2026-11-03' },
-        OK: { senate:1, gov:1, court:0, reg:'2026-05-27', primaryDate:'2026-06-16', generalDate:'2026-11-03' },
-        OR: { senate:1, gov:1, court:1, reg:'2026-04-28', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        PA: { senate:0, gov:1, court:0, reg:'2026-05-04', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        RI: { senate:1, gov:1, court:0, reg:'2026-08-09', primaryDate:'2026-09-08', generalDate:'2026-11-03' },
-        SC: { senate:1, gov:1, court:0, reg:'2026-05-10', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        SD: { senate:1, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        TN: { senate:1, gov:1, court:0, reg:'2026-07-07', primaryDate:'2026-08-06', generalDate:'2026-11-03' },
-        TX: { senate:1, gov:1, court:0, reg:'2026-02-02', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
-        UT: { senate:0, gov:0, court:0, reg:'2026-06-12', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
-        VT: { senate:0, gov:1, court:0, reg:'2026-08-11', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        VA: { senate:1, gov:0, court:0, reg:'2026-05-25', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        WA: { senate:0, gov:0, court:1, reg:'2026-07-27', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        WV: { senate:1, gov:0, court:1, reg:'2026-04-21', primaryDate:'2026-05-12', generalDate:'2026-11-03' },
-        WI: { senate:0, gov:1, court:1, reg:'2026-07-20', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        WY: { senate:1, gov:1, court:0, reg:'2026-08-04', primaryDate:'2026-08-18', generalDate:'2026-11-03' }
+        AL: { house:1, senate:1, gov:1, court:0, reg:'2026-06-01', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
+        AK: { house:1, senate:1, gov:1, court:0, reg:'2026-07-19', primaryDate:'2026-08-18', generalDate:'2026-11-03' },
+        AZ: { house:1, senate:0, gov:1, court:0, reg:'2026-06-22', primaryDate:'2026-07-21', generalDate:'2026-11-03' },
+        AR: { house:1, senate:1, gov:1, court:1, reg:'2026-02-01', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
+        CA: { house:1, senate:0, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
+        CO: { house:1, senate:1, gov:1, court:0, reg:'2026-06-30', primaryDate:'2026-06-30', generalDate:'2026-11-03' },
+        CT: { house:1, senate:0, gov:1, court:0, reg:'2026-07-24', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
+        DE: { house:1, senate:1, gov:0, court:0, reg:'2026-08-22', primaryDate:'2026-09-15', generalDate:'2026-11-03' },
+        FL: { house:1, senate:1, gov:1, court:0, reg:'2026-07-20', primaryDate:'2026-08-18', generalDate:'2026-11-03' },
+        GA: { house:1, senate:1, gov:1, court:1, reg:'2026-04-20', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
+        HI: { house:1, senate:0, gov:1, court:0, reg:'2026-07-30', primaryDate:'2026-08-08', generalDate:'2026-11-03' },
+        ID: { house:1, senate:1, gov:1, court:1, reg:'2026-04-25', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
+        IL: { house:1, senate:1, gov:1, court:0, reg:'2026-02-18', primaryDate:'2026-03-17', generalDate:'2026-11-03' },
+        IN: { house:1, senate:0, gov:0, court:0, reg:'2026-04-06', primaryDate:'2026-05-05', generalDate:'2026-11-03' },
+        IA: { house:1, senate:1, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
+        KS: { house:1, senate:1, gov:1, court:0, reg:'2026-07-14', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
+        KY: { house:1, senate:1, gov:0, court:1, reg:'2026-04-20', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
+        LA: { house:1, senate:1, gov:0, court:0, reg:'2026-04-16', primaryDate:'2026-05-16', generalDate:'2026-11-03' },
+        ME: { house:1, senate:1, gov:1, court:0, reg:'2026-05-19', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
+        MD: { house:1, senate:0, gov:1, court:0, reg:'2026-06-02', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
+        MA: { house:1, senate:1, gov:1, court:0, reg:'2026-08-22', primaryDate:'2026-09-01', generalDate:'2026-11-03' },
+        MI: { house:1, senate:1, gov:1, court:1, reg:'2026-07-20', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
+        MN: { house:1, senate:1, gov:1, court:1, reg:'2026-07-21', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
+        MS: { house:1, senate:1, gov:0, court:1, reg:'2026-02-08', primaryDate:'2026-03-10', generalDate:'2026-11-03' },
+        MO: { house:1, senate:0, gov:0, court:0, reg:'2026-07-08', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
+        MT: { house:1, senate:1, gov:0, court:1, reg:'2026-05-03', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
+        NE: { house:1, senate:1, gov:1, court:0, reg:'2026-04-24', primaryDate:'2026-05-12', generalDate:'2026-11-03' },
+        NV: { house:1, senate:0, gov:1, court:1, reg:'2026-05-12', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
+        NH: { house:1, senate:1, gov:1, court:0, reg:'2026-08-26', primaryDate:'2026-09-08', generalDate:'2026-11-03' },
+        NJ: { house:1, senate:1, gov:0, court:0, reg:'2026-05-12', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
+        NM: { house:1, senate:1, gov:1, court:0, reg:'2026-05-05', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
+        NY: { house:1, senate:0, gov:1, court:0, reg:'2026-06-08', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
+        NC: { house:1, senate:1, gov:0, court:0, reg:'2026-02-08', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
+        ND: { house:1, senate:0, gov:0, court:1, reg:'same-day',   primaryDate:'2026-06-09', generalDate:'2026-11-03' },
+        OH: { house:1, senate:1, gov:1, court:0, reg:'2026-04-05', primaryDate:'2026-05-05', generalDate:'2026-11-03' },
+        OK: { house:1, senate:1, gov:1, court:0, reg:'2026-05-27', primaryDate:'2026-06-16', generalDate:'2026-11-03' },
+        OR: { house:1, senate:1, gov:1, court:1, reg:'2026-04-28', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
+        PA: { house:1, senate:0, gov:1, court:0, reg:'2026-05-04', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
+        RI: { house:1, senate:1, gov:1, court:0, reg:'2026-08-09', primaryDate:'2026-09-08', generalDate:'2026-11-03' },
+        SC: { house:1, senate:1, gov:1, court:0, reg:'2026-05-10', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
+        SD: { house:1, senate:1, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
+        TN: { house:1, senate:1, gov:1, court:0, reg:'2026-07-07', primaryDate:'2026-08-06', generalDate:'2026-11-03' },
+        TX: { house:1, senate:1, gov:1, court:0, reg:'2026-02-02', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
+        UT: { house:1, senate:0, gov:0, court:0, reg:'2026-06-12', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
+        VT: { house:1, senate:0, gov:1, court:0, reg:'2026-08-11', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
+        VA: { house:1, senate:1, gov:0, court:0, reg:'2026-05-25', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
+        WA: { house:1, senate:0, gov:0, court:1, reg:'2026-07-27', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
+        WV: { house:1, senate:1, gov:0, court:1, reg:'2026-04-21', primaryDate:'2026-05-12', generalDate:'2026-11-03' },
+        WI: { house:1, senate:0, gov:1, court:1, reg:'2026-07-20', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
+        WY: { house:1, senate:1, gov:1, court:0, reg:'2026-08-04', primaryDate:'2026-08-18', generalDate:'2026-11-03' }
       };
 
       // ========================================
@@ -121,7 +121,7 @@ $(function () {
       // ========================================
       let csvStates = 0, csvTotal = 0, csvSenate = 0, csvGov = 0, csvCourt = 0;
       Object.values(csvElectionData).forEach(c => {
-        const n = c.senate + c.gov + c.court;
+        const n = (c.house || 0) + c.senate + c.gov + c.court;
         if (n > 0) csvStates++;
         csvTotal  += n;
         csvSenate += c.senate;
@@ -178,20 +178,21 @@ $(function () {
         `;
       }
 
-      // Blue gradient: 0 = gray, 1 = light blue, 2 = medium blue, 3 = dark blue
+      // Blue gradient: 4 tiers (every state has ≥1 election — no gray)
+      // 1 = house only | 2 = house + 1 | 3 = house + 2 | 4 = house + all 3
       const gradientColors = {
-        0: '#8a817c', // gray  – no elections
-        1: '#90c2e8', // light blue – 1 election
-        2: '#2b7fc1', // medium blue – 2 elections
-        3: '#03254c'  // dark navy – all 3 elections
+        1: '#bde0f7', // lightest blue – House only
+        2: '#5ba3d4', // light-medium blue – House + 1
+        3: '#1a5a8f', // medium-dark blue – House + 2
+        4: '#03254c'  // darkest navy – House + all 3
       };
 
       // Matching hover shades for each tier
       const gradientHoverColors = {
-        0: '#6b6461',
-        1: '#5ba3d4',
-        2: '#1a5a8f',
-        3: '#021829'
+        1: '#90c2e8',
+        2: '#2b7fc1',
+        3: '#0d3b6e',
+        4: '#021829'
       };
 
       const stateSpecificStyles = {};
@@ -202,8 +203,8 @@ $(function () {
       // Build styles for all states (main SVG paths AND northeast label boxes)
       const allAbbrs = new Set([...Object.keys(electionData), ...Object.keys(csvElectionData)]);
       allAbbrs.forEach(abbr => {
-        const csv = csvElectionData[abbr] || { senate: 0, gov: 0, court: 0 };
-        const count = csv.senate + csv.gov + csv.court;
+        const csv = csvElectionData[abbr] || { house: 0, senate: 0, gov: 0, court: 0 };
+        const count = csv.house + csv.senate + csv.gov + csv.court;
         const fill = gradientColors[count];
         const hoverFill = gradientHoverColors[count];
 
@@ -244,7 +245,7 @@ $(function () {
       $('#map').usmap({
         // Default styles for ALL states (if not overridden by stateSpecificStyles)
         stateStyles: { 
-          fill: '#8a817c',                // Default state color (dark gray)
+          fill: '#bde0f7',                // Default state color (lightest blue)
           stroke: '#ffffff',              // Border color (WHITE - hardcoded)
           'stroke-width': 2,              // Border thickness
           'stroke-linejoin': 'round',     // Rounded corners at borders
@@ -267,7 +268,7 @@ $(function () {
         stateSpecificHoverStyles,
 
         // Label box defaults (northeast small states)
-        labelBackingStyles: { fill: '#8a817c', stroke: '#ffffff', 'stroke-width': 1, cursor: 'pointer' },
+        labelBackingStyles: { fill: '#bde0f7', stroke: '#ffffff', 'stroke-width': 1, cursor: 'pointer' },
         labelBackingHoverStyles: { fill: '#1a5a8f', stroke: '#ffffff', 'stroke-width': 1, cursor: 'pointer' },
         stateSpecificLabelBackingStyles,
         stateSpecificLabelBackingHoverStyles,
@@ -284,11 +285,12 @@ $(function () {
           const s = electionData[data.name];
           let html = `<strong>${s ? s.stateName : data.name}</strong><br/>`;
           
-          const csv = csvElectionData[data.name] || { senate: 0, gov: 0, court: 0 };
+          const csv = csvElectionData[data.name] || { house: 0, senate: 0, gov: 0, court: 0 };
           const generalTypes = [];
+          if (csv.house)  generalTypes.push('House');
           if (csv.senate) generalTypes.push('Senate');
-          if (csv.gov) generalTypes.push('Gubernatorial');
-          if (csv.court) generalTypes.push('Court');
+          if (csv.gov)    generalTypes.push('Gubernatorial');
+          if (csv.court)  generalTypes.push('Court');
 
           if (generalTypes.length > 0) {
             html += `<strong>${generalTypes.length} General Election${generalTypes.length !== 1 ? 's' : ''}</strong><br/>`;
@@ -334,9 +336,10 @@ $(function () {
       
       // Builds general election cards from CSV data for a state abbreviation
       function buildGeneralElectionCards(abbr) {
-        const csv = csvElectionData[abbr] || { senate: 0, gov: 0, court: 0 };
+        const csv = csvElectionData[abbr] || { house: 0, senate: 0, gov: 0, court: 0 };
         const displayDate = fmtDate(csv.generalDate) || 'November 3, 2026';
         const generalElections = [];
+        if (csv.house)  generalElections.push({ title: 'U.S. House of Representatives', badge: 'House', badgeStyle: 'background: linear-gradient(135deg, #e63946, #c91c28); color: white;' });
         if (csv.senate) generalElections.push({ title: 'U.S. Senate', badge: 'Senate', badgeStyle: 'background: linear-gradient(135deg, #2b7fc1, #03254c); color: white;' });
         if (csv.gov)    generalElections.push({ title: 'Governor', badge: 'Gubernatorial', badgeStyle: 'background: linear-gradient(135deg, #457b9d, #1d3557); color: white;' });
         if (csv.court)  generalElections.push({ title: 'State Supreme Court', badge: 'Court', badgeStyle: 'background: linear-gradient(135deg, #6c757d, #495057); color: white;' });
