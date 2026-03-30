@@ -193,7 +193,7 @@
     .summary-card {
       display: grid;
       gap: .5rem;
-      grid-template-columns: repeat(5, minmax(5rem, 1fr)); /* Reduced from 110px to 80px for better mobile fit */
+      grid-template-columns: repeat(6, minmax(4rem, 1fr));
       border: 2px solid var(--cerulean);
       background: var(--surface);
       padding: .75rem;
@@ -205,7 +205,7 @@
     /* Fallback for browsers without container query support */
     @supports not (container-type: inline-size) {
       @media (max-width: 50rem) {
-        .summary-card { grid-template-columns: repeat(5, 1fr); }
+        .summary-card { grid-template-columns: repeat(6, 1fr); }
       }
       @media (max-width: 40rem) {
         .summary-card { grid-template-columns: repeat(2, 1fr); }
@@ -220,8 +220,8 @@
       @container (max-width: 50rem) {
         .summary-card { grid-template-columns: repeat(3, 1fr); }
       }
-      @container (max-width: 40rem) {
-        .summary-card { grid-template-columns: repeat(3, 1fr); }
+      @container (max-width: 30rem) {
+        .summary-card { grid-template-columns: repeat(2, 1fr); }
       }
     }
    

@@ -119,7 +119,7 @@ $(function () {
       // ========================================
       // CALCULATE SUMMARY STATISTICS (from CSV general election data)
       // ========================================
-      let csvStates = 0, csvTotal = 0, csvSenate = 0, csvGov = 0, csvCourt = 0;
+      let csvStates = 0, csvTotal = 0, csvSenate = 0, csvGov = 0, csvCourt = 0, csvHouse = 0;
       Object.values(csvElectionData).forEach(c => {
         const n = (c.house || 0) + c.senate + c.gov + c.court;
         if (n > 0) csvStates++;
@@ -127,12 +127,14 @@ $(function () {
         csvSenate += c.senate;
         csvGov    += c.gov;
         csvCourt  += c.court;
+        csvHouse  += c.house || 0;
       });
       setTimeout(() => animateNumber($('#sum-states'),    csvStates,  1200), 0);
       setTimeout(() => animateNumber($('#sum-elections'), csvTotal,   1200), 100);
       setTimeout(() => animateNumber($('#sum-local'),     csvSenate,  1000), 200);
       setTimeout(() => animateNumber($('#sum-state'),     csvGov,     1000), 300);
       setTimeout(() => animateNumber($('#sum-federal'),   csvCourt,   1000), 400);
+      setTimeout(() => animateNumber($('#sum-house'),     csvHouse,   1000), 500);
 
       // Format YYYY-MM-DD → "Mon D, YYYY"; handles the same-day special value
       function fmtDate(d) {
@@ -574,7 +576,8 @@ $(function () {
         const filterLabels = {
           'Senate':   'Senate Elections',
           'Governor': 'Gubernatorial Elections',
-          'Court':    'Court Elections'
+          'Court':    'Court Elections',
+          'House':    'House Elections'
         };
 
         $('#modal-state-name').text(filterLabels[filterType] || filterType);
@@ -586,7 +589,8 @@ $(function () {
         for (const [abbr, csv] of Object.entries(csvElectionData)) {
           const hasType = filterType === 'Senate'   ? csv.senate :
                           filterType === 'Governor' ? csv.gov    :
-                          filterType === 'Court'    ? csv.court  : 0;
+                          filterType === 'Court'    ? csv.court  :
+                          filterType === 'House'    ? csv.house  : 0;
           if (!hasType) continue;
 
           const stateInfo = electionData[abbr];
