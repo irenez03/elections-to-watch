@@ -127,7 +127,7 @@ $(function () {
         csvSenate += c.senate;
         csvGov    += c.gov;
         csvCourt  += c.court;
-        csvHouse  += c.house || 0;
+        csvHouse  =  435; // hardcoded for now
       });
       setTimeout(() => animateNumber($('#sum-states'),    csvStates,  1200), 0);
       setTimeout(() => animateNumber($('#sum-elections'), csvTotal,   1200), 100);
