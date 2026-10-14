@@ -1,0 +1,303 @@
+{
+  "_source": "vote.org/voter-registration-deadlines and vote.org/absentee-ballot-deadlines, retrieved 2026-10-13. Relative rules converted to dates for the Nov 3, 2026 general election. Registration/election-info links carried over from the previous site data.",
+  "AL": {
+    "registrationWebsite": "https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action",
+    "electionInfoUrl": "https://www.sos.alabama.gov/alabama-votes",
+    "reg": {"deadline": "2026-10-19", "note": null},
+    "absentee": {"request": "By mail: received by Oct 27. In person: by Oct 29.", "return": "By mail: received by noon on Election Day. Hand-delivered: by 5pm Nov 2.", "tracker": "https://myinfo.alabamavotes.gov/voterview"}
+  },
+  "AK": {
+    "registrationWebsite": "https://voterregistration.alaska.gov",
+    "electionInfoUrl": "https://www.elections.alaska.gov/voter-information/#Reg",
+    "reg": {"deadline": "2026-10-04", "note": null},
+    "absentee": {"request": "Received by Oct 24 (online delivery: by 5pm Nov 2).", "return": "By mail: postmarked by Election Day, received by Nov 13. In person: by 8pm Election Day.", "tracker": "https://myvoterportal.alaska.gov/"}
+  },
+  "AZ": {
+    "registrationWebsite": "https://servicearizona.com/VoterRegistration/selectLanguage",
+    "electionInfoUrl": "https://azsos.gov/elections",
+    "reg": {"deadline": "2026-10-05", "note": null},
+    "absentee": {"request": "Received by 5pm Oct 23.", "return": "Received by 7pm on Election Day.", "tracker": "https://my.arizona.vote/AbsenteeTracker.aspx"}
+  },
+  "AR": {
+    "registrationWebsite": "https://www.voterview.ar-nova.org/VoterView",
+    "electionInfoUrl": "https://www.sos.arkansas.gov/elections/for-voters",
+    "reg": {"deadline": "2026-10-05", "note": "No online registration."},
+    "absentee": {"request": "By mail: received by Oct 27. In person: by Oct 30.", "return": "By mail: received by 7:30pm Election Day. In person: by Oct 30.", "tracker": "https://www.voterview.ar-nova.org/voterview"}
+  },
+  "CA": {
+    "registrationWebsite": "https://covr.sos.ca.gov",
+    "electionInfoUrl": "https://www.sos.ca.gov/elections",
+    "reg": {"deadline": "2026-10-19", "note": "Conditional same-day registration available through Election Day."},
+    "absentee": {"autoMail": true, "request": "No application needed: every active voter is mailed a ballot.", "return": "Postmarked by Election Day and received by Nov 10.", "tracker": "https://www.sos.ca.gov/elections/ballot-status/"}
+  },
+  "CO": {
+    "registrationWebsite": "https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml",
+    "electionInfoUrl": "https://docs.google.com/spreadsheets/d/17FhCtlspiaa65-ZXhXo853mlynPiSUMUCaQHUvv62Mw/edit?gid=53780384#gid=53780384",
+    "reg": {"deadline": "2026-10-26", "note": "Register in person through Election Day."},
+    "absentee": {"autoMail": true, "request": "No application needed: every voter is mailed a ballot. Address changes by Oct 26.", "return": "Received by 7pm on Election Day.", "tracker": "https://colorado.ballottrax.net/voter/"}
+  },
+  "CT": {
+    "registrationWebsite": "https://voterregistration.ct.gov/OLVR/welcome.do?TSPD_101_R0=08ec0ef8bdab20000977204747af8d1af38f30db793d14f944387e8296d216451eb5cbc938e37ea0089ed0d42514300058d84151841ea9b35e0d536d5e2a4fd27dcd0c545327d3c4dfc1f38afe66c7377b0e962b6257099cd6985be5ac9e250c",
+    "electionInfoUrl": "https://portal.ct.gov/sots/common-elements/v5-template---redesign/elections-and-voting",
+    "reg": {"deadline": "2026-10-16", "note": "Same-day registration during early voting and on Election Day."},
+    "absentee": {"request": "Received by Nov 2 (apply by Oct 27 recommended).", "return": "By mail: received by close of polls on Election Day. In person: by Nov 2.", "tracker": "https://portaldir.ct.gov/sots/LookUp.aspx"}
+  },
+  "DE": {
+    "registrationWebsite": "https://ivote.de.gov/VoterView/registrant/newregistrant",
+    "electionInfoUrl": "https://elections.delaware.gov/elections/elections.shtml",
+    "reg": {"deadline": "2026-10-10", "note": null},
+    "absentee": {"request": "By mail/online: received by Oct 30. In person: by noon Nov 2.", "return": "Received by 8pm on Election Day.", "tracker": "https://ivote.de.gov/VoterView"}
+  },
+  "FL": {
+    "registrationWebsite": "https://registertovoteflorida.gov/home",
+    "electionInfoUrl": "https://dos.fl.gov/elections/",
+    "reg": {"deadline": "2026-10-05", "note": null},
+    "absentee": {"request": "Received by 5pm Oct 22.", "return": "Received by 7pm on Election Day.", "tracker": "https://dos.myflorida.com/elections/for-voters/check-your-voter-status-and-polling-place/ballot-information-and-status-lookup/"}
+  },
+  "GA": {
+    "registrationWebsite": "https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true",
+    "electionInfoUrl": "https://sos.ga.gov/elections-division-georgia-secretary-states-office",
+    "reg": {"deadline": "2026-10-05", "note": null},
+    "absentee": {"request": "Received by Oct 23.", "return": "Received by close of polls on Election Day.", "tracker": "https://www.mvp.sos.ga.gov/MVP/mvp.do"}
+  },
+  "HI": {
+    "registrationWebsite": "https://olvr.hawaii.gov",
+    "electionInfoUrl": "https://elections.hawaii.gov",
+    "reg": {"deadline": "2026-10-26", "note": "Mail deadline. Online and in person through Election Day."},
+    "absentee": {"autoMail": true, "request": "No application needed: all-mail voting. Address changes by Oct 27.", "return": "Received by 7pm on Election Day.", "tracker": "https://hawaii.ballottrax.net/voter/"}
+  },
+  "ID": {
+    "registrationWebsite": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
+    "electionInfoUrl": "https://sos.idaho.gov/elections-division/",
+    "reg": {"deadline": "2026-10-23", "note": "Also register in person during early voting or on Election Day."},
+    "absentee": {"request": "By mail/online: received by 5pm Oct 23. In person: by 5pm Oct 30.", "return": "Received by 8pm on Election Day.", "tracker": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx"}
+  },
+  "IL": {
+    "registrationWebsite": "https://ova.elections.il.gov",
+    "electionInfoUrl": "https://www.elections.il.gov",
+    "reg": {"deadline": "2026-10-06", "note": "Online through Oct 18. In-person grace period through Election Day."},
+    "absentee": {"request": "By mail/online: received by Oct 29. In person: by Nov 2.", "return": "Postmarked by Election Day and received by Nov 17.", "tracker": "https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx"}
+  },
+  "IN": {
+    "registrationWebsite": "https://indianavoters.in.gov",
+    "electionInfoUrl": "https://www.in.gov/sos/elections/",
+    "reg": {"deadline": "2026-10-05", "note": null},
+    "absentee": {"request": "Received by Oct 22.", "return": "Received by 6pm on Election Day.", "tracker": "https://indianavoters.in.gov/"}
+  },
+  "IA": {
+    "registrationWebsite": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
+    "electionInfoUrl": "https://sos.iowa.gov/elections-voting",
+    "reg": {"deadline": "2026-10-19", "note": "Also register in person during early voting or on Election Day."},
+    "absentee": {"request": "By mail: received by Oct 19. In person: by Nov 2.", "return": "Received by 8pm on Election Day.", "tracker": "https://sos.iowa.gov/elections/absenteeballotstatus/absentee/search"}
+  },
+  "KS": {
+    "registrationWebsite": "https://www.kdor.ks.gov/Apps/VoterReg",
+    "electionInfoUrl": "https://sos.ks.gov/elections/elections.html",
+    "reg": {"deadline": "2026-10-13", "note": null},
+    "absentee": {"request": "Received by Oct 27.", "return": "Return by close of polls on Election Day (a court order may count late-arriving ballots postmarked by Election Day).", "tracker": "https://myvoteinfo.voteks.org/voterview/"}
+  },
+  "KY": {
+    "registrationWebsite": "https://vrsws.sos.ky.gov/ovrweb/govoteky",
+    "electionInfoUrl": "https://elect.ky.gov/Pages/default.aspx",
+    "reg": {"deadline": "2026-10-05", "note": null},
+    "absentee": {"request": "By mail/online: received by Oct 20. In person: excuse required.", "return": "Received by 6pm on Election Day.", "tracker": "https://vrsws.sos.ky.gov/VIC/"}
+  },
+  "LA": {
+    "registrationWebsite": "https://www.sos.la.gov/ElectionsAndVoting/Pages/OnlineVoterRegistration.aspx?Referrer=https://www.google.com/",
+    "electionInfoUrl": "https://www.sos.la.gov/electionsandvoting/Pages/default.aspx",
+    "reg": {"deadline": "2026-10-04", "note": "Online through Oct 14."},
+    "absentee": {"request": "Received by 4:30pm Oct 30.", "return": "Received by 4:30pm Nov 2 (most voters).", "tracker": "https://voterportal.sos.la.gov/"}
+  },
+  "ME": {
+    "registrationWebsite": "https://registertovote.sos.maine.govv",
+    "electionInfoUrl": "https://www.maine.gov/sos/elections-voting",
+    "reg": {"deadline": "2026-10-13", "note": "Register in person through Election Day."},
+    "absentee": {"request": "Received by Oct 29.", "return": "Received by the town clerk by 8pm on Election Day.", "tracker": "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/ballot_status.pl"}
+  },
+  "MD": {
+    "registrationWebsite": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1",
+    "electionInfoUrl": "https://elections.maryland.gov",
+    "reg": {"deadline": "2026-10-13", "note": "Register during early voting or on Election Day with proof of address."},
+    "absentee": {"request": "By mail: received by Oct 27 (online delivery: by Oct 30).", "return": "Postmarked by Election Day and received by 10am Nov 13.", "tracker": "https://voterservices.elections.maryland.gov/VoterSearch"}
+  },
+  "MA": {
+    "registrationWebsite": "https://www.sec.state.ma.us/OVR/Pages/CheckEligibility.aspx?&Action=Register",
+    "electionInfoUrl": "https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm",
+    "reg": {"deadline": "2026-10-24", "note": null},
+    "absentee": {"request": "Received by 5pm Oct 27. In person: by noon Nov 2.", "return": "By mail: mailed by Election Day, received by 5pm Nov 6. In person/drop box: close of polls.", "tracker": "https://www.sec.state.ma.us/wheredoivotema/track/trackmyballot.aspx"}
+  },
+  "MI": {
+    "registrationWebsite": "https://mvic.sos.state.mi.us/RegisterVoter/Index",
+    "electionInfoUrl": "https://www.michigan.gov/sos/elections",
+    "reg": {"deadline": "2026-10-19", "note": "Register in person at your clerk's office through 8pm Election Day."},
+    "absentee": {"request": "By mail/online: received by 5pm Oct 30. In person: by 4pm Nov 2.", "return": "Received by your clerk by 8pm on Election Day.", "tracker": "https://mvic.sos.state.mi.us/Voter/Index"}
+  },
+  "MN": {
+    "registrationWebsite": "https://mnvotes.sos.mn.gov/VoterRegistration/index",
+    "electionInfoUrl": "https://www.sos.mn.gov/elections-voting/",
+    "reg": {"deadline": "2026-10-13", "note": "Register in person on Election Day."},
+    "absentee": {"request": "Received before Election Day (apply by Oct 27 recommended).", "return": "Received by 8pm on Election Day.", "tracker": "https://mnvotes.sos.state.mn.us/AbsenteeBallotStatus.aspx"}
+  },
+  "MS": {
+    "registrationWebsite": "https://www.msegov.com/sos/voter_registration/amiregistered/Search",
+    "electionInfoUrl": "https://www.sos.ms.gov/elections-voting",
+    "reg": {"deadline": "2026-10-05", "note": "No online registration."},
+    "absentee": {"request": "Excuse required. Apply by Oct 27 recommended; in person by Oct 31.", "return": "Postmarked by Election Day and received by Nov 10.", "tracker": "https://myelectionday.sos.state.ms.us/voteroutreach/pages/VoterRegistrationCheck.aspx"}
+  },
+  "MO": {
+    "registrationWebsite": "https://s1.sos.mo.gov/elections/voterregistration/",
+    "electionInfoUrl": "https://www.sos.ms.gov/elections-voting",
+    "reg": {"deadline": "2026-10-07", "note": null},
+    "absentee": {"request": "By mail: received by 5pm Oct 21. In person: by 5pm Nov 2.", "return": "Received by close of polls on Election Day.", "tracker": "https://www.sos.mo.gov/elections/goVoteMissouri/localelectionauthority"}
+  },
+  "MT": {
+    "registrationWebsite": "https://voterportal.mt.gov/WhereToVote.aspx",
+    "electionInfoUrl": "https://sosmt.gov/elections/",
+    "reg": {"deadline": "2026-10-04", "note": "Mail deadline. Late registration in person through Election Day."},
+    "absentee": {"request": "Received by noon Nov 2 (apply by Oct 27 recommended).", "return": "Received by 8pm on Election Day.", "tracker": "https://app.mt.gov/voterinfo/"}
+  },
+  "NE": {
+    "registrationWebsite": "https://www.nebraska.gov/apps-sos-voter-registration/",
+    "electionInfoUrl": "https://www.nebraska.gov/featured/elections-voting/",
+    "reg": {"deadline": "2026-10-16", "note": "In person through Oct 23."},
+    "absentee": {"request": "Received by Oct 23.", "return": "Received by close of polls on Election Day.", "tracker": "https://www.votercheck.necvr.ne.gov/voterview/"}
+  },
+  "NV": {
+    "registrationWebsite": "https://www.nvsos.gov/SOSVoterServices/start.aspx",
+    "electionInfoUrl": "https://www.nvsos.gov/sos/elections",
+    "reg": {"deadline": "2026-10-06", "note": "Mail deadline. Online through Election Day; same-day registration in person."},
+    "absentee": {"autoMail": true, "request": "No application needed: every registered voter is mailed a ballot.", "return": "By mail: postmarked by Election Day, received by 5pm Nov 7. Drop box/in person: by 7pm Election Day.", "tracker": "http://myballot.nv.gov"}
+  },
+  "NH": {
+    "registrationWebsite": "https://app.sos.nh.gov/voterinformation",
+    "electionInfoUrl": "https://www.sos.nh.gov/elections",
+    "reg": {"deadline": null, "label": "Varies by town", "note": "Before Election Day, deadline is 6–13 days out depending on your town. You can also register at your polling place on Election Day."},
+    "absentee": {"request": "By mail: received by noon Nov 2. In person: by 5pm Nov 2.", "return": "Received by 5pm on Election Day.", "tracker": "https://app.sos.nh.gov/voterinformation"}
+  },
+  "NJ": {
+    "registrationWebsite": "https://voter.svrs.nj.gov/register",
+    "electionInfoUrl": "https://www.nj.gov/state/elections/vote.shtml",
+    "reg": {"deadline": "2026-10-13", "note": null},
+    "absentee": {"request": "By mail: received by Oct 27. In person: by 3pm Nov 2.", "return": "Postmarked by 8pm Election Day and received by Nov 9.", "tracker": "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml"}
+  },
+  "NM": {
+    "registrationWebsite": "https://portal1.sos.nm.gov/OVR/(S(rbtqg3mb1svld02fuv4y1icv))/WebPages/InstructionsStep1.aspx",
+    "electionInfoUrl": "https://www.sos.nm.gov/voting-and-elections/",
+    "reg": {"deadline": "2026-10-06", "note": "Same-day registration during early voting (through Oct 31) and on Election Day."},
+    "absentee": {"request": "Received by Oct 20.", "return": "Received by 7pm on Election Day.", "tracker": "https://voterportal.servis.sos.state.nm.us/wheretovote.aspx"}
+  },
+  "NY": {
+    "registrationWebsite": "https://www.ny.gov/services/register-vote",
+    "electionInfoUrl": "https://elections.ny.gov/election-information",
+    "reg": {"deadline": "2026-10-24", "note": null},
+    "absentee": {"request": "By mail/online: received by Oct 24. In person: by Nov 2.", "return": "Hand-deliver to a poll site or county board by 9pm on Election Day.", "tracker": "https://voterlookup.elections.ny.gov/"}
+  },
+  "NC": {
+    "registrationWebsite": "https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx",
+    "electionInfoUrl": "https://www.ncsbe.gov",
+    "reg": {"deadline": "2026-10-09", "note": "Same-day registration during early voting (ends Oct 31)."},
+    "absentee": {"request": "Received by 5pm Oct 20.", "return": "Received by 7:30pm on Election Day.", "tracker": "https://northcarolina.ballottrax.net/voter/"}
+  },
+  "ND": {
+    "registrationWebsite": "https://vip.sos.nd.gov/WhereToVoteID.aspx",
+    "electionInfoUrl": "https://vip.sos.nd.gov/PortalList.aspx",
+    "reg": {"deadline": null, "label": "No registration required", "note": "Bring acceptable ID to vote."},
+    "absentee": {"request": "Received by Nov 2 (apply by Oct 27 recommended).", "return": "Received by close of polls on Election Day. Not accepted at polling places.", "tracker": "https://vip.sos.nd.gov/AbsenteeTracker.aspx"}
+  },
+  "OH": {
+    "registrationWebsite": "https://olvr.ohiosos.gov",
+    "electionInfoUrl": "https://www.ohiosos.gov/elections/",
+    "reg": {"deadline": "2026-10-05", "note": null},
+    "absentee": {"request": "Received by close of business Oct 27.", "return": "Received by your board of elections by 7:30pm on Election Day.", "tracker": "https://www.ohiosos.gov/directories/ballot-tracking"}
+  },
+  "OK": {
+    "registrationWebsite": "https://okvoterportal.okelections.gov/Home/RegWizard",
+    "electionInfoUrl": "https://www.oklahoma.gov/elections.html",
+    "reg": {"deadline": "2026-10-09", "note": null},
+    "absentee": {"request": "Received by 5pm Oct 19.", "return": "By mail: received by 7pm Election Day. Hand-delivered: by Nov 2.", "tracker": "https://okvoterportal.okelections.us/"}
+  },
+  "OR": {
+    "registrationWebsite": "https://secure.sos.state.or.us/orestar/vr/register.do?lang=eng&source=SOS",
+    "electionInfoUrl": "https://sos.oregon.gov/voting-elections/Pages/default.aspx",
+    "reg": {"deadline": "2026-10-13", "note": null},
+    "absentee": {"autoMail": true, "request": "No application needed: every active voter is mailed a ballot.", "return": "Postmarked by Election Day and received by Nov 10.", "tracker": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?lang=eng"}
+  },
+  "PA": {
+    "registrationWebsite": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
+    "electionInfoUrl": "https://www.pa.gov/agencies/vote/elections/upcoming-elections",
+    "reg": {"deadline": "2026-10-19", "note": null},
+    "absentee": {"request": "Received by 5pm Oct 27.", "return": "Received by 8pm on Election Day.", "tracker": "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx"}
+  },
+  "RI": {
+    "registrationWebsite": "https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1",
+    "electionInfoUrl": "https://elections.ri.gov",
+    "reg": {"deadline": "2026-10-04", "note": null},
+    "absentee": {"request": "Received by 4pm Oct 13. Emergency ballots available until 4pm Nov 2.", "return": "Received by 8pm on Election Day.", "tracker": "https://ballottrax.sos.ri.gov/voter/"}
+  },
+  "SC": {
+    "registrationWebsite": "https://vrems.scvotes.sc.gov/ovr/start",
+    "electionInfoUrl": "https://scvotes.gov",
+    "reg": {"deadline": "2026-10-04", "note": null},
+    "absentee": {"request": "Received by 5pm Oct 23.", "return": "Received by 7pm on Election Day.", "tracker": "https://vrems.scvotes.sc.gov/Voter/Login?PageMode=AbsenteeInfo"}
+  },
+  "SD": {
+    "registrationWebsite": "https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx",
+    "electionInfoUrl": "https://sdsos.gov/elections-voting/default.aspx",
+    "reg": {"deadline": "2026-10-19", "note": "No online registration."},
+    "absentee": {"request": "Received by Nov 2 (apply by Oct 27 recommended).", "return": "Received by 7pm on Election Day.", "tracker": "https://vip.sdsos.gov/VIPLogin.aspx"}
+  },
+  "TN": {
+    "registrationWebsite": "https://ovr.govote.tn.gov",
+    "electionInfoUrl": "https://sos.tn.gov/elections",
+    "reg": {"deadline": "2026-10-05", "note": null},
+    "absentee": {"request": "Received by Oct 24.", "return": "Received by 7pm on Election Day.", "tracker": "https://tnmap.tn.gov/voterlookup/"}
+  },
+  "TX": {
+    "registrationWebsite": "https://vrrequest.sos.texas.gov/VoterApplication/ConfirmStatusEN",
+    "electionInfoUrl": "https://www.sos.state.tx.us/elections/index.shtml",
+    "reg": {"deadline": "2026-10-05", "note": "No online registration."},
+    "absentee": {"request": "Received by Oct 23.", "return": "Postmarked by 7pm Election Day and received by 5pm Nov 4.", "tracker": "https://goelect.txelections.civixapps.com/ivis-oab-ui/#/login"}
+  },
+  "UT": {
+    "registrationWebsite": "https://vote.utah.gov/register-to-vote-or-update-your-voter-registration/",
+    "electionInfoUrl": "https://vote.utah.gov",
+    "reg": {"deadline": "2026-10-23", "note": "Also register during early voting or on Election Day (provisional ballot)."},
+    "absentee": {"autoMail": true, "request": "No application needed: every voter is mailed a ballot. Other mailing address: apply by Oct 23.", "return": "Received by the county clerk by 8pm on Election Day.", "tracker": "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot"}
+  },
+  "VT": {
+    "registrationWebsite": "https://vote.vermont.gov/public/dashboard",
+    "electionInfoUrl": "https://sos.vermont.gov/elections/",
+    "reg": {"deadline": "2026-11-03", "note": "Register by Oct 30 to make sure you're on the checklist."},
+    "absentee": {"request": "Received by Nov 2 (apply by Oct 27 recommended).", "return": "Received by the town clerk before polls close, or hand in at your polling place.", "tracker": "https://mvp.vermont.gov/"}
+  },
+  "VA": {
+    "registrationWebsite": "https://www.elections.virginia.gov/citizen-portal/",
+    "electionInfoUrl": "https://www.elections.virginia.gov",
+    "reg": {"deadline": "2026-10-23", "note": "Same-day registration during early voting and on Election Day."},
+    "absentee": {"request": "By mail/online: received by 5pm Oct 23.", "return": "Postmarked by Election Day and received by noon Nov 6.", "tracker": "https://www.elections.virginia.gov/citizen-portal/"}
+  },
+  "WA": {
+    "registrationWebsite": "https://olvr.votewa.gov/olvr2024/landing.aspx",
+    "electionInfoUrl": "https://www.sos.wa.gov/elections",
+    "reg": {"deadline": "2026-10-26", "note": "Register in person through Election Day."},
+    "absentee": {"autoMail": true, "request": "No application needed: every registered voter is mailed a ballot.", "return": "Postmarked by Election Day.", "tracker": "https://voter.votewa.gov/WhereToVote.aspx#/login"}
+  },
+  "WV": {
+    "registrationWebsite": "https://ovr.sos.wv.gov/Register/Landing#Qualifications",
+    "electionInfoUrl": "https://sos.wv.gov/elections/Pages/default.aspx",
+    "reg": {"deadline": "2026-10-13", "note": null},
+    "absentee": {"request": "Received by Oct 28.", "return": "By mail: postmarked by Election Day, received by Nov 9. In person: by Nov 2.", "tracker": "https://apps.sos.wv.gov/Elections/voter/absenteeballottracking"}
+  },
+  "WI": {
+    "registrationWebsite": "https://myvote.wi.gov/en-us/Register-To-Vote",
+    "electionInfoUrl": "https://elections.wi.gov",
+    "reg": {"deadline": "2026-10-14", "note": "In person at your clerk through Oct 30, or at the polls on Election Day."},
+    "absentee": {"request": "By mail/online: received by 5pm Oct 29. In person: by Nov 1.", "return": "Received by 8pm on Election Day.", "tracker": "https://myvote.wi.gov/en-us/My-Voter-Info"}
+  },
+  "WY": {
+    "registrationWebsite": "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx",
+    "electionInfoUrl": "https://sos.wyo.gov/elections/",
+    "reg": {"deadline": "2026-10-20", "note": "Register at the polls on Election Day."},
+    "absentee": {"request": "Received by Nov 2 (apply by Oct 27 recommended).", "return": "Received by 7pm on Election Day.", "tracker": "https://sos.wyo.gov/Elections/Docs/WYCountyClerks.pdf"}
+  }
+}

@@ -41,102 +41,60 @@ $(function () {
   // ========================================
   // LOAD ELECTION DATA
   // ========================================
-  // Fetches elections.json and builds the map
+  // races.json is built from data/ by scripts/build_from_csv.py
+  // (races, links, registration + absentee deadlines per state)
   // Add timestamp to prevent caching of JSON file
-  fetch(`elections.json?v=${Date.now()}`)
+  fetch(`races.json?v=${Date.now()}`)
     .then(r => r.json())
-    .then(data => {
-      const electionData = data.electionData || {};
+    .then(racesData => {
+      const raceStates = racesData.states || {};
 
-      // Stats are calculated after csvElectionData is defined (see STATE COLORS section below)
-      
+      // Map regions without CSV data (shown in the default color)
+      const OTHER_NAMES = { DC: 'District of Columbia' };
+      const stateName = abbr => raceStates[abbr]?.name || OTHER_NAMES[abbr] || abbr;
 
-      /* ========================================
-         STATE COLORS CONFIGURATION
-         ========================================
-         This section controls the colors of each state on the map
-         
-         HOW TO CUSTOMIZE STATE COLORS:
-         1. Change 'fill' variable to set colors based on your criteria
-         2. States are colored based on whether they have elections
-         3. You can add more complex logic (e.g., color by election type)
-      */
-      // General election data per state from CSV
-      // senate/gov/court = 1 or 0 | reg = registration deadline | primaryDate | generalDate
-      const csvElectionData = {
-        AL: { house:1, senate:1, gov:1, court:0, reg:'2026-06-01', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        AK: { house:1, senate:1, gov:1, court:0, reg:'2026-07-19', primaryDate:'2026-08-18', generalDate:'2026-11-03' },
-        AZ: { house:1, senate:0, gov:1, court:0, reg:'2026-06-22', primaryDate:'2026-07-21', generalDate:'2026-11-03' },
-        AR: { house:1, senate:1, gov:1, court:1, reg:'2026-02-01', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
-        CA: { house:1, senate:0, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        CO: { house:1, senate:1, gov:1, court:0, reg:'2026-06-30', primaryDate:'2026-06-30', generalDate:'2026-11-03' },
-        CT: { house:1, senate:0, gov:1, court:0, reg:'2026-07-24', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        DE: { house:1, senate:1, gov:0, court:0, reg:'2026-08-22', primaryDate:'2026-09-15', generalDate:'2026-11-03' },
-        FL: { house:1, senate:1, gov:1, court:0, reg:'2026-07-20', primaryDate:'2026-08-18', generalDate:'2026-11-03' },
-        GA: { house:1, senate:1, gov:1, court:1, reg:'2026-04-20', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        HI: { house:1, senate:0, gov:1, court:0, reg:'2026-07-30', primaryDate:'2026-08-08', generalDate:'2026-11-03' },
-        ID: { house:1, senate:1, gov:1, court:1, reg:'2026-04-25', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        IL: { house:1, senate:1, gov:1, court:0, reg:'2026-02-18', primaryDate:'2026-03-17', generalDate:'2026-11-03' },
-        IN: { house:1, senate:0, gov:0, court:0, reg:'2026-04-06', primaryDate:'2026-05-05', generalDate:'2026-11-03' },
-        IA: { house:1, senate:1, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        KS: { house:1, senate:1, gov:1, court:0, reg:'2026-07-14', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        KY: { house:1, senate:1, gov:0, court:1, reg:'2026-04-20', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        LA: { house:1, senate:1, gov:0, court:0, reg:'2026-04-16', primaryDate:'2026-05-16', generalDate:'2026-11-03' },
-        ME: { house:1, senate:1, gov:1, court:0, reg:'2026-05-19', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        MD: { house:1, senate:0, gov:1, court:0, reg:'2026-06-02', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
-        MA: { house:1, senate:1, gov:1, court:0, reg:'2026-08-22', primaryDate:'2026-09-01', generalDate:'2026-11-03' },
-        MI: { house:1, senate:1, gov:1, court:1, reg:'2026-07-20', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        MN: { house:1, senate:1, gov:1, court:1, reg:'2026-07-21', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        MS: { house:1, senate:1, gov:0, court:1, reg:'2026-02-08', primaryDate:'2026-03-10', generalDate:'2026-11-03' },
-        MO: { house:1, senate:0, gov:0, court:0, reg:'2026-07-08', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        MT: { house:1, senate:1, gov:0, court:1, reg:'2026-05-03', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        NE: { house:1, senate:1, gov:1, court:0, reg:'2026-04-24', primaryDate:'2026-05-12', generalDate:'2026-11-03' },
-        NV: { house:1, senate:0, gov:1, court:1, reg:'2026-05-12', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        NH: { house:1, senate:1, gov:1, court:0, reg:'2026-08-26', primaryDate:'2026-09-08', generalDate:'2026-11-03' },
-        NJ: { house:1, senate:1, gov:0, court:0, reg:'2026-05-12', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        NM: { house:1, senate:1, gov:1, court:0, reg:'2026-05-05', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        NY: { house:1, senate:0, gov:1, court:0, reg:'2026-06-08', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
-        NC: { house:1, senate:1, gov:0, court:0, reg:'2026-02-08', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
-        ND: { house:1, senate:0, gov:0, court:1, reg:'same-day',   primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        OH: { house:1, senate:1, gov:1, court:0, reg:'2026-04-05', primaryDate:'2026-05-05', generalDate:'2026-11-03' },
-        OK: { house:1, senate:1, gov:1, court:0, reg:'2026-05-27', primaryDate:'2026-06-16', generalDate:'2026-11-03' },
-        OR: { house:1, senate:1, gov:1, court:1, reg:'2026-04-28', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        PA: { house:1, senate:0, gov:1, court:0, reg:'2026-05-04', primaryDate:'2026-05-19', generalDate:'2026-11-03' },
-        RI: { house:1, senate:1, gov:1, court:0, reg:'2026-08-09', primaryDate:'2026-09-08', generalDate:'2026-11-03' },
-        SC: { house:1, senate:1, gov:1, court:0, reg:'2026-05-10', primaryDate:'2026-06-09', generalDate:'2026-11-03' },
-        SD: { house:1, senate:1, gov:1, court:0, reg:'2026-05-18', primaryDate:'2026-06-02', generalDate:'2026-11-03' },
-        TN: { house:1, senate:1, gov:1, court:0, reg:'2026-07-07', primaryDate:'2026-08-06', generalDate:'2026-11-03' },
-        TX: { house:1, senate:1, gov:1, court:0, reg:'2026-02-02', primaryDate:'2026-03-03', generalDate:'2026-11-03' },
-        UT: { house:1, senate:0, gov:0, court:0, reg:'2026-06-12', primaryDate:'2026-06-23', generalDate:'2026-11-03' },
-        VT: { house:1, senate:0, gov:1, court:0, reg:'2026-08-11', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        VA: { house:1, senate:1, gov:0, court:0, reg:'2026-05-25', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        WA: { house:1, senate:0, gov:0, court:1, reg:'2026-07-27', primaryDate:'2026-08-04', generalDate:'2026-11-03' },
-        WV: { house:1, senate:1, gov:0, court:1, reg:'2026-04-21', primaryDate:'2026-05-12', generalDate:'2026-11-03' },
-        WI: { house:1, senate:0, gov:1, court:1, reg:'2026-07-20', primaryDate:'2026-08-11', generalDate:'2026-11-03' },
-        WY: { house:1, senate:1, gov:1, court:0, reg:'2026-08-04', primaryDate:'2026-08-18', generalDate:'2026-11-03' }
-      };
+      // Race categories, in display order. key matches counts[...] in races.json
+      const RACE_TYPES = [
+        { key: 'federal_senate', group: 'federal', race: 'senate',   label: 'U.S. Senate',  badge: 'Senate',   badgeStyle: 'background: linear-gradient(135deg, #2b7fc1, #03254c); color: white;' },
+        { key: 'federal_house',  group: 'federal', race: 'house',    label: 'U.S. House',   badge: 'House',    badgeStyle: 'background: linear-gradient(135deg, #e63946, #c91c28); color: white;' },
+        { key: 'state_governor', group: 'state',   race: 'governor', label: 'Governor',     badge: 'Governor', badgeStyle: 'background: linear-gradient(135deg, #457b9d, #1d3557); color: white;' },
+        { key: 'state_court',    group: 'state',   race: 'court',    label: 'Court',        badge: 'Court',    badgeStyle: 'background: linear-gradient(135deg, #6c757d, #495057); color: white;' },
+        { key: 'state_house',    group: 'state',   race: 'house',    label: 'State House',  badge: 'House',    badgeStyle: 'background: linear-gradient(135deg, #a8dadc, #457b9d); color: white;' },
+        { key: 'state_senate',   group: 'state',   race: 'senate',   label: 'State Senate', badge: 'Senate',   badgeStyle: 'background: linear-gradient(135deg, #7209b7, #5a189a); color: white;' }
+      ];
+      const GROUPS = [
+        { key: 'federal', label: 'Federal' },
+        { key: 'state',   label: 'State' }
+      ];
+
+      // Escape CSV text before inserting it as HTML
+      function esc(text) {
+        return String(text ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      }
 
       // ========================================
-      // CALCULATE SUMMARY STATISTICS (from CSV general election data)
+      // CALCULATE SUMMARY STATISTICS (from races.json)
       // ========================================
-      let csvStates = 0, csvTotal = 0, csvSenate = 0, csvGov = 0, csvCourt = 0, csvHouse = 0;
-      Object.values(csvElectionData).forEach(c => {
-        const n = (c.house || 0) + c.senate + c.gov + c.court;
-        if (n > 0) csvStates++;
-        csvTotal  = 520;
-        csvSenate += c.senate;
-        csvGov    += c.gov;
-        csvCourt  += c.court;
-        csvHouse  =  435; // hardcoded for now
+      const totals = Object.fromEntries(RACE_TYPES.map(t => [t.key, 0]));
+      let statesTracked = 0;
+      Object.values(raceStates).forEach(s => {
+        let stateTotal = 0;
+        RACE_TYPES.forEach(t => {
+          totals[t.key] += s.counts[t.key] || 0;
+          stateTotal    += s.counts[t.key] || 0;
+        });
+        if (stateTotal > 0) statesTracked++;
       });
-      setTimeout(() => animateNumber($('#sum-states'),    csvStates,  1200), 0);
-      setTimeout(() => animateNumber($('#sum-elections'), csvTotal,   1200), 100);
-      setTimeout(() => animateNumber($('#sum-local'),     csvSenate,  1000), 200);
-      setTimeout(() => animateNumber($('#sum-state'),     csvGov,     1000), 300);
-      setTimeout(() => animateNumber($('#sum-federal'),   csvCourt,   1000), 400);
-      setTimeout(() => animateNumber($('#sum-house'),     csvHouse,   1000), 500);
+      const totalElections = Object.values(totals).reduce((a, b) => a + b, 0);
 
-      // Format YYYY-MM-DD → "Mon D, YYYY"; handles the same-day special value
+      setTimeout(() => animateNumber($('#sum-states'),    statesTracked,  1200), 0);
+      setTimeout(() => animateNumber($('#sum-elections'), totalElections, 1200), 100);
+      RACE_TYPES.forEach((t, i) => {
+        const el = $(`#sum-${t.key.replace('_', '-')}`);
+        setTimeout(() => animateNumber(el, totals[t.key], 1000), 200 + i * 100);
+      });
+
+      // Format YYYY-MM-DD → "Mon D, YYYY"
       function fmtDate(d) {
         if (!d) return '—';
         if (d === 'same-day') return 'Same-day registration';
@@ -146,42 +104,111 @@ $(function () {
         return `${months[+m - 1]} ${+day}, ${y}`;
       }
 
-      // Builds the "Key Dates" registration block shared across modal branches
-      function buildDatesSection(stateAbbr, stateData) {
-        const csv = csvElectionData[stateAbbr] || {};
-        const regDeadline = fmtDate(csv.reg) || stateData?.registrationDeadline || '—';
-        const primaryDate  = fmtDate(csv.primaryDate);
-        const generalDate  = fmtDate(csv.generalDate);
-        const hasButtons   = stateData?.registrationWebsite || stateData?.electionInfoUrl;
+      // Registration deadline headline for a state (a date, or a label like "Varies by town")
+      function regDeadlineText(abbr) {
+        const reg = raceStates[abbr]?.registration;
+        if (!reg) return '—';
+        return reg.deadline ? fmtDate(reg.deadline) : (reg.label || '—');
+      }
+
+      // Key Dates: the registration deadline, shown large, plus registration links
+      function buildRegistrationSection(s) {
+        const reg = s.registration || {};
+        const hasButtons = s.registrationWebsite || s.electionInfoUrl;
         return `
           <div class="registration-info">
-            <h4 style="margin: 0 0 0.75rem; font-size: 1rem; color: var(--berkeley-blue);">Key Dates</h4>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.75rem; margin-bottom: ${hasButtons ? '0.75rem' : '0'};">
-              <div>
-                <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Reg. Deadline</span>
-                <p style="margin: 0.2rem 0 0; font-weight: 700; font-size: 0.95rem; color: var(--berkeley-blue);">${regDeadline}</p>
-              </div>
-              ${primaryDate ? `
-              <div>
-                <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Primary</span>
-                <p style="margin: 0.2rem 0 0; font-weight: 700; font-size: 0.95rem; color: var(--berkeley-blue);">${primaryDate}</p>
-              </div>` : ''}
-              ${generalDate ? `
-              <div>
-                <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">General Election</span>
-                <p style="margin: 0.2rem 0 0; font-weight: 700; font-size: 0.95rem; color: var(--berkeley-blue);">${generalDate}</p>
-              </div>` : ''}
-            </div>
+            <h4 class="info-heading">Key Dates</h4>
+            <span class="info-label">Registration Deadline</span>
+            <p class="reg-deadline">${esc(reg.deadline ? fmtDate(reg.deadline) : (reg.label || '—'))}</p>
+            ${reg.note ? `<p class="info-note">${esc(reg.note)}</p>` : ''}
             ${hasButtons ? `<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              ${stateData?.registrationWebsite ? `<a href="${stateData.registrationWebsite}" target="_blank" rel="noopener" class="register-button">Register to Vote →</a>` : ''}
-              ${stateData?.electionInfoUrl ? `<a href="${stateData.electionInfoUrl}" target="_blank" rel="noopener" class="register-button" style="background: white; color: var(--cerulean); border: 2px solid var(--cerulean);">More Election Info</a>` : ''}
+              ${s.registrationWebsite ? `<a href="${s.registrationWebsite}" target="_blank" rel="noopener" class="register-button">Register to Vote →</a>` : ''}
+              ${s.electionInfoUrl ? `<a href="${s.electionInfoUrl}" target="_blank" rel="noopener" class="register-button" style="background: white; color: var(--cerulean); border: 2px solid var(--cerulean);">More Election Info</a>` : ''}
             </div>` : ''}
           </div>
         `;
       }
 
-      // Blue gradient: 4 tiers (every state has ≥1 election — no gray)
-      // 1 = house only | 2 = house + 1 | 3 = house + 2 | 4 = house + all 3
+      // Absentee ballot request/return deadlines (from vote.org)
+      function buildAbsenteeSection(s) {
+        const a = s.absentee;
+        if (!a) return '';
+        return `
+          <div class="registration-info absentee-info">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem;">
+              <h4 class="info-heading" style="margin: 0;">Absentee Ballots</h4>
+              ${a.autoMail ? '<span class="election-badge" style="background: linear-gradient(135deg, #a8dadc, #457b9d); color: white;">Ballots mailed to all voters</span>' : ''}
+            </div>
+            <div class="absentee-grid">
+              <div>
+                <span class="info-label">${a.autoMail ? 'Requesting a ballot' : 'Request by'}</span>
+                <p class="absentee-text">${esc(a.request)}</p>
+              </div>
+              <div>
+                <span class="info-label">Return by</span>
+                <p class="absentee-text">${esc(a.return)}</p>
+              </div>
+            </div>
+            <div class="absentee-links">
+              ${a.tracker ? `<a href="${a.tracker}" target="_blank" rel="noopener">Track your ballot →</a>` : ''}
+              <a href="https://www.vote.org/absentee-ballot-deadlines/" target="_blank" rel="noopener">All absentee deadlines on Vote.org →</a>
+            </div>
+          </div>
+        `;
+      }
+
+      // One card per race type; long lists (e.g. 100+ state house districts) collapse
+      function buildRaceCard(type, races) {
+        const COLLAPSE_AFTER = 6;
+        const items = races.map(r => `
+          <li class="race-item">
+            ${r.title ? `<span class="race-title">${esc(r.title)}</span>` : ''}
+            <span class="race-detail">${esc(r.detail)}</span>
+          </li>`).join('');
+        const list = races.length > COLLAPSE_AFTER
+          ? `<details class="race-details">
+               <summary>Show all ${races.length} races</summary>
+               <ul class="race-list">${items}</ul>
+             </details>`
+          : `<ul class="race-list">${items}</ul>`;
+        return `
+          <div class="election-card">
+            <div style="display: flex; justify-content: space-between; align-items: start; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--berkeley-blue); flex: 1;">
+                ${type.label}${races.length > 1 && type.key !== 'state_governor' ? ` <span class="race-count">${races.length} races</span>` : ''}
+              </h4>
+              <span class="election-badge" style="${type.badgeStyle}">${type.badge}</span>
+            </div>
+            ${list}
+          </div>
+        `;
+      }
+
+      // Federal / State section: header + one card per race type with races
+      function buildRaceGroup(group, s) {
+        const types = RACE_TYPES.filter(t => t.group === group.key && s.races[group.key][t.race].length);
+        const raceCount = types.reduce((n, t) => n + (s.counts[t.key] || 0), 0);
+        const header = `
+          <div class="race-group-header">
+            <p>${group.label} Elections${raceCount ? ` — ${raceCount} race${raceCount !== 1 ? 's' : ''}` : ''}</p>
+          </div>`;
+        if (!types.length) {
+          return header + `<p class="no-elections-message">No ${group.label.toLowerCase()} races on the ballot in 2026.</p>`;
+        }
+        return header + types.map(t => buildRaceCard(t, s.races[group.key][t.race])).join('');
+      }
+
+      /* ========================================
+         STATE COLORS CONFIGURATION
+         ========================================
+         Blue gradient: 4 tiers based on which major races a state has (races.json)
+         1 = U.S. House only | 2 = House + 1 | 3 = House + 2 | 4 = House + U.S. Senate, Governor and Court
+      */
+      function colorTier(abbr) {
+        const c = raceStates[abbr]?.counts || {};
+        const majors = ['federal_senate', 'state_governor', 'state_court'].filter(k => c[k] > 0).length;
+        return Math.min(4, 1 + majors);
+      }
       const gradientColors = {
         1: '#bde0f7', // lightest blue – House only
         2: '#5ba3d4', // light-medium blue – House + 1
@@ -203,12 +230,10 @@ $(function () {
       const stateSpecificLabelBackingHoverStyles = {};
 
       // Build styles for all states (main SVG paths AND northeast label boxes)
-      const allAbbrs = new Set([...Object.keys(electionData), ...Object.keys(csvElectionData)]);
-      allAbbrs.forEach(abbr => {
-        const csv = csvElectionData[abbr] || { house: 0, senate: 0, gov: 0, court: 0 };
-        const count = csv.house + csv.senate + csv.gov + csv.court;
-        const fill = gradientColors[count];
-        const hoverFill = gradientHoverColors[count];
+      Object.keys(raceStates).forEach(abbr => {
+        const tier = colorTier(abbr);
+        const fill = gradientColors[tier];
+        const hoverFill = gradientHoverColors[tier];
 
         // Main map state (SVG path)
         stateSpecificStyles[abbr] = {
@@ -284,21 +309,18 @@ $(function () {
           // Don't show tooltip if modal is open
           if (modal.attr('open') !== undefined) return;
           
-          const s = electionData[data.name];
-          let html = `<strong>${s ? s.stateName : data.name}</strong><br/>`;
-          
-          const csv = csvElectionData[data.name] || { house: 0, senate: 0, gov: 0, court: 0 };
-          const generalTypes = [];
-          if (csv.house)  generalTypes.push('House');
-          if (csv.senate) generalTypes.push('Senate');
-          if (csv.gov)    generalTypes.push('Gubernatorial');
-          if (csv.court)  generalTypes.push('Court');
+          const s = raceStates[data.name];
+          let html = `<strong>${stateName(data.name)}</strong><br/>`;
 
-          if (generalTypes.length > 0) {
-            html += `<strong>${generalTypes.length} General Election${generalTypes.length !== 1 ? 's' : ''}</strong><br/>`;
-            html += generalTypes.join(' · ');
+          if (s) {
+            const total = RACE_TYPES.reduce((n, t) => n + (s.counts[t.key] || 0), 0);
+            html += `<strong>${total} Election${total !== 1 ? 's' : ''}</strong>`;
+            GROUPS.forEach(g => {
+              const types = RACE_TYPES.filter(t => t.group === g.key && s.counts[t.key] > 0);
+              if (types.length) html += `<br/>${g.label}: ${types.map(t => t.badge).join(' · ')}`;
+            });
           } else {
-            html += 'No general elections';
+            html += 'No tracked elections';
           }
           
           // Position and show tooltip
@@ -323,8 +345,7 @@ $(function () {
            Opens modal with full details when clicking a state
         */
         click: function (event, data) {
-          const s = electionData[data.name];
-          openModal(s ? s.stateName : data.name, s, data.name);
+          openModal(data.name);
         }
       });
 
@@ -336,220 +357,27 @@ $(function () {
       const modal = $('#info-modal');
       const closeBtn = $('.close-btn');
       
-      // Builds general election cards from CSV data for a state abbreviation
-      function buildGeneralElectionCards(abbr) {
-        const csv = csvElectionData[abbr] || { house: 0, senate: 0, gov: 0, court: 0 };
-        const displayDate = fmtDate(csv.generalDate) || 'November 3, 2026';
-        const generalElections = [];
-        if (csv.house)  generalElections.push({ title: 'U.S. House of Representatives', badge: 'House', badgeStyle: 'background: linear-gradient(135deg, #e63946, #c91c28); color: white;' });
-        if (csv.senate) generalElections.push({ title: 'U.S. Senate', badge: 'Senate', badgeStyle: 'background: linear-gradient(135deg, #2b7fc1, #03254c); color: white;' });
-        if (csv.gov)    generalElections.push({ title: 'Governor', badge: 'Gubernatorial', badgeStyle: 'background: linear-gradient(135deg, #457b9d, #1d3557); color: white;' });
-        if (csv.court)  generalElections.push({ title: 'State Supreme Court', badge: 'Court', badgeStyle: 'background: linear-gradient(135deg, #6c757d, #495057); color: white;' });
-        if (generalElections.length === 0) return '';
-
-        const cards = generalElections.map(e => `
-          <div class="election-card">
-            <div style="display: flex; justify-content: space-between; align-items: start; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--berkeley-blue); flex: 1;">${e.title}</h4>
-              <span class="election-badge" style="${e.badgeStyle}">${e.badge}</span>
-            </div>
-            <div style="display: grid; gap: 0.5rem; margin-top: 0.75rem;">
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span style="font-size: 1rem;">📅</span>
-                <div>
-                  <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Date</span>
-                  <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${displayDate}</p>
-                </div>
-              </div>
-              <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <div>
-                  <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Type</span>
-                  <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">General Election</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        `).join('');
-
-        return `
-          <div style="padding: 0.75rem 0 0.5rem; border-top: 0;">
-            <p style="margin: 0; font-size: 0.875rem; font-weight: 700; color: var(--cerulean); text-transform: uppercase; letter-spacing: 0.05em;">
-              ${generalElections.length} General Election${generalElections.length !== 1 ? 's' : ''} — ${displayDate}
-            </p>
-          </div>
-          ${cards}
-        `;
-      }
-
-      // Opens the modal and populates it with state data
-      function openModal(stateName, stateData, stateAbbr) {
+      // Opens the modal and populates it with a state's races and voting info
+      function openModal(abbr) {
         // Hide tooltip when modal opens
         tooltip.hide();
-        
-        $('#modal-state-name').text(stateName);
+
+        const s = raceStates[abbr];
+        $('#modal-state-name').text(stateName(abbr));
         const list = $('#modal-elections-list');
         list.empty();
-        
-        // Check if elections are over for this state
-        if (stateData && stateData.electionsOver) {
-          list.append(`
-            <div style="background: linear-gradient(135deg, rgba(74, 74, 74, 0.1), rgba(74, 74, 74, 0.05)); 
-                        padding: 1.5rem; border-radius: var(--radius-md); 
-                        border: 2px solid rgba(74, 74, 74, 0.3);
-                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                        text-align: center;">
-              <div style="font-size: 3rem; margin-bottom: 0.5rem;">✓</div>
-              <h3 style="margin: 0 0 0.5rem; color: #4a4a4a; font-size: 1.5rem; font-weight: 800;">
-                Elections Are Over
-              </h3>
-              <p style="margin: 0; color: var(--fg); font-size: 1rem; line-height: 1.6;">
-                The elections in ${stateName} have concluded.
-              </p>
-            </div>
-          `);
-          
-          list.append(buildDatesSection(stateAbbr, stateData));
 
-          // Still show the elections that were held
-          if (stateData.elections && stateData.elections.length) {
-            list.append(`
-              <div style="padding: 0.75rem 0 0.5rem; border-top: 2px dashed rgba(74, 74, 74, 0.3); margin-top: 1rem;">
-                <p style="margin: 0; font-size: 0.875rem; font-weight: 700; color: var(--cerulean); text-transform: uppercase; letter-spacing: 0.05em;">
-                  ${stateData.elections.length} Completed Election${stateData.elections.length !== 1 ? 's' : ''}
-                </p>
-              </div>
-            `);
-            
-            // Loop through each election
-            stateData.elections.forEach((e, index) => {
-              const badgeColors = {
-                'Local': 'background: linear-gradient(135deg, #a8dadc, #457b9d); color: white;',
-                'State': 'background: linear-gradient(135deg, #457b9d, #1d3557); color: white;',
-                'House': 'background: linear-gradient(135deg, #e63946, #c91c28); color: white;',
-                'Senate': 'background: linear-gradient(135deg, #7209b7, #5a189a); color: white;'
-              };
-              const badgeStyle = badgeColors[e.chamberImpact] || 'background: linear-gradient(135deg, #6c757d, #495057); color: white;';
-              
-              list.append(`
-                <div class="election-card" style="opacity: 0.8;">
-                  <div style="display: flex; justify-content: space-between; align-items: start; gap: 0.75rem; margin-bottom: 0.5rem;">
-                    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--berkeley-blue); flex: 1;">
-                      ${e.title}
-                    </h4>
-                    <span class="election-badge" style="${badgeStyle}">
-                      ${e.chamberImpact}
-                    </span>
-                  </div>
-                  
-                  <div style="display: grid; gap: 0.5rem; margin-top: 0.75rem;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <span style="font-size: 1rem;">📅</span>
-                      <div>
-                        <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Date</span>
-                        <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${e.date}</p>
-                      </div>
-                    </div>
-                    
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <div>
-                        <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Type</span>
-                        <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${e.type}</p>
-                      </div>
-                    </div>
-                    
-                    ${e.stakes ? `
-                      <div style="display: flex; align-items: start; gap: 0.5rem; margin-top: 0.25rem;">
-                        <p style="margin: 0; font-size: 0.875rem; color: var(--fg); line-height: 1.5;">
-                          ${e.stakes}
-                        </p>
-                      </div>
-                    ` : ''}
-                  </div>
-                </div>
-              `);
-            });
-          }
-        } else if (stateData && stateData.elections && stateData.elections.length) {
-          // State has elections - show key dates first
-          list.append(buildDatesSection(stateAbbr, stateData));
-          
-          // General elections from CSV
-          const generalHtml = buildGeneralElectionCards(stateAbbr);
-          if (generalHtml) list.append(generalHtml);
-
-          // Header showing primary count
-          if (stateData.elections.length > 0) list.append(`
-            <div style="padding: 0.75rem 0 0.5rem; border-top: ${generalHtml ? '2px dashed rgba(0,0,0,0.1)' : '0'}; margin-top: ${generalHtml ? '0.5rem' : '0'};">
-              <p style="margin: 0; font-size: 0.875rem; font-weight: 700; color: var(--cerulean); text-transform: uppercase; letter-spacing: 0.05em;">
-                ${stateData.elections.length} Primary Election${stateData.elections.length !== 1 ? 's' : ''}
-              </p>
-            </div>
-          `);
-          
-          // Loop through each election and display it with enhanced design
-          stateData.elections.forEach((e, index) => {
-            // Determine badge color based on type
-            const badgeColors = {
-              'Local': 'background: linear-gradient(135deg, #a8dadc, #457b9d); color: white;',
-              'State': 'background: linear-gradient(135deg, #457b9d, #1d3557); color: white;',
-              'House': 'background: linear-gradient(135deg, #e63946, #c91c28); color: white;',
-              'Senate': 'background: linear-gradient(135deg, #7209b7, #5a189a); color: white;'
-            };
-            const badgeStyle = badgeColors[e.chamberImpact] || 'background: linear-gradient(135deg, #6c757d, #495057); color: white;';
-            
-            list.append(`
-              <div class="election-card">
-                <div style="display: flex; justify-content: space-between; align-items: start; gap: 0.75rem; margin-bottom: 0.5rem;">
-                  <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--berkeley-blue); flex: 1;">
-                    ${e.title}
-                  </h4>
-                  <span class="election-badge" style="${badgeStyle}">
-                    ${e.chamberImpact}
-                  </span>
-                </div>
-                
-                <div style="display: grid; gap: 0.5rem; margin-top: 0.75rem;">
-                  <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="font-size: 1rem;">📅</span>
-                    <div>
-                      <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Date</span>
-                      <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${e.date}</p>
-                    </div>
-                  </div>
-                  
-                  <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <div>
-                      <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.05em;">Type</span>
-                      <p style="margin: 0; font-weight: 600; color: var(--berkeley-blue); font-size: 0.9rem;">${e.type}</p>
-                    </div>
-                  </div>
-                  
-                  ${e.stakes ? `
-                    <div style="display: flex; align-items: start; gap: 0.5rem; margin-top: 0.25rem;">
-                      <p style="margin: 0; font-size: 0.875rem; color: var(--fg); line-height: 1.5;">
-                        ${e.stakes}
-                      </p>
-                    </div>
-                  ` : ''}
-                </div>
-              </div>
-            `);
-          });
-        } else if (stateData) {
-          list.append(buildDatesSection(stateAbbr, stateData));
-          const generalHtml = buildGeneralElectionCards(stateAbbr);
-          if (generalHtml) {
-            list.append(generalHtml);
-          } else {
-            list.append('<p class="no-elections-message">No tracked general elections in this state at this time.</p>');
-          }
-        } else {
-          // No state data at all
+        if (!s) {
           list.append('<p class="no-elections-message">No information available for this state.</p>');
+        } else {
+          list.append(buildRegistrationSection(s));
+          list.append(buildAbsenteeSection(s));
+          GROUPS.forEach(g => list.append(buildRaceGroup(g, s)));
         }
-        
+
         // Open modal with proper attribute for CSS styling and centering
         modal.attr('open', '');
+        list.closest('.modal-body').scrollTop(0);
       }
       
       // Closes the modal
@@ -563,104 +391,6 @@ $(function () {
       // Click outside modal to close
       $(window).on('click', function (e) { 
         if ($(e.target).is(modal)) closeModal(); 
-      });
-
-      /* ========================================
-         CLICKABLE SUMMARY STATISTICS
-         ========================================
-         Show filtered list of states when clicking on stat cards
-      */
-      
-      // Function to show states filtered by general election type (from CSV data)
-      function showFilteredStates(filterType) {
-        const filterLabels = {
-          'Senate':   'Senate Elections',
-          'Governor': 'Gubernatorial Elections',
-          'Court':    'Court Elections',
-          'House':    'House Elections'
-        };
-
-        $('#modal-state-name').text(filterLabels[filterType] || filterType);
-        const list = $('#modal-elections-list');
-        list.empty();
-
-        // Build list of matching states from CSV data
-        const matchingStates = [];
-        for (const [abbr, csv] of Object.entries(csvElectionData)) {
-          const hasType = filterType === 'Senate'   ? csv.senate :
-                          filterType === 'Governor' ? csv.gov    :
-                          filterType === 'Court'    ? csv.court  :
-                          filterType === 'House'    ? csv.house  : 0;
-          if (!hasType) continue;
-
-          const stateInfo = electionData[abbr];
-          matchingStates.push({
-            code: abbr,
-            name: stateInfo ? stateInfo.stateName : abbr,
-            regDeadline: fmtDate(csv.reg),
-            primaryDate: fmtDate(csv.primaryDate),
-            generalDate: fmtDate(csv.generalDate),
-            registrationWebsite: stateInfo?.registrationWebsite,
-            electionInfoUrl:     stateInfo?.electionInfoUrl
-          });
-        }
-
-        matchingStates.sort((a, b) => a.name.localeCompare(b.name));
-
-        if (matchingStates.length === 0) {
-          list.append('<p class="no-elections-message">No states currently have this type of election.</p>');
-        } else {
-          list.append(`
-            <div class="election-item" style="border-top: 0; padding-top: 0;">
-              <p style="color: var(--cerulean); font-weight: 700; margin: 0;">
-                ${matchingStates.length} state${matchingStates.length !== 1 ? 's' : ''} with ${filterLabels[filterType]}
-              </p>
-            </div>
-          `);
-
-          matchingStates.forEach(state => {
-            list.append(`
-              <div class="election-item">
-                <h4 style="margin: 0 0 0.4rem;">${state.name} <span style="font-weight: 400; color: var(--cerulean);">(${state.code})</span></h4>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 0.5rem;">
-                  <div>
-                    <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.04em;">Reg. Deadline</span>
-                    <p style="margin: 0.15rem 0 0; font-size: 0.85rem; font-weight: 600; color: var(--berkeley-blue);">${state.regDeadline}</p>
-                  </div>
-                  <div>
-                    <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.04em;">Primary</span>
-                    <p style="margin: 0.15rem 0 0; font-size: 0.85rem; font-weight: 600; color: var(--berkeley-blue);">${state.primaryDate}</p>
-                  </div>
-                  <div>
-                    <span style="font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: var(--cerulean); letter-spacing: 0.04em;">General</span>
-                    <p style="margin: 0.15rem 0 0; font-size: 0.85rem; font-weight: 600; color: var(--berkeley-blue);">${state.generalDate}</p>
-                  </div>
-                </div>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-                  ${state.registrationWebsite ? `<a href="${state.registrationWebsite}" target="_blank" rel="noopener" class="register-button" style="padding: 0.35rem 0.7rem; font-size: 0.8rem;">Register →</a>` : ''}
-                  ${state.electionInfoUrl ? `<a href="${state.electionInfoUrl}" target="_blank" rel="noopener" class="register-button" style="padding: 0.35rem 0.7rem; font-size: 0.8rem; background: white; color: var(--cerulean); border: 2px solid var(--cerulean);">Election Info</a>` : ''}
-                </div>
-              </div>
-            `);
-          });
-        }
-
-        modal.attr('open', '');
-      }
-      
-      // Attach click handlers to clickable summary items
-      $('.clickable-stat').on('click', function() {
-        const filterType = $(this).data('filter');
-        showFilteredStates(filterType);
-      });
-      
-      // Keyboard accessibility for summary items
-      $('.clickable-stat').on('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          const filterType = $(this).data('filter');
-          showFilteredStates(filterType);
-        }
       });
     })
     .catch(() => console.error('Failed to load election data.'));

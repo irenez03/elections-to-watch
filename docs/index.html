@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="apple-touch-icon" href="EVC.jpeg">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=7">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
@@ -20,6 +20,7 @@
   <header>
     <h1>Elections to Watch 2026</h1>
     <p>Hover a state for a summary. Click for details.</p>
+    <p class="election-date">General Election <span aria-hidden="true">·</span> <strong>November 3, 2026</strong></p>
   </header>
 
   <main>
@@ -34,21 +35,39 @@
             <div class="summary-number" id="sum-elections">0</div>
             <div class="summary-label">Total Elections</div>
           </div>
-          <div class="summary-item clickable-stat" data-filter="Senate" role="button" tabindex="0" aria-label="View states with Senate elections">
-            <div class="summary-number" id="sum-local">0</div>
-            <div class="summary-sub">Senate</div>
+          <div class="summary-group">
+            <div class="summary-group-label">Federal</div>
+            <div class="summary-group-items">
+              <div class="summary-item">
+                <div class="summary-number" id="sum-federal-senate">0</div>
+                <div class="summary-sub">Senate</div>
+              </div>
+              <div class="summary-item">
+                <div class="summary-number" id="sum-federal-house">0</div>
+                <div class="summary-sub">House</div>
+              </div>
+            </div>
           </div>
-          <div class="summary-item clickable-stat" data-filter="House" role="button" tabindex="0" aria-label="View states with House elections">
-            <div class="summary-number" id="sum-house">0</div>
-            <div class="summary-sub">House</div>
-          </div>
-          <div class="summary-item clickable-stat" data-filter="Governor" role="button" tabindex="0" aria-label="View states with gubernatorial elections">
-            <div class="summary-number" id="sum-state">0</div>
-            <div class="summary-sub">Governor</div>
-          </div>
-          <div class="summary-item clickable-stat" data-filter="Court" role="button" tabindex="0" aria-label="View states with court elections">
-            <div class="summary-number" id="sum-federal">0</div>
-            <div class="summary-sub">Court</div>
+          <div class="summary-group">
+            <div class="summary-group-label">State</div>
+            <div class="summary-group-items">
+              <div class="summary-item">
+                <div class="summary-number" id="sum-state-governor">0</div>
+                <div class="summary-sub">Governor</div>
+              </div>
+              <div class="summary-item">
+                <div class="summary-number" id="sum-state-court">0</div>
+                <div class="summary-sub">Court</div>
+              </div>
+              <div class="summary-item">
+                <div class="summary-number" id="sum-state-house">0</div>
+                <div class="summary-sub">House</div>
+              </div>
+              <div class="summary-item">
+                <div class="summary-number" id="sum-state-senate">0</div>
+                <div class="summary-sub">Senate</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -73,18 +92,18 @@
   <section class="hero-end">
     <div class="hero-content">
       <h2>Every Vote Counts</h2>
-      <p>Stay informed about 2026 elections. Building on the hard-won voting rights victories of the past, Every Vote Counts seeks to strengthen our democracy for future generations by making sure that every American who is eligible to vote can easily do so—and that every vote counts.</p>
       <a href="https://www.evcnational.org" target="_blank" rel="noopener" class="hero-cta">Learn More</a>
     </div>
   </section>
   <footer>
     <div class="footer-content">
       <p class="feedback-line">See something wrong? <a href="https://www.evcnational.org/contact" target="_blank" rel="noopener">Tell us!</a></p>
-      <p class="last-updated">Last updated: March 5, 2026</p>
+      <p class="last-updated">Last updated: October 13, 2026</p>
     </div>
+    <p class="credit-line">This election tracker map was made by Yale University students Esha Bolar and Irene Zheng.</p>
     <small>&copy; 2026 Elections to Watch 2026</small>
   </footer>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>
