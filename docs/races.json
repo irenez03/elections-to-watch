@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T20:15:33",
+ "generated": "2026-11-02T14:31:45",
  "generalElection": "2026-11-03",
  "states": {
   "AL": {
@@ -46,8 +46,8 @@
     "state": {
      "governor": [
       {
-       "title": "U.S. Senate",
-       "detail": "Everett Wess (Democratic) vs. Barry Moore (Republican) · Write-In Independent: Craig Jelks"
+       "title": "Governor",
+       "detail": "Tommy Tuberville (R) · Doug Jones (D)"
       }
      ],
      "court": [
@@ -4014,112 +4014,116 @@
      ],
      "house": [
       {
-       "title": "Florida U.S. House District 1",
-       "detail": "Democrat: Gay Valimont · Republican: Jimmy Patronis (incumbent) · No Party Affiliation: Tyler Davis"
+       "title": "U.S. House District 1",
+       "detail": "Jimmy Patronis Jr. (R, Inc.) · Gay Valimont (D) · Tyler Leeana Davis (NPA)"
       },
       {
-       "title": "Florida U.S. House District 2",
-       "detail": "Democrat: Amanda Green · Republican: Austin Rogers"
+       "title": "U.S. House District 2",
+       "detail": "Austin Rogers (R) · Amanda Marie Green (D)"
       },
       {
-       "title": "Florida U.S. House District 3",
-       "detail": "Democrat: Seth Harp · Republican: Kat Cammack (incumbent) · No Party Affiliation: Mike Klein"
+       "title": "U.S. House District 3",
+       "detail": "Kat Cammack (R, Inc.) · Seth Allan Harp (D) · Mike Klein (NPA)"
       },
       {
-       "title": "Florida U.S. House District 4",
-       "detail": "Democrat: LaShonda Holloway · Republican: Aaron Bean (incumbent) · Florida Forward Party: Mike Sell · No Party Affiliation: Todd Schaefer"
+       "title": "U.S. House District 4",
+       "detail": "Aaron Bean (R, Inc.) · LaShonda \"L.J.\" Holloway (D) · Mike Sell (Forward) · Todd Schaefer (NPA)"
       },
       {
-       "title": "Florida U.S. House District 5",
-       "detail": "Democrat: Rachel Grage · Republican: John Rutherford (incumbent) · Write-in: William Upham"
+       "title": "U.S. House District 5",
+       "detail": "John Rutherford (R, Inc.) · Rachel Grage (D) · Write-in: William Lintag Upham"
       },
       {
-       "title": "Florida U.S. House District 6",
-       "detail": "Democrat: Eric Yonce · Republican: Randy Fine (incumbent) · Libertarian: Andrew Parrott · Write-in: Alec Pavlik"
+       "title": "U.S. House District 6",
+       "detail": "Randy Fine (R, Inc.) · Eric Yonce (D) · Andrew Parrott (L) · Write-in: Alec Pavlik"
       },
       {
-       "title": "Florida U.S. House District 7",
-       "detail": "Democrat: Bale Dalton · Republican: Ryan Elijah · Libertarian: Christopher Dennison"
+       "title": "U.S. House District 7",
+       "detail": "Ryan Elijah (R) · Bale Dalton (D) · Christopher Allen Dennison (L)"
       },
       {
-       "title": "Florida U.S. House District 8",
-       "detail": "Democrat: Jennifer Jenkins · Republican: Mike Haridopolos (incumbent)"
+       "title": "U.S. House District 8",
+       "detail": "Mike Haridopolos (R, Inc.) · Jennifer Jenkins (D)"
       },
       {
-       "title": "Florida U.S. House District 9",
-       "detail": "Democrat: Darren Soto (incumbent) · Republican: Dan Green"
+       "title": "U.S. House District 9",
+       "detail": "Darren Soto (D, Inc.) · Dan Green (R)"
       },
       {
-       "title": "Florida U.S. House District 11",
-       "detail": "Democrat: James Pericola · Republican: Joe Strada · Libertarian: Ralph Groves"
+       "title": "U.S. House District 10",
+       "detail": "Maxwell Alejandro Frost (D, Inc.)"
       },
       {
-       "title": "Florida U.S. House District 12",
-       "detail": "Democrat: Kimberly Overman · Republican: Gus M. Bilirakis (incumbent) · No Party Affiliation: Branden Scrivener"
+       "title": "U.S. House District 11",
+       "detail": "Joe Strada (R) · James Pericola (D) · Ralph Groves (L)"
       },
       {
-       "title": "Florida U.S. House District 13",
-       "detail": "Democrat: Leela Gray · Republican: Anna Paulina Luna (incumbent) · No Party Affiliation: Tony D'Arrigo"
+       "title": "U.S. House District 12",
+       "detail": "Gus Bilirakis (R, Inc.) · Kimberly Overman (D) · Branden Scrivener (NPA)"
       },
       {
-       "title": "Florida U.S. House District 14",
-       "detail": "Democrat: Kathy Castor (incumbent) · Republican: Mike Beltran · Libertarian: Brian Lambert · Write-in: Salomon Hernandez · Write-in: Keith Varian"
+       "title": "U.S. House District 13",
+       "detail": "Anna Paulina Luna (R, Inc.) · Leela J. Gray (D) · Tony C. D'Arrigo (NPA)"
       },
       {
-       "title": "Florida U.S. House District 15",
-       "detail": "Democrat: Robert People · Republican: Laurel Lee (incumbent) · Write-in: Angie Boone"
+       "title": "U.S. House District 14",
+       "detail": "Kathy Castor (D, Inc.) · Mike Beltran (R) · Brian Keith Lambert (L) · Write-in: Salomon Hernandez Sr. · Write-in: Keith Varian"
       },
       {
-       "title": "Florida U.S. House District 16",
-       "detail": "Democrat: Kelly Kirschner · Republican: Sydney Gruters · No Party Affiliation: Mark Davis"
+       "title": "U.S. House District 15",
+       "detail": "Laurel Lee (R, Inc.) · Robert People (D) · Write-in: Angie Boone"
       },
       {
-       "title": "Florida U.S. House District 17",
-       "detail": "Democrat: Matthew Montavon · Republican: Greg Steube (incumbent) · No Party Affiliation: Michael Quirk"
+       "title": "U.S. House District 16",
+       "detail": "Sydney Gruters (R) · Kelly Kirschner (D) · Mark Davis (NPA)"
       },
       {
-       "title": "Florida U.S. House District 18",
-       "detail": "Democrat: Curtis Gibson · Republican: Scott Franklin (incumbent) · No Party Affiliation: Deva Simmons"
+       "title": "U.S. House District 17",
+       "detail": "Greg Steube (R, Inc.) · Matthew \"Matt\" Montavon (D) · Michael J. Quirk (NPA)"
       },
       {
-       "title": "Florida U.S. House District 19",
-       "detail": "Democrat: Victor Arias · Republican: Jim Schwartzel · No Party Affiliation: Seth Haskin · Write-in: Alexandra Zakhvatayev"
+       "title": "U.S. House District 18",
+       "detail": "Scott Franklin (R, Inc.) · Curtis Gibson (D) · Deva Simmons (NPA)"
       },
       {
-       "title": "Florida U.S. House District 20",
-       "detail": "Democrat: Debbie Wasserman Schultz (incumbent) · Republican: Brent Andersen · Independent Party of Florida: Kedner Maxime"
+       "title": "U.S. House District 19",
+       "detail": "Jim Schwartzel (R) · Victor M. Arias (D) · Seth Haskin (NPA) · Write-in: Alexandra \"Alex\" Zakhvatayev"
       },
       {
-       "title": "Florida U.S. House District 21",
-       "detail": "Democrat: James Martin · Republican: Brian Mast (incumbent) · No Party Affiliation: Alexander Cooke · Write-in: David Fabrikant"
+       "title": "U.S. House District 20",
+       "detail": "Debbie Wasserman Schultz (D) · Brent Andersen (R) · Kedner Maxime (Independent Party of Florida)"
       },
       {
-       "title": "Florida U.S. House District 22",
-       "detail": "Democrat: Pia Dandiya · Republican: Casey Askar"
+       "title": "U.S. House District 21",
+       "detail": "Brian Mast (R, Inc.) · James T. Martin (D) · Alexander R. Cooke (NPA) · Write-in: David S. Fabrikant"
       },
       {
-       "title": "Florida U.S. House District 23",
-       "detail": "Democrat: Lois Frankel (incumbent) · Republican: Deborah Adeimy"
+       "title": "U.S. House District 22",
+       "detail": "Casey Askar (R) · Pia Dandiya (D)"
       },
       {
-       "title": "Florida U.S. House District 24",
-       "detail": "Democrat: Oliver Gilbert · Republican: Tedora Brown · Write-in: Patricia Gonzalez"
+       "title": "U.S. House District 23",
+       "detail": "Lois Frankel (D) · Deborah Adeimy (R)"
       },
       {
-       "title": "Florida U.S. House District 25",
-       "detail": "Democrat: Jared Evan Moskowitz (incumbent) · Republican: Scott Singer · Libertarian: Peter Jassenoff · Write-in: Michaelangelo Hamilton"
+       "title": "U.S. House District 24",
+       "detail": "Oliver G. Gilbert III (D) · Te Mayonna Brown (R) · Write-in: Patricia Gonzalez"
       },
       {
-       "title": "Florida U.S. House District 26",
-       "detail": "Democrat: Nicole Locklin · Republican: Mario Diaz-Balart (incumbent) · No Party Affiliation: Deborah Meidinger Hosey"
+       "title": "U.S. House District 25",
+       "detail": "Jared Moskowitz (D) · Scott M. Singer (R) · Peter Jassenoff (L) · Write-in: Michaelangelo Collins Hamilton"
       },
       {
-       "title": "Florida U.S. House District 27",
-       "detail": "Democrat: Eliott Rodriguez · Republican: Maria Elvira Salazar (incumbent)"
+       "title": "U.S. House District 26",
+       "detail": "Mario Diaz-Balart (R, Inc.) · Nicole Locklin (D) · Deborah Ann Meidinger Hosey (NPA)"
       },
       {
-       "title": "Florida U.S. House District 28",
-       "detail": "Democrat: Phil Ehr · Republican: Carlos Gimenez (incumbent) · No Party Affiliation: Eddy Rojas"
+       "title": "U.S. House District 27",
+       "detail": "María Elvira Salazar (R, Inc.) · Eliott Rodriguez (D)"
+      },
+      {
+       "title": "U.S. House District 28",
+       "detail": "Carlos A. Giménez (R, Inc.) · Phil \"Felipe\" Ehr (D) · Eddy Rojas (NPA)"
       }
      ]
     },
@@ -4672,7 +4676,7 @@
    },
    "counts": {
     "federal_senate": 1,
-    "federal_house": 27,
+    "federal_house": 28,
     "state_governor": 1,
     "state_court": 22,
     "state_house": 92,
@@ -10232,28 +10236,40 @@
      ],
      "house": [
       {
-       "title": "Massachusetts U.S. House District 1",
-       "detail": "Democrat: Richard E. Neal (incumbent) · Independent/Unenrolled: Nadia Donya Milleron"
+       "title": "U.S. House District 1",
+       "detail": "Richard E. Neal (D, Inc.) · Nadia Donya Milleron (I)"
       },
       {
-       "title": "Massachusetts U.S. House District 3",
-       "detail": "Democrat: Lori Loureiro Trahan (incumbent) · Republican: Gary J. Grossi · Independent/Unenrolled: Dennis R. Conlon"
+       "title": "U.S. House District 2",
+       "detail": "James P. McGovern (D, Inc.)"
       },
       {
-       "title": "Massachusetts U.S. House District 4",
-       "detail": "Democrat: Jake Auchincloss (incumbent) · Republican: Thomas Stalcup"
+       "title": "U.S. House District 3",
+       "detail": "Lori Loureiro Trahan (D, Inc.) · Gary J. Grossi (R) · Dennis R. Conlon (Unenrolled)"
       },
       {
-       "title": "Massachusetts U.S. House District 6",
-       "detail": "Democrat: Dan Koh · Republican: Micah Quinney Jones"
+       "title": "U.S. House District 4",
+       "detail": "Jake Auchincloss (D, Inc.) · Thomas Stalcup (R)"
       },
       {
-       "title": "Massachusetts U.S. House District 8",
-       "detail": "Democrat: Stephen F. Lynch (incumbent) · Republican: Robert G. Burke · Independent: Rasheed Nicholas Walters"
+       "title": "U.S. House District 5",
+       "detail": "Katherine M. Clark (D, Inc.)"
       },
       {
-       "title": "Massachusetts U.S. House District 9",
-       "detail": "Democrat: Bill Keating (incumbent) · Republican: R. Tyler Macallister"
+       "title": "U.S. House District 6",
+       "detail": "Dan Koh (D) · Micah Quinney Jones (R)"
+      },
+      {
+       "title": "U.S. House District 7",
+       "detail": "Ayanna S. Pressley (D, Inc.)"
+      },
+      {
+       "title": "U.S. House District 8",
+       "detail": "Stephen F. Lynch (D, Inc.) · Robert G. Burke (R) · Rasheed Nicholas Walters (I)"
+      },
+      {
+       "title": "U.S. House District 9",
+       "detail": "Bill Keating (D, Inc.) · R. Tyler Macallister (R)"
       }
      ]
     },
@@ -10501,7 +10517,7 @@
    },
    "counts": {
     "federal_senate": 1,
-    "federal_house": 6,
+    "federal_house": 9,
     "state_governor": 1,
     "state_court": 0,
     "state_house": 47,
@@ -14781,88 +14797,16 @@
      ],
      "house": [
       {
-       "title": "District 1",
-       "detail": "Rodney D. Montoya (R) — unopposed"
+       "title": "New Mexico Congressional District 1",
+       "detail": "Democrat: Melanie Ann Stansbury (incumbent) · Republican: Ndidiamaka \"Didi\" Ekwua Charlene Okpareke"
       },
       {
-       "title": "District 2",
-       "detail": "P. Mark Duncan (R) — unopposed"
+       "title": "New Mexico Congressional District 2",
+       "detail": "Democrat: Gabriel \"Gabe\" Vasquez (incumbent) · Republican: Gregory G. Cunningham"
       },
       {
-       "title": "District 3",
-       "detail": "William A. Hall II (R) — unopposed"
-      },
-      {
-       "title": "District 4",
-       "detail": "Joseph Franklin Hernandez (D) v. Heather Scott Ellison (R)"
-      },
-      {
-       "title": "District 5",
-       "detail": "Doreen Wonda Johnson (D) — unopposed"
-      },
-      {
-       "title": "District 6",
-       "detail": "Martha Garcia (D) v. Paul L. Spencer (R)"
-      },
-      {
-       "title": "District 7",
-       "detail": "Rickie Allen Gonazales II (D) v. Tanya R. Mirabal Moya (R)"
-      },
-      {
-       "title": "District 8",
-       "detail": "Katherine Joanna Gauer (D) v. Brian G. Baca (R)"
-      },
-      {
-       "title": "District 9",
-       "detail": "Patricia A. Lundstrom (D) — unopposed"
-      },
-      {
-       "title": "District 10",
-       "detail": "G. Andres Romero (D) v. Christopher P. Crane (R)"
-      },
-      {
-       "title": "District 11",
-       "detail": "(Javier I. Martinez (D) — unopposed"
-      },
-      {
-       "title": "District 12",
-       "detail": "Art De La Cruz (D) v. Steve E. Tafoya (R)"
-      },
-      {
-       "title": "District 13",
-       "detail": "Patricia A. Roybal - Caballero (D) — unopposed"
-      },
-      {
-       "title": "District 14",
-       "detail": "Miguel P. Garcia (D) v. Richard Victor Zubia (R)"
-      },
-      {
-       "title": "District 15",
-       "detail": "Dayan M. Hochman-Vigil (D) — unopposed"
-      },
-      {
-       "title": "District 16",
-       "detail": "Yanira Gurrola Valenzuela (D) — unopposed"
-      },
-      {
-       "title": "District 17",
-       "detail": "Cynthia D. Borrego (D) — unopposed"
-      },
-      {
-       "title": "District 18",
-       "detail": "Mariana A. Ananya (D) — unopposed"
-      },
-      {
-       "title": "District 19",
-       "detail": "Janelle I. Anyanonu (D) — unopposed"
-      },
-      {
-       "title": "District 20",
-       "detail": "Meredith A. Dixon (D) — unopposed"
-      },
-      {
-       "title": "District 21",
-       "detail": "Debra Marie Sarinana (D) v. Robert L. Mason (R)"
+       "title": "New Mexico Congressional District 3",
+       "detail": "Democrat: Teresa Leger Fernández (incumbent) · Republican: Martin Ruben Zamora"
       }
      ]
     },
@@ -15175,7 +15119,7 @@
    },
    "counts": {
     "federal_senate": 1,
-    "federal_house": 21,
+    "federal_house": 3,
     "state_governor": 1,
     "state_court": 2,
     "state_house": 70,
@@ -16203,484 +16147,60 @@
      ],
      "house": [
       {
-       "title": "North Carolina House District 1",
-       "detail": "Democrat: Miriam Rollin · Republican: Edward C. Goodwin"
+       "title": "North Carolina Congressional District 1",
+       "detail": "Democrat: Don Davis · Republican: Laurie Buckhout · Libertarian: Tom Bailey"
       },
       {
-       "title": "North Carolina House District 2",
-       "detail": "Democrat: Ray Jeffers · Republican: No Republican nominee listed"
+       "title": "North Carolina Congressional District 2",
+       "detail": "Democrat: Deborah K. Ross · Republican: Eugene F. Douglass · Libertarian: Matthew Laszacs"
       },
       {
-       "title": "North Carolina House District 3",
-       "detail": "Democrat: Diannia Bright · Republican: Steve Tyson"
+       "title": "North Carolina Congressional District 3",
+       "detail": "Democrat: Raymond Smith · Republican: Greg Murphy · Libertarian: Daniel Cavender"
       },
       {
-       "title": "North Carolina House District 4",
-       "detail": "Democrat: Vernon Moore · Republican: Jimmy Dixon"
+       "title": "North Carolina Congressional District 4",
+       "detail": "Democrat: Valerie P. Foushee · Republican: Mahesh (Max) Ganorkar · Libertarian: Guy Meilleur"
       },
       {
-       "title": "North Carolina House District 5",
-       "detail": "Democrat: Sam Davis III · Republican: Bill Ward"
+       "title": "North Carolina Congressional District 5",
+       "detail": "Democrat: Chuck Hubbard · Republican: Virginia Foxx · Libertarian: Robert B. Luffman"
       },
       {
-       "title": "North Carolina House District 6",
-       "detail": "Democrat: Tony Spears · Republican: Joe Pike"
+       "title": "North Carolina Congressional District 6",
+       "detail": "Democrat: Cyril Jefferson · Republican: Addison McDowell"
       },
       {
-       "title": "North Carolina House District 7",
-       "detail": "Democrat: Mark Speed · Republican: Cory Thornton"
+       "title": "North Carolina Congressional District 7",
+       "detail": "Democrat: Kimberly Hardy · Republican: David Rouzer · Libertarian: Maad Abu-Ghazalah"
       },
       {
-       "title": "North Carolina House District 8",
-       "detail": "Democrat: Gloristine Brown · Republican: Cathy Thorne Bynum"
+       "title": "North Carolina Congressional District 8",
+       "detail": "Democrat: Colby Watson · Republican: Mark Harris · Green: Bo Whitehead"
       },
       {
-       "title": "North Carolina House District 9",
-       "detail": "Democrat: Claire Kempner · Republican: Timothy Reeder"
+       "title": "North Carolina Congressional District 9",
+       "detail": "Democrat: Richard N. Ojeda II · Republican: Richard Hudson"
       },
       {
-       "title": "North Carolina House District 10",
-       "detail": "Democrat: Zyaire Webb · Republican: John Bell"
+       "title": "North Carolina Congressional District 10",
+       "detail": "Democrat: Ashley Bell · Republican: Pat Harrigan · Libertarian: Steven Feldman"
       },
       {
-       "title": "North Carolina House District 11",
-       "detail": "Democrat: Allison A. Dahle · Republican: No Republican nominee listed"
+       "title": "North Carolina Congressional District 11",
+       "detail": "Democrat: Jamie Ager · Republican: Jennifer Capps Balkcom · Libertarian: Travis Groo"
       },
       {
-       "title": "North Carolina House District 12",
-       "detail": "Democrat: Don Hardy · Republican: Chris Humphrey"
+       "title": "North Carolina Congressional District 12",
+       "detail": "Democrat: Alma S. Adams · Republican: Jack Codiga"
       },
       {
-       "title": "North Carolina House District 13",
-       "detail": "Democrat: Jason Moore · Republican: Celeste Cairns"
+       "title": "North Carolina Congressional District 13",
+       "detail": "Democrat: Paul Barringer · Republican: Brad Knott · Libertarian: Steven Swinton"
       },
       {
-       "title": "North Carolina House District 14",
-       "detail": "Democrat: No Democratic nominee listed · Republican: Wyatt Gable"
-      },
-      {
-       "title": "North Carolina House District 15",
-       "detail": "Democrat: Christopher Schulte · Republican: Phillip Shepard"
-      },
-      {
-       "title": "North Carolina House District 16",
-       "detail": "Democrat: Jim Harris · Republican: Carson Smith"
-      },
-      {
-       "title": "North Carolina House District 17",
-       "detail": "Democrat: Dennis A. Breen · Republican: Frank Iler"
-      },
-      {
-       "title": "North Carolina House District 18",
-       "detail": "Democrat: Deb Butler · Republican: Latisha Grady"
-      },
-      {
-       "title": "North Carolina House District 19",
-       "detail": "Democrat: Scott Nasiff · Republican: Charlie Miller"
-      },
-      {
-       "title": "North Carolina House District 20",
-       "detail": "Democrat: Tim Merrick · Republican: Dane Scalise"
-      },
-      {
-       "title": "North Carolina House District 21",
-       "detail": "Democrat: Ya Liu · Republican: Bryson Johnson"
-      },
-      {
-       "title": "North Carolina House District 22",
-       "detail": "Democrat: No Democratic nominee listed · Republican: Wellie Jackson"
-      },
-      {
-       "title": "North Carolina House District 23",
-       "detail": "Democrat: Patricia Smith · Republican: Brent Roberson"
-      },
-      {
-       "title": "North Carolina House District 24",
-       "detail": "Democrat: Dante Pittman · Republican: Blake Boykin"
-      },
-      {
-       "title": "North Carolina House District 25",
-       "detail": "Democrat: Lorenza M. Wilkins · Republican: Allen Chesser"
-      },
-      {
-       "title": "North Carolina House District 26",
-       "detail": "Democrat: L'Bertrice Solomon · Republican: Donna McDowell White"
-      },
-      {
-       "title": "North Carolina House District 27",
-       "detail": "Democrat: Rodney D. Pierce · Republican: David Woodson"
-      },
-      {
-       "title": "North Carolina House District 28",
-       "detail": "Democrat: D. Matthew Bailey · Republican: Larry C. Strickland"
-      },
-      {
-       "title": "North Carolina House District 29",
-       "detail": "Democrat: Vernetta Alston · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 30",
-       "detail": "Democrat: Marcia Morey · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 31",
-       "detail": "Democrat: Zack Hawkins · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 32",
-       "detail": "Democrat: Bryan K. Cohn · Republican: Frank Sossamon"
-      },
-      {
-       "title": "North Carolina House District 33",
-       "detail": "Democrat: Monika Johnson-Hostler · Republican: Matthew Orr"
-      },
-      {
-       "title": "North Carolina House District 34",
-       "detail": "Democrat: Tim Longest · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 35",
-       "detail": "Democrat: Evonne S. Hopkins · Republican: Mike Schietzelt"
-      },
-      {
-       "title": "North Carolina House District 36",
-       "detail": "Democrat: Julie von Haefen · Republican: Mary Insprucker"
-      },
-      {
-       "title": "North Carolina House District 37",
-       "detail": "Democrat: Winn Decker · Republican: Erin Pare"
-      },
-      {
-       "title": "North Carolina House District 38",
-       "detail": "Democrat: Abe Jones · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 39",
-       "detail": "Democrat: James A. Roberson · Republican: Jorge Cordova"
-      },
-      {
-       "title": "North Carolina House District 40",
-       "detail": "Democrat: Phil Rubin · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 41",
-       "detail": "Democrat: Maria Cervania · Republican: Bruce Forster"
-      },
-      {
-       "title": "North Carolina House District 42",
-       "detail": "Democrat: Mike Colvin · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 43",
-       "detail": "Democrat: Janene Ackles · Republican: Diane Wheatley"
-      },
-      {
-       "title": "North Carolina House District 44",
-       "detail": "Democrat: Charles Smith · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 45",
-       "detail": "Democrat: Frances Jackson · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 46",
-       "detail": "Democrat: Brittany Newton · Republican: Brenden H. Jones"
-      },
-      {
-       "title": "North Carolina House District 47",
-       "detail": "Democrat: Eshonda Hooper · Republican: John L. Lowery"
-      },
-      {
-       "title": "North Carolina House District 48",
-       "detail": "Democrat: Garland E. Pierce · Republican: Ralph Carter"
-      },
-      {
-       "title": "North Carolina House District 49",
-       "detail": "Democrat: Cynthia Ball · Republican: Daran Thomas"
-      },
-      {
-       "title": "North Carolina House District 50",
-       "detail": "Democrat: Renee A. Price · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 51",
-       "detail": "Democrat: No Democratic nominee listed · Republican: Charles M. Taylor"
-      },
-      {
-       "title": "North Carolina House District 52",
-       "detail": "Democrat: Joe Parfitt · Republican: Ben Moss"
-      },
-      {
-       "title": "North Carolina House District 53",
-       "detail": "Democrat: Kevin G. Thurman · Republican: Howard L. Penny Jr."
-      },
-      {
-       "title": "North Carolina House District 54",
-       "detail": "Democrat: Robert T. Reives II · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 55",
-       "detail": "Democrat: John J. Kirkpatrick IV · Republican: Clancy Baucom"
-      },
-      {
-       "title": "North Carolina House District 56",
-       "detail": "Democrat: Allen Buansi · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 57",
-       "detail": "Democrat: Tracy Clark · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 58",
-       "detail": "Democrat: Amos Quick · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 59",
-       "detail": "Democrat: Elma Hairston · Republican: Alan Branson"
-      },
-      {
-       "title": "North Carolina House District 60",
-       "detail": "Democrat: Amanda Cook · Republican: Joseph Perrotta"
-      },
-      {
-       "title": "North Carolina House District 61",
-       "detail": "Democrat: Mary Price (Pricey) Harrison · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 62",
-       "detail": "Democrat: Shelly Headen · Republican: John M. Blust"
-      },
-      {
-       "title": "North Carolina House District 63",
-       "detail": "Democrat: Ian Baltutis · Republican: Ryan Moffitt"
-      },
-      {
-       "title": "North Carolina House District 64",
-       "detail": "Democrat: LeVon Barnes · Republican: Dennis Riddell"
-      },
-      {
-       "title": "North Carolina House District 65",
-       "detail": "Democrat: Gavin McGaughey · Republican: Seth Woodall"
-      },
-      {
-       "title": "North Carolina House District 66",
-       "detail": "Democrat: Sarah Crawford · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 67",
-       "detail": "Democrat: Jocelyn Torres · Republican: Cody Huneycutt"
-      },
-      {
-       "title": "North Carolina House District 68",
-       "detail": "Democrat: Derek Warriner · Republican: David Willis"
-      },
-      {
-       "title": "North Carolina House District 69",
-       "detail": "Democrat: Heidi Sinsley · Republican: Dean Arp"
-      },
-      {
-       "title": "North Carolina House District 70",
-       "detail": "Democrat: William (Bill) McCaskill · Republican: Brian Biggs"
-      },
-      {
-       "title": "North Carolina House District 71",
-       "detail": "Democrat: Kanika Brown · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 72",
-       "detail": "Democrat: Amber M. Baker · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 73",
-       "detail": "Democrat: Thomas J. Monks · Republican: Jonathan Almond"
-      },
-      {
-       "title": "North Carolina House District 74",
-       "detail": "Democrat: Amy Taylor North · Republican: Jeff Zenger"
-      },
-      {
-       "title": "North Carolina House District 75",
-       "detail": "Democrat: Jen Wiles · Republican: Donny C. Lambeth"
-      },
-      {
-       "title": "North Carolina House District 76",
-       "detail": "Democrat: Scott Huffman · Republican: Greg Edds"
-      },
-      {
-       "title": "North Carolina House District 77",
-       "detail": "Democrat: Sabrina Harris · Republican: Julia Howard"
-      },
-      {
-       "title": "North Carolina House District 78",
-       "detail": "Democrat: Matt Holway · Republican: Neal Jackson"
-      },
-      {
-       "title": "North Carolina House District 79",
-       "detail": "Democrat: No Democratic nominee listed · Republican: Darren Armstrong"
-      },
-      {
-       "title": "North Carolina House District 80",
-       "detail": "Democrat: JacQuez Johnson · Republican: Sam Watford"
-      },
-      {
-       "title": "North Carolina House District 81",
-       "detail": "Democrat: Dylan R. Tucker · Republican: Larry W. Potts"
-      },
-      {
-       "title": "North Carolina House District 82",
-       "detail": "Democrat: Chris Bishopp · Republican: Brian Echevarria"
-      },
-      {
-       "title": "North Carolina House District 83",
-       "detail": "Democrat: Johnnie Jones · Republican: Grant Campbell"
-      },
-      {
-       "title": "North Carolina House District 84",
-       "detail": "Democrat: No Democratic nominee listed · Republican: Jeffrey C. McNeely"
-      },
-      {
-       "title": "North Carolina House District 85",
-       "detail": "Democrat: Suzanne Gavenus · Republican: Dudley Greene"
-      },
-      {
-       "title": "North Carolina House District 86",
-       "detail": "Democrat: Wesley E. Hendrix · Republican: Hugh Blackwell"
-      },
-      {
-       "title": "North Carolina House District 87",
-       "detail": "Democrat: Iris Bender · Republican: Destin Hall"
-      },
-      {
-       "title": "North Carolina House District 88",
-       "detail": "Democrat: Mary Belk · Republican: Ray Craig"
-      },
-      {
-       "title": "North Carolina House District 89",
-       "detail": "Democrat: Robert (Spider) Thompson · Republican: Mitchell Smith Setzer"
-      },
-      {
-       "title": "North Carolina House District 90",
-       "detail": "Democrat: Ken Badgett · Republican: Dan Kiger"
-      },
-      {
-       "title": "North Carolina House District 91",
-       "detail": "Democrat: Lucille Puckett · Republican: Kyle Hall"
-      },
-      {
-       "title": "North Carolina House District 92",
-       "detail": "Democrat: Terry Brown · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 93",
-       "detail": "Democrat: Charlie Wallin · Republican: Ray Pickett"
-      },
-      {
-       "title": "North Carolina House District 94",
-       "detail": "Democrat: Andy Warren · Republican: Blair Eddins"
-      },
-      {
-       "title": "North Carolina House District 95",
-       "detail": "Democrat: Michael Robinson · Republican: Richard (Todd) Carver"
-      },
-      {
-       "title": "North Carolina House District 96",
-       "detail": "Democrat: Park Inglefield · Republican: Jay Adams"
-      },
-      {
-       "title": "North Carolina House District 97",
-       "detail": "Democrat: Greg McBryde · Republican: Heather Rhyne"
-      },
-      {
-       "title": "North Carolina House District 98",
-       "detail": "Democrat: Beth Helfrich · Republican: John Rhodes"
-      },
-      {
-       "title": "North Carolina House District 99",
-       "detail": "Democrat: Veleria M. Levy · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 100",
-       "detail": "Democrat: Julia Greenfield · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 101",
-       "detail": "Democrat: Carolyn G. Logan · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 102",
-       "detail": "Democrat: Becky Carney · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 103",
-       "detail": "Democrat: Laura Budd · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 104",
-       "detail": "Democrat: Brandon Lofton · Republican: Trina Boyd"
-      },
-      {
-       "title": "North Carolina House District 105",
-       "detail": "Democrat: Ken McCool · Republican: Tricia Ann Cotham"
-      },
-      {
-       "title": "North Carolina House District 106",
-       "detail": "Democrat: Rodney Sadler · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 107",
-       "detail": "Democrat: Aisha O. Dew · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 108",
-       "detail": "Democrat: Sydnie Hutchinson · Republican: John A. Torbett"
-      },
-      {
-       "title": "North Carolina House District 109",
-       "detail": "Democrat: Mark D. Carver · Republican: Donnie Loftis"
-      },
-      {
-       "title": "North Carolina House District 110",
-       "detail": "Democrat: Mary Silver · Republican: Caroline Eason"
-      },
-      {
-       "title": "North Carolina House District 111",
-       "detail": "Democrat: Jerry Blake · Republican: Paul Scott"
-      },
-      {
-       "title": "North Carolina House District 112",
-       "detail": "Democrat: Jordan Lopez · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 113",
-       "detail": "Democrat: John Morgan · Republican: Jake Johnson"
-      },
-      {
-       "title": "North Carolina House District 114",
-       "detail": "Democrat: Eric Ager · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 115",
-       "detail": "Democrat: Lindsey Prather · Republican: Anthony J. Penland"
-      },
-      {
-       "title": "North Carolina House District 116",
-       "detail": "Democrat: Brian Turner · Republican: No Republican nominee listed"
-      },
-      {
-       "title": "North Carolina House District 117",
-       "detail": "Democrat: Lynne Russo · Republican: Chelsea Walsh"
-      },
-      {
-       "title": "North Carolina House District 118",
-       "detail": "Democrat: Danny E. Davis · Republican: James M. (Jimmy) Rogers"
-      },
-      {
-       "title": "North Carolina House District 119",
-       "detail": "Democrat: Mark Burrows · Republican: Anna Ferguson"
-      },
-      {
-       "title": "North Carolina House District 120",
-       "detail": "Democrat: Caleb Brown · Republican: Karl Gillespie"
+       "title": "North Carolina Congressional District 14",
+       "detail": "Democrat: Lakesha Womack · Republican: Tim Moore"
       }
      ]
     },
@@ -17380,7 +16900,7 @@
    },
    "counts": {
     "federal_senate": 1,
-    "federal_house": 120,
+    "federal_house": 14,
     "state_governor": 0,
     "state_court": 1,
     "state_house": 120,
@@ -21704,8 +21224,8 @@
      ],
      "court": [
       {
-       "title": "South Dakota Supreme Court",
-       "detail": "Justice Mark E. Salter — Retention Election"
+       "title": "Tennessee Supreme Court",
+       "detail": "Kyle Hixson — Retention Election (Yes/No)"
       }
      ],
      "house": [
@@ -22204,502 +21724,882 @@
     "federal": {
      "senate": [
       {
-       "title": "",
-       "detail": "Marquita Bradshaw (D) vs. Bill Hagerty (R)"
+       "title": "U.S. Senate",
+       "detail": "Ken Paxton (R) · James Talarico (D) · Ted Brown (L) · Write-in: Avery Ayers · Write-in: Bradford \"Brad\" Hall · Write-in: Zul Mohamed · Write-in: Jade Simmons"
       }
      ],
      "house": [
       {
-       "title": "District 1",
-       "detail": "Kristi Burke (D) vs. Diana Harshbarger (R) vs. Joshua Ashburn (I) vs. Richard Baker (I) vs. Chris Campbell (I) vs. Billy Cody (I) vs. Tyler Brice Mitchell McClain (I)"
+       "title": "U.S. House District 1",
+       "detail": "Nathaniel Moran (R) · Yolanda R. Prince (D)"
       },
       {
-       "title": "District 2",
-       "detail": "Michaela Barnett (D) vs. Tim Burchett (R) vs. Bruce Fine (I) vs. Adam Heimerman (I)"
+       "title": "U.S. House District 2",
+       "detail": "Steve Toth (R) · Shaun Finnie (D)"
       },
       {
-       "title": "District 3",
-       "detail": "Anna Golladay (D) vs. Chuck Fleischmann (R) vs. Dean Arnold (I) vs. Jean Howard Hill (I) vs. Rodney King (I) vs. Donnie Ownby (I) vs. Edward John Roland (I)"
+       "title": "U.S. House District 3",
+       "detail": "Keith Self (R) · Evan Hunt (D)"
       },
       {
-       "title": "District 4",
-       "detail": "Victoria Broderick (D) vs. Scott DesJarlais (R)"
+       "title": "U.S. House District 4",
+       "detail": "Pat Fallon (R) · Jason Pearce (D)"
       },
       {
-       "title": "District 5",
-       "detail": "Chaz Molder (D) vs. Charlie Hatcher (R) vs. James Johnson (I) vs. Micheal O'Leary (I)"
+       "title": "U.S. House District 5",
+       "detail": "Lance Gooden (R) · Chelsey Hockett (D)"
       },
       {
-       "title": "District 6",
-       "detail": "Mike Croley (D) vs. Johnny Garrett (R) vs. Christopher Monday (I)"
+       "title": "U.S. House District 6",
+       "detail": "Jake Ellzey (R) · Danny Minton (D)"
       },
       {
-       "title": "District 7",
-       "detail": "Darden Copeland (D) vs. Matt Van Epps (R) vs. Andrew Koontz (I) vs. Lowell Reynolds (I)"
+       "title": "U.S. House District 7",
+       "detail": "Alexander Hale (R) · Lizzie Pannill Fletcher (D) · Espoir Ngabo (Green)"
       },
       {
-       "title": "District 8",
-       "detail": "Heidi Kuhn (D) vs. David Kustoff (R) vs. Adam Austill (I) vs. Antonio Futch (I) vs. Pamela Moses (I) vs. Horace Taylor (I) vs. Henry J. Ward (I)"
+       "title": "U.S. House District 8",
+       "detail": "Jessica Hart Steinmann (R) · Laura Jones (D)"
       },
       {
-       "title": "District 9",
-       "detail": "Justin J. Pearson (D) vs. Brent Taylor (R) vs. Dennis Clark (I) vs. Michelle Head (I)"
+       "title": "U.S. House District 9",
+       "detail": "Alex Mealer (R) · Leticia Gutierrez (D)"
+      },
+      {
+       "title": "U.S. House District 10",
+       "detail": "Chris Gober (R) · Caitlin Rourk (D)"
+      },
+      {
+       "title": "U.S. House District 11",
+       "detail": "August Pfluger (R) · Claire Reynolds (D)"
+      },
+      {
+       "title": "U.S. House District 12",
+       "detail": "Craig Goldman (R) · Angela Rodriguez Prilliman (D)"
+      },
+      {
+       "title": "U.S. House District 13",
+       "detail": "Ronny Jackson (R) · Mark Nair (D)"
+      },
+      {
+       "title": "U.S. House District 14",
+       "detail": "Randy Weber (R) · Thurman Bill Bartie (D)"
+      },
+      {
+       "title": "U.S. House District 15",
+       "detail": "Monica De La Cruz (R) · Bobby Pulido (D)"
+      },
+      {
+       "title": "U.S. House District 16",
+       "detail": "Adam Bauman (R) · Veronica Escobar (D)"
+      },
+      {
+       "title": "U.S. House District 17",
+       "detail": "Pete Sessions (R) · Casey Shepard (D)"
+      },
+      {
+       "title": "U.S. House District 18",
+       "detail": "Ronald Dwayne Whitfield (R) · Christian D. Menefee (D)"
+      },
+      {
+       "title": "U.S. House District 19",
+       "detail": "Tom Sell (R) · Kyle Rable (D)"
+      },
+      {
+       "title": "U.S. House District 20",
+       "detail": "Edgardo Rafael Baez (R) · Joaquin Castro (D)"
+      },
+      {
+       "title": "U.S. House District 21",
+       "detail": "Mark Teixeira (R) · Kristin Hook (D)"
+      },
+      {
+       "title": "U.S. House District 22",
+       "detail": "Trever Nehls (R) · Marquette Greene-Scott (D)"
+      },
+      {
+       "title": "U.S. House District 23",
+       "detail": "Brandon Herrera (R) · Katy Padilla Stout (D) · Ben Mendoza (I)"
+      },
+      {
+       "title": "U.S. House District 24",
+       "detail": "Beth Van Duyne (R) · Kevin Burge (D)"
+      },
+      {
+       "title": "U.S. House District 25",
+       "detail": "Roger Williams (R) · Dione Sims (D)"
+      },
+      {
+       "title": "U.S. House District 26",
+       "detail": "Brandon Gill (R) · Steven Shook (D)"
+      },
+      {
+       "title": "U.S. House District 27",
+       "detail": "Michael Cloud (R) · Tanya Lloyd (D)"
+      },
+      {
+       "title": "U.S. House District 28",
+       "detail": "Tano E. Tijerina (R) · Henry Cuellar (D) · Marlón Durán (Green)"
+      },
+      {
+       "title": "U.S. House District 29",
+       "detail": "Martha Fierro (R) · Sylvia Garcia (D)"
+      },
+      {
+       "title": "U.S. House District 30",
+       "detail": "Everett Jackson (R) · Frederick D. Haynes III (D)"
+      },
+      {
+       "title": "U.S. House District 31",
+       "detail": "John Carter (R) · Justin Early (D) · Gregory James Stoker (Green)"
+      },
+      {
+       "title": "U.S. House District 32",
+       "detail": "Jace Yarbrough (R) · Dan Barrios (D)"
+      },
+      {
+       "title": "U.S. House District 33",
+       "detail": "Patrick David Gillespie (R) · Colin Allred (D)"
+      },
+      {
+       "title": "U.S. House District 34",
+       "detail": "Eric Flores (R) · Vicente Gonzalez (D)"
+      },
+      {
+       "title": "U.S. House District 35",
+       "detail": "Carlos De La Cruz (R) · Johnny Garcia (D)"
+      },
+      {
+       "title": "U.S. House District 36",
+       "detail": "Brian Babin (R) · Rhonda Hart (D)"
+      },
+      {
+       "title": "U.S. House District 37",
+       "detail": "Lauren Peña (R) · Greg Casar (D)"
+      },
+      {
+       "title": "U.S. House District 38",
+       "detail": "Jon Bonck (R) · Melissa McDonough (D) · Alex McMenemy (Green)"
       }
      ]
     },
     "state": {
      "governor": [
       {
-       "title": "",
-       "detail": "Jerri Green (D) vs. Marsha Blackburn (R) vs. Misam Abidi (I)"
+       "title": "Governor",
+       "detail": "Greg Abbott (R, Inc.) · Gina Hinojosa (D) · Mark Tippetts (L) · Delilah Barrios (Green)"
       }
      ],
      "court": [
       {
-       "title": "South Dakota Supreme Court",
-       "detail": "Justice Mark E. Salter — Retention Election"
+       "title": "Texas Supreme Court, Chief Justice Place 1",
+       "detail": "Jimmy Blacklock (R)"
+      },
+      {
+       "title": "Texas Supreme Court, Place 2",
+       "detail": "James Sullivan (R)"
+      },
+      {
+       "title": "Texas Supreme Court, Place 7",
+       "detail": "Kyle Hawkins (R) · Kristen Hawkins (D)"
+      },
+      {
+       "title": "Texas Supreme Court, Place 8",
+       "detail": "Brett Busby (R) · Gisela D. Triana (D)"
+      },
+      {
+       "title": "Court of Criminal Appeals, Place 3",
+       "detail": "Thomas Smith (R) · Okey Anyiam (D) · Mark Ash (L)"
+      },
+      {
+       "title": "Court of Criminal Appeals, Place 4",
+       "detail": "Kevin Patrick Yeary (R) · Audra Riley (D)"
+      },
+      {
+       "title": "Court of Criminal Appeals, Place 9",
+       "detail": "John Messinger (R) · Holly Taylor (D)"
       }
      ],
      "house": [
       {
-       "title": "District 1",
-       "detail": "Jessica Means (R)"
+       "title": "Texas House District 1",
+       "detail": "Chris Spencer (R) · Sean Huffman (D)"
       },
       {
-       "title": "District 2",
-       "detail": "Gary Stidham (R)"
+       "title": "Texas House District 2",
+       "detail": "Brent Money (R, Inc.) · Fatima La'Juan Muse (D)"
       },
       {
-       "title": "District 3",
-       "detail": "Timothy Hill (R) vs. Lori Love (D)"
+       "title": "Texas House District 3",
+       "detail": "Kristen Plaisance (R) · Nicole King (D)"
       },
       {
-       "title": "District 4",
-       "detail": "Renea Jones (R)"
+       "title": "Texas House District 4",
+       "detail": "Keith Bell (R, Inc.) · Mark Moseley (D)"
       },
       {
-       "title": "District 5",
-       "detail": "David Hawk (R) vs. Catherine Bacon (D)"
+       "title": "Texas House District 5",
+       "detail": "Cole Hefner (R, Inc.) · Hector Garza (D)"
       },
       {
-       "title": "District 6",
-       "detail": "Tim Hicks (R) vs. Brad Batt (D) vs. Rodger Broadwater (I)"
+       "title": "Texas House District 6",
+       "detail": "Daniel Alders (R, Inc.) · Lorenzo Johnson (D)"
       },
       {
-       "title": "District 7",
-       "detail": "Rebecca Alexander (R) vs. Sarah Jayne Della Vecchia (D)"
+       "title": "Texas House District 7",
+       "detail": "Jay Dean (R, Inc.) · Fantasha Allen (D)"
       },
       {
-       "title": "District 8",
-       "detail": "Jordan Henderson (R) vs. Hilary Trudell (D)"
+       "title": "Texas House District 8",
+       "detail": "Cody Harris (R, Inc.) · Jeff Chavez (D)"
       },
       {
-       "title": "District 9",
-       "detail": "Gary Hicks Jr. (R)"
+       "title": "Texas House District 9",
+       "detail": "Rocky Thigpen (R) · Shelley Tatum (D)"
       },
       {
-       "title": "District 10",
-       "detail": "Rick Eldridge (R)"
+       "title": "Texas House District 10",
+       "detail": "Brian Harrison (R, Inc.) · Michael Myers (D)"
       },
       {
-       "title": "District 11",
-       "detail": "Kenny Cody (R) vs. Sheila McMahan (D) vs. Larry Brown (I)"
+       "title": "Texas House District 11",
+       "detail": "Joanne Shofner (R, Inc.) · Roxanne Lathan (D)"
       },
       {
-       "title": "District 12",
-       "detail": "Fred Atchley (R)"
+       "title": "Texas House District 12",
+       "detail": "Trey Wharton (R, Inc.) · Andie Ho (D)"
       },
       {
-       "title": "District 13",
-       "detail": "Robert Stevens (R) vs. Brett Windrow (D)"
+       "title": "Texas House District 13",
+       "detail": "Angelia Orr (R, Inc.) · Albert Hunter (D)"
       },
       {
-       "title": "District 14",
-       "detail": "Jason Zachary (R) vs. Lindsay Honaker (D)"
+       "title": "Texas House District 14",
+       "detail": "Paul Dyson (R, Inc.) · Janet Dudding (D)"
       },
       {
-       "title": "District 15",
-       "detail": "Sam McKenzie (D)"
+       "title": "Texas House District 15",
+       "detail": "Brad Bailey (R) · Moniqua' Scott (D)"
       },
       {
-       "title": "District 16",
-       "detail": "Michele Carringer (R) vs. Eliza Boles (D)"
+       "title": "Texas House District 16",
+       "detail": "Will Metcalf (R, Inc.) · Bobbie Clayton (D)"
       },
       {
-       "title": "District 17",
-       "detail": "Andrew Farmer (R)"
+       "title": "Texas House District 17",
+       "detail": "Stan Gerdes (R, Inc.) · Mary Elizabeth Klenz (D)"
       },
       {
-       "title": "District 18",
-       "detail": "Elaine Davis (R) vs. Bryan Goldberg (D)"
+       "title": "Texas House District 18",
+       "detail": "Janis Holt (R, Inc.) · Valorie Barton (D)"
       },
       {
-       "title": "District 19",
-       "detail": "Dave Wright (R) vs. Jenny Fowler (D)"
+       "title": "Texas House District 19",
+       "detail": "Ellen Troxclair (R, Inc.) · Kelly Hall (D)"
       },
       {
-       "title": "District 20",
-       "detail": "Tom Stinnett (R) vs. Karen Gertz (D) vs. Jeff Coggin (I)"
+       "title": "Texas House District 20",
+       "detail": "Terry M. Wilson (R, Inc.) · Matthias-Jonah Early (D)"
       },
       {
-       "title": "District 21",
-       "detail": "Lowell Russell (R)"
+       "title": "Texas House District 21",
+       "detail": "Ray Callas (R) · Jacqueline \"Jacky\" Hernandez (D)"
       },
       {
-       "title": "District 22",
-       "detail": "Dan Howell (R)"
+       "title": "Texas House District 22",
+       "detail": "Christian Manuel (D, Inc.)"
       },
       {
-       "title": "District 23",
-       "detail": "Mark Cochran (R) vs. Jeremy Bromwell (I) vs. Jason Hitt (I)"
+       "title": "Texas House District 23",
+       "detail": "Terri Leo Wilson (R, Inc.) · Cheryl Clark (D)"
       },
       {
-       "title": "District 24",
-       "detail": "Kevin Raper (R) vs. Daniel Jones (D)"
+       "title": "Texas House District 24",
+       "detail": "Greg Bonnen (R, Inc.) · Frank Carr (D)"
       },
       {
-       "title": "District 25",
-       "detail": "Cameron Sexton (R) vs. Monica Mowdy (D)"
+       "title": "Texas House District 25",
+       "detail": "Cody Vasut (R, Inc.) · Mike Meadors (D)"
       },
       {
-       "title": "District 26",
-       "detail": "Greg Martin (R) vs. Nathan Denton (D)"
+       "title": "Texas House District 26",
+       "detail": "Matt Morgan (R, Inc.) · Eliz Markowitz (D)"
       },
       {
-       "title": "District 27",
-       "detail": "Michele Reneau (R) vs. Paige Quirin (D)"
+       "title": "Texas House District 27",
+       "detail": "Max Alalibo (R) · Ron Reynolds (D, Inc.)"
       },
       {
-       "title": "District 28",
-       "detail": "Yusuf Hakeem (D) vs. Demetrus Coonrod (I) vs. Johnny Horne (I)"
+       "title": "Texas House District 28",
+       "detail": "Gary Gates (R, Inc.) · Sandy Ibanez (D)"
       },
       {
-       "title": "District 29",
-       "detail": "Greg Vital (R) vs. Ryan Scofield (D)"
+       "title": "Texas House District 29",
+       "detail": "Jeff Barry (R, Inc.) · Karen Reeder (D)"
       },
       {
-       "title": "District 30",
-       "detail": "Esther Helton-Haynes (R) vs. Art Rymer (D)"
+       "title": "Texas House District 30",
+       "detail": "A.J. Louderback (R, Inc.) · Crystal Sedillo (D)"
       },
       {
-       "title": "District 31",
-       "detail": "Andy Swafford (R) vs. Michael Woodlee (D) vs. Keith Nolan (I) vs. Randy Sharp (I)"
+       "title": "Texas House District 31",
+       "detail": "Ryan Guillen (R, Inc.) · Jennifer \"JJ\" Dominguez (D)"
       },
       {
-       "title": "District 32",
-       "detail": "Jack Stockton (R) vs. Ali Simpson (D)"
+       "title": "Texas House District 32",
+       "detail": "Todd Hunter (R, Inc.) · Gabriel Marroquin (D)"
       },
       {
-       "title": "District 33",
-       "detail": "Rick Scarbrough (R) vs. Anne Backus (D)"
+       "title": "Texas House District 33",
+       "detail": "Katrina Pierson (R, Inc.) · Orlando Lopez (D)"
       },
       {
-       "title": "District 34",
-       "detail": "Tim Rudd (R) vs. Owen Farnsworth (D)"
+       "title": "Texas House District 34",
+       "detail": "Denise Villalobos (R, Inc.) · Stephanie Guerrero Sáenz (D)"
       },
       {
-       "title": "District 35",
-       "detail": "William Slater (R) vs. Phil Barnes (D)"
+       "title": "Texas House District 35",
+       "detail": "Oscar Rosa (R) · Oscar Longoria (D, Inc.)"
       },
       {
-       "title": "District 36",
-       "detail": "Noah Smith (R)"
+       "title": "Texas House District 36",
+       "detail": "Sergio Muñoz Jr. (D, Inc.)"
       },
       {
-       "title": "District 37",
-       "detail": "Charlie Baum (R) vs. Mary Ann Young (D)"
+       "title": "Texas House District 37",
+       "detail": "Janie Lopez (R, Inc.) · Oziel \"Ozzie\" Ochoa Jr. (D)"
       },
       {
-       "title": "District 38",
-       "detail": "Kelly Keisling (R) vs. Seth McMillan (D)"
+       "title": "Texas House District 38",
+       "detail": "Laura Cisneros (R) · Erin Elizabeth Gámez (D, Inc.)"
       },
       {
-       "title": "District 39",
-       "detail": "Iris Rudder (R)"
+       "title": "Texas House District 39",
+       "detail": "Armando \"Mando\" Martinez (D, Inc.)"
       },
       {
-       "title": "District 40",
-       "detail": "Michael Hale (R) vs. Daniel Hawthorne (D)"
+       "title": "Texas House District 40",
+       "detail": "Celeste Cabrera-Huff (R) · Terry Canales (D, Inc.)"
       },
       {
-       "title": "District 41",
-       "detail": "Ed Butler (R) vs. R. Jason Goodman (D)"
+       "title": "Texas House District 41",
+       "detail": "Gary Groves (R) · Julio Salinas (D)"
       },
       {
-       "title": "District 42",
-       "detail": "Ryan Williams (R) vs. Trenton Strode (D)"
+       "title": "Texas House District 42",
+       "detail": "Teresa Johnson-Hernandez (R) · Richard Peña Raymond (D, Inc.)"
       },
       {
-       "title": "District 43",
-       "detail": "Paul Sherrell (R) vs. Samantha Petit (D)"
+       "title": "Texas House District 43",
+       "detail": "J.M. Lozano (R, Inc.) · Jeffrey Jackson (D)"
       },
       {
-       "title": "District 44",
-       "detail": "William Lamberth (R) vs. Latoya Holcomb (D)"
+       "title": "Texas House District 44",
+       "detail": "Alan Schoolcraft (R, Inc.) · Eric Norman (D)"
       },
       {
-       "title": "District 45",
-       "detail": "Brian Stewart (R) vs. Mandy Cook (D)"
+       "title": "Texas House District 45",
+       "detail": "Tennyson Moreno (R) · Erin Zwiener (D, Inc.)"
       },
       {
-       "title": "District 46",
-       "detail": "Clark Boyd (R) vs. Dominic Howard (D)"
+       "title": "Texas House District 46",
+       "detail": "Sheryl Cole (D, Inc.)"
       },
       {
-       "title": "District 47",
-       "detail": "Rush Bricken (R) vs. Mike Stein (D)"
+       "title": "Texas House District 47",
+       "detail": "Jennifer Mushtaler (R) · Pooja Sethi (D)"
       },
       {
-       "title": "District 48",
-       "detail": "Bryan Terry (R) vs. Matt Ferry (D)"
+       "title": "Texas House District 48",
+       "detail": "Anthony Gupta (R) · Donna Howard (D, Inc.)"
       },
       {
-       "title": "District 49",
-       "detail": "Mike Sparks (R) vs. Connie Casha (D)"
+       "title": "Texas House District 49",
+       "detail": "Montserrat Garibay (D)"
       },
       {
-       "title": "District 50",
-       "detail": "Bo Mitchell (D)"
+       "title": "Texas House District 50",
+       "detail": "Howard Olsen (R) · Samantha Lopez-Resendez (D)"
       },
       {
-       "title": "District 51",
-       "detail": "Aftyn Behn (D)"
+       "title": "Texas House District 51",
+       "detail": "Jessica Martinez (R) · Lulu Flores (D, Inc.)"
       },
       {
-       "title": "District 52",
-       "detail": "Justin Jones (D) vs. Michele Vetter (R) vs. Martez Coleman (I)"
+       "title": "Texas House District 52",
+       "detail": "Caroline Harris Davila (R, Inc.) · Chris Jimenez (D)"
       },
       {
-       "title": "District 53",
-       "detail": "Jason Powell (D)"
+       "title": "Texas House District 53",
+       "detail": "Wes Virdell (R, Inc.) · Kathryn Hartmann (D)"
       },
       {
-       "title": "District 54",
-       "detail": "Vincent Dixie (D)"
+       "title": "Texas House District 54",
+       "detail": "Brad Buckley (R, Inc.) · Dawn Richardson (D)"
       },
       {
-       "title": "District 55",
-       "detail": "John Ray Clemmons (D) vs. Jayla Thomas (R)"
+       "title": "Texas House District 55",
+       "detail": "Hillary Hickland (R, Inc.) · Amelia Rabroker (D)"
       },
       {
-       "title": "District 56",
-       "detail": "Bob Freeman (D)"
+       "title": "Texas House District 56",
+       "detail": "Pat Curry (R, Inc.) · Ashley Bean Thornton (D)"
       },
       {
-       "title": "District 57",
-       "detail": "Susan Lynn (R) vs. Matt Burchfield (D)"
+       "title": "Texas House District 57",
+       "detail": "Richard Hayes (R, Inc.) · Ray Stith (D)"
       },
       {
-       "title": "District 58",
-       "detail": "Harold Love Jr. (D)"
+       "title": "Texas House District 58",
+       "detail": "Helen Kerwin (R, Inc.) · Chris Oldham (D)"
       },
       {
-       "title": "District 59",
-       "detail": "Bill Hancock (R) vs. Mark Proctor (D)"
+       "title": "Texas House District 59",
+       "detail": "Shelby Slawson (R, Inc.) · Andrew Turner (D)"
       },
       {
-       "title": "District 60",
-       "detail": "Shaundelle Brooks (D) vs. Eva Romero (R)"
+       "title": "Texas House District 60",
+       "detail": "Mike Olcott (R, Inc.) · Krissy Guess (D)"
       },
       {
-       "title": "District 61",
-       "detail": "Gino Bulso (R) vs. Becca Ripley (D)"
+       "title": "Texas House District 61",
+       "detail": "Keresa Richardson (R, Inc.) · Brittany Black (D)"
       },
       {
-       "title": "District 62",
-       "detail": "Pat Marsh (R) vs. Brieanna Akers (D)"
+       "title": "Texas House District 62",
+       "detail": "Shelley Luther (R, Inc.) · Catherine Thorne (D)"
       },
       {
-       "title": "District 63",
-       "detail": "Jake McCalmon (R) vs. Laura Andreson (D)"
+       "title": "Texas House District 63",
+       "detail": "Ben Bumgarner (R, Inc.) · Denise Wooten (D)"
       },
       {
-       "title": "District 64",
-       "detail": "Scott Cepicky (R) vs. Craig D'Apolito (D)"
+       "title": "Texas House District 64",
+       "detail": "Andy Hopper (R, Inc.) · Julie Evans (D)"
       },
       {
-       "title": "District 65",
-       "detail": "Lee Reeves (R) vs. Julian Pierre-Griffin (D)"
+       "title": "Texas House District 65",
+       "detail": "Mitch Little (R, Inc.) · Detrick DeBurr (D)"
       },
       {
-       "title": "District 66",
-       "detail": "Sabi Kumar (R) vs. Tamara Bavendam (D)"
+       "title": "Texas House District 66",
+       "detail": "Matt Shaheen (R, Inc.) · Sandeep Srivastava (D)"
       },
       {
-       "title": "District 67",
-       "detail": "Ronnie Glynn (D) vs. Chris Lanier (R)"
+       "title": "Texas House District 67",
+       "detail": "Jeff Leach (R, Inc.) · Jordan Wheatley (D)"
       },
       {
-       "title": "District 68",
-       "detail": "Aron Maberry (R) vs. Garfield Scott (D)"
+       "title": "Texas House District 68",
+       "detail": "David Spiller (R, Inc.) · Jasmine Henderson (D)"
       },
       {
-       "title": "District 69",
-       "detail": "Jody Barrett (R) vs. Rachael Murray (D)"
+       "title": "Texas House District 69",
+       "detail": "James Frank (R, Inc.) · Leilani Barnett (D)"
       },
       {
-       "title": "District 70",
-       "detail": "Clay Doggett (R) vs. Rayanne Moos (D)"
+       "title": "Texas House District 70",
+       "detail": "George Flint (R) · Mihaela Plesa (D, Inc.)"
       },
       {
-       "title": "District 71",
-       "detail": "Kip Capley (R) vs. Matt Day (D)"
+       "title": "Texas House District 71",
+       "detail": "Jay Hardaway (R) · Diana Luna (D)"
       },
       {
-       "title": "District 72",
-       "detail": "Kirk Haston (R)"
+       "title": "Texas House District 72",
+       "detail": "Drew Darby (R, Inc.) · Shiloh Salazar (D)"
       },
       {
-       "title": "District 73",
-       "detail": "Chris Todd (R)"
+       "title": "Texas House District 73",
+       "detail": "Carrie Isaac (R, Inc.) · Merrie Fox (D)"
       },
       {
-       "title": "District 74",
-       "detail": "Jay Reedy (R)"
+       "title": "Texas House District 74",
+       "detail": "Robert Garza (R) · Eddie Morales Jr. (D, Inc.)"
       },
       {
-       "title": "District 75",
-       "detail": "Michael Lankford (R) vs. Allie Phillips (D)"
+       "title": "Texas House District 75",
+       "detail": "Mary E. González (D, Inc.)"
       },
       {
-       "title": "District 76",
-       "detail": "Tandy Darby (R)"
+       "title": "Texas House District 76",
+       "detail": "Linda Howell (R) · Suleman Lalani (D, Inc.)"
       },
       {
-       "title": "District 77",
-       "detail": "Rusty Grills (R) vs. Erin Reid (I)"
+       "title": "Texas House District 77",
+       "detail": "Humberto Perez (R) · Vince Perez (D, Inc.)"
       },
       {
-       "title": "District 78",
-       "detail": "Perry Keenan (R) vs. Hillary Capes-Gwinn (D)"
+       "title": "Texas House District 78",
+       "detail": "Joe Moody (D, Inc.)"
       },
       {
-       "title": "District 79",
-       "detail": "Brock Martin (R) vs. Kirk Carter (I)"
+       "title": "Texas House District 79",
+       "detail": "Jesus Romero (R) · Claudia Ordaz (D, Inc.)"
       },
       {
-       "title": "District 80",
-       "detail": "Julian McTizic (R) vs. Andrea Johnson (D)"
+       "title": "Texas House District 80",
+       "detail": "Don McLaughlin Jr. (R, Inc.) · Cecilia Castellano (D)"
       },
       {
-       "title": "District 81",
-       "detail": "Brett Giannini (R)"
+       "title": "Texas House District 81",
+       "detail": "Brooks Landgraf (R, Inc.) · Ceasar Sanchez (D)"
       },
       {
-       "title": "District 82",
-       "detail": "Chris Hurt (R)"
+       "title": "Texas House District 82",
+       "detail": "Tom Craddick (R, Inc.) · Cathy Broadrick (D)"
       },
       {
-       "title": "District 83",
-       "detail": "Mark White (R) vs. Margaret Price (D)"
+       "title": "Texas House District 83",
+       "detail": "Dustin Burrows (R, Inc.) · Malik Williams (D)"
       },
       {
-       "title": "District 84",
-       "detail": "Joe Towns Jr. (D)"
+       "title": "Texas House District 84",
+       "detail": "Carl Tepper (R, Inc.) · Margaret Durham (D)"
       },
       {
-       "title": "District 85",
-       "detail": "Jesse Chism (D)"
+       "title": "Texas House District 85",
+       "detail": "Dennis \"Goose\" Geesaman (R) · Lawrence Brandyburg (D)"
       },
       {
-       "title": "District 86",
-       "detail": "Justin Pearson (D)"
+       "title": "Texas House District 86",
+       "detail": "Holly Jeffreys (R) · Cullin Knutson (D)"
       },
       {
-       "title": "District 87",
-       "detail": "Karen Camper (D) vs. Reggie Hall (R)"
+       "title": "Texas House District 87",
+       "detail": "Caroline Fairly (R, Inc.) · Diana Loya (D)"
       },
       {
-       "title": "District 88",
-       "detail": "Larry Miller (D)"
+       "title": "Texas House District 88",
+       "detail": "Ken King (R, Inc.) · Heather Wallace (D)"
       },
       {
-       "title": "District 89",
-       "detail": "Justin Lafferty (R) vs. Randy Debord (D)"
+       "title": "Texas House District 89",
+       "detail": "Candy Noble (R, Inc.) · Angie Carraway (D)"
       },
       {
-       "title": "District 90",
-       "detail": "Gloria Johnson (D)"
+       "title": "Texas House District 90",
+       "detail": "Ramon Romero Jr. (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 91",
+       "detail": "David Lowe (R, Inc.) · Yisak Worku (D)"
+      },
+      {
+       "title": "Texas House District 92",
+       "detail": "JP Woodruff (R) · Salman Bhojani (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 93",
+       "detail": "Alan Blaylock (R) · Ericka Lomick (D)"
+      },
+      {
+       "title": "Texas House District 94",
+       "detail": "Cheryl Bean (R) · Katie O'Brien Duzan (D)"
+      },
+      {
+       "title": "Texas House District 95",
+       "detail": "Nicole Collier (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 96",
+       "detail": "Ellen Fleischmann (R) · Ebony Turner (D)"
+      },
+      {
+       "title": "Texas House District 97",
+       "detail": "John McQueeney (R, Inc.) · Beth Llewellyn McLaughlin (D)"
+      },
+      {
+       "title": "Texas House District 98",
+       "detail": "Armin Mizani (R) · Cate Brennan (D)"
+      },
+      {
+       "title": "Texas House District 99",
+       "detail": "Charlie Geren (R, Inc.) · Michelle Winder (D)"
+      },
+      {
+       "title": "Texas House District 100",
+       "detail": "Jordan Scott Hoffnagle (R) · Venton Jones (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 101",
+       "detail": "Junior Ezeonu (D)"
+      },
+      {
+       "title": "Texas House District 102",
+       "detail": "Bonnie Abadie (R) · Ana-Maria Ramos (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 103",
+       "detail": "Melanie Medley-Thomas (R) · Rafael Anchía (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 104",
+       "detail": "Jessica González (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 105",
+       "detail": "Terry Meza (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 106",
+       "detail": "Jared Patterson (R, Inc.) · Joe Mayes (D)"
+      },
+      {
+       "title": "Texas House District 107",
+       "detail": "Linda Garcia (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 108",
+       "detail": "Morgan Meyer (R, Inc.) · Allison Mitchell (D)"
+      },
+      {
+       "title": "Texas House District 109",
+       "detail": "Will Campbell (R) · Aicha Davis (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 110",
+       "detail": "Toni Rose (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 111",
+       "detail": "Yvonne Davis (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 112",
+       "detail": "Angie Chen Button (R, Inc.) · Zach Herbert (D)"
+      },
+      {
+       "title": "Texas House District 113",
+       "detail": "Stephen Stanley (R) · Rhetta Andrews Bowers (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 114",
+       "detail": "Tim McDonough (R) · John Bryant (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 115",
+       "detail": "Danny Rosellini (R) · Cassandra Hernandez (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 116",
+       "detail": "Rhett Rosenquest Smith (R) · Trey Martinez Fischer (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 117",
+       "detail": "Ben Mostyn (R) · Philip Cortez (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 118",
+       "detail": "Jorge Borrego (R) · Kristian Carranza (D)"
+      },
+      {
+       "title": "Texas House District 119",
+       "detail": "Melva Pérez (R) · Elizabeth \"Liz\" Campos (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 120",
+       "detail": "Barbara Gervin-Hawkins (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 121",
+       "detail": "Marc LaHood (R, Inc.) · Zack Dunn (D)"
+      },
+      {
+       "title": "Texas House District 122",
+       "detail": "Mark Dorazio (R, Inc.) · Shelly Nickels (D)"
+      },
+      {
+       "title": "Texas House District 123",
+       "detail": "Diego Bernal (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 124",
+       "detail": "Sylvia Soto (R) · Josey Garcia (D, Inc.) · Write-in: L.D. Howard"
+      },
+      {
+       "title": "Texas House District 125",
+       "detail": "Rick Martinez (R) · Adrian Reyna (D)"
+      },
+      {
+       "title": "Texas House District 126",
+       "detail": "Stan Stanart (R) · Stefanie Bord (D)"
+      },
+      {
+       "title": "Texas House District 127",
+       "detail": "Charles Cunningham (R, Inc.) · Michelle Williams (D)"
+      },
+      {
+       "title": "Texas House District 128",
+       "detail": "Tom Butler (R) · Desirée Klaus (D)"
+      },
+      {
+       "title": "Texas House District 129",
+       "detail": "Scott Bowen (R) · Albert Wittliff (D)"
+      },
+      {
+       "title": "Texas House District 130",
+       "detail": "Tom Oliverson (R, Inc.) · Brett Robinson (D)"
+      },
+      {
+       "title": "Texas House District 131",
+       "detail": "Scott Whitmarsh (R) · Staci Childs (D)"
+      },
+      {
+       "title": "Texas House District 132",
+       "detail": "Mike Schofield (R, Inc.) · Sara McGee (D)"
+      },
+      {
+       "title": "Texas House District 133",
+       "detail": "Mano DeAyala (R, Inc.) · Josh Wallenstein (D)"
+      },
+      {
+       "title": "Texas House District 134",
+       "detail": "Mike Michna (R) · Ann Johnson (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 135",
+       "detail": "Liz Ramos (R) · Odus Evbagharu (D)"
+      },
+      {
+       "title": "Texas House District 136",
+       "detail": "Theodore Schramm (R) · John H. Bucy III (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 137",
+       "detail": "Helen Zhou (R) · Gene Wu (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 138",
+       "detail": "Lacey Hull (R, Inc.) · Tyler Smith (D)"
+      },
+      {
+       "title": "Texas House District 139",
+       "detail": "Kyle Harding (R) · Charlene Ward Johnson (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 140",
+       "detail": "Laura Garcia DeLeon (R) · Armando Lucio Walle (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 141",
+       "detail": "Julie Hunt (R) · Senfronia Thompson (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 142",
+       "detail": "Heidi Hall (R) · Harold V. Dutton Jr. (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 143",
+       "detail": "Frank Salazar (R) · Ana Hernandez (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 144",
+       "detail": "David Flores (R) · Mary Ann Perez (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 145",
+       "detail": "Inocensia Moreno (R) · Christina Morales (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 146",
+       "detail": "Alexandria Nicole Butler (R) · Lauren Ashley Simmons (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 147",
+       "detail": "Theodis Daniel (R) · Jolanda Jones (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 148",
+       "detail": "Amanda LaBrie (R) · Penny Morales Shaw (D, Inc.)"
+      },
+      {
+       "title": "Texas House District 149",
+       "detail": "Dave Bennett (R) · Darlene Breaux (D)"
+      },
+      {
+       "title": "Texas House District 150",
+       "detail": "Valoree Swanson (R, Inc.) · A'Yonna Kellum (D)"
       }
      ],
      "senate": [
       {
-       "title": "District 1",
-       "detail": "J. Adam Lowe (R)"
+       "title": "Texas Senate District 1",
+       "detail": "Bryan Hughes (R, Inc.) · Laticia Ambroz (D)"
       },
       {
-       "title": "District 3",
-       "detail": "Rusty Crowe (R)"
+       "title": "Texas Senate District 2",
+       "detail": "Bob Hall (R, Inc.) · Keenen Colbert (D)"
       },
       {
-       "title": "District 5",
-       "detail": "Jimmy Matlock (R) vs. David Miller (D)"
+       "title": "Texas Senate District 3",
+       "detail": "Trent Ashby (R) · Bobby Tillman (D)"
       },
       {
-       "title": "District 7",
-       "detail": "Richard Briggs (R) vs. Bryan Langan (D)"
+       "title": "Texas Senate District 4",
+       "detail": "Brett Ligon (R) · Ron C. Angeletti (D)"
       },
       {
-       "title": "District 9",
-       "detail": "Steve Southerland (R)"
+       "title": "Texas Senate District 5",
+       "detail": "Charles Schwertner (R, Inc.) · Paul Thomasson (D)"
       },
       {
-       "title": "District 11",
-       "detail": "Bo Watson (R) vs. Tim Roberts (D)"
+       "title": "Texas Senate District 9",
+       "detail": "Leigh Wambsganss (R) · Taylor Rehmet (D, Inc.)"
       },
       {
-       "title": "District 13",
-       "detail": "Dawn White (R) vs. Angela Wynn (D)"
+       "title": "Texas Senate District 11",
+       "detail": "Dennis Paul (R) · Shannon Dicely (D)"
       },
       {
-       "title": "District 15",
-       "detail": "Paul Bailey (R)"
+       "title": "Texas Senate District 13",
+       "detail": "Borris L. Miles (D, Inc.)"
       },
       {
-       "title": "District 17",
-       "detail": "Mark Pody (R) vs. Lindsey Patrick-Wright (D)"
+       "title": "Texas Senate District 18",
+       "detail": "Lois Kolkhorst (R, Inc.) · Erica Gillum (D)"
       },
       {
-       "title": "District 19",
-       "detail": "Charlane Oliver (D)"
+       "title": "Texas Senate District 19",
+       "detail": "Marcus Cardenas (R) · Roland Gutierrez (D, Inc.)"
       },
       {
-       "title": "District 21",
-       "detail": "Jeff Yarbro (D)"
+       "title": "Texas Senate District 21",
+       "detail": "Julie Dahlberg (R) · Judith Zaffirini (D, Inc.)"
       },
       {
-       "title": "District 23",
-       "detail": "Kerry Roberts (R) vs. David Marcum (I)"
+       "title": "Texas Senate District 22",
+       "detail": "David Cook (R) · Amy Martinez-Salas (D)"
       },
       {
-       "title": "District 25",
-       "detail": "Ed Jackson (R)"
+       "title": "Texas Senate District 24",
+       "detail": "Pete Flores (R, Inc.) · Joe P. Herrera (D)"
       },
       {
-       "title": "District 27",
-       "detail": "Jack Johnson (R) vs. David Hardy (D)"
+       "title": "Texas Senate District 26",
+       "detail": "José Menéndez (D, Inc.) · Julián Villarreal (Green)"
       },
       {
-       "title": "District 29",
-       "detail": "Raumesh Akbari (D)"
+       "title": "Texas Senate District 28",
+       "detail": "Charles Perry (R, Inc.) · Riley Rodriquez (D)"
       },
       {
-       "title": "District 31",
-       "detail": "Brent Taylor (R) vs. David Weatherspoon (D)"
+       "title": "Texas Senate District 31",
+       "detail": "Kevin Sparks (R, Inc.) · John Betancourt (D)"
       },
       {
-       "title": "District 33",
-       "detail": "London Lamar (D)"
+       "title": "Texas Senate District 22 Special Election",
+       "detail": "David Cook (R) · Amy Martinez-Salas (D)"
       }
      ]
     }
    },
    "counts": {
     "federal_senate": 1,
-    "federal_house": 9,
+    "federal_house": 38,
     "state_governor": 1,
-    "state_court": 1,
-    "state_house": 90,
+    "state_court": 7,
+    "state_house": 150,
     "state_senate": 17
    },
    "registration": {
@@ -23782,40 +23682,44 @@
      "senate": [],
      "house": [
       {
-       "title": "District 1",
-       "detail": "Suzan DelBene (D) vs. Mary Silva (R)"
+       "title": "U.S. House District 1",
+       "detail": "Suzan DelBene (D, Inc.) · Mary Silva (R)"
       },
       {
-       "title": "District 2",
-       "detail": "Check the certified general-election list"
+       "title": "U.S. House District 2",
+       "detail": "Rick Larsen (D, Inc.) · Edwin H. Feller (R)"
       },
       {
-       "title": "District 3",
-       "detail": "Marie Gluesenkamp Perez (D) vs. John Braun (R)"
+       "title": "U.S. House District 3",
+       "detail": "Marie Gluesenkamp Perez (D, Inc.) · John Braun (R)"
       },
       {
-       "title": "District 4",
-       "detail": "John Duresky (D) vs. Amanda McKinney (R)"
+       "title": "U.S. House District 4",
+       "detail": "Amanda McKinney (R) · John Duresky (D)"
       },
       {
-       "title": "District 5",
-       "detail": "Michael Baumgartner (R) vs. Carmela Conroy (D)"
+       "title": "U.S. House District 5",
+       "detail": "Michael Baumgartner (R, Inc.) · Carmela Conroy (D)"
       },
       {
-       "title": "District 6",
-       "detail": "Emily Randall (D) vs. Teresa Fox (R)"
+       "title": "U.S. House District 6",
+       "detail": "Emily Randall (D, Inc.) · Teresa Fox (R)"
       },
       {
-       "title": "District 7",
-       "detail": "Pramila Jayapal (D) vs. Nirav Sheth (R)"
+       "title": "U.S. House District 7",
+       "detail": "Pramila Jayapal (D, Inc.) · Nirav Sheth (R)"
       },
       {
-       "title": "District 8",
-       "detail": "Kim Schrier (D) vs. Spencer Meline (R)"
+       "title": "U.S. House District 8",
+       "detail": "Kim Schrier (D, Inc.) · Spencer Meline (R)"
       },
       {
-       "title": "District 9",
-       "detail": "Adam Smith (D) vs. Doug Basler (R)"
+       "title": "U.S. House District 9",
+       "detail": "Adam Smith (D, Inc.) · Doug Basler (R)"
+      },
+      {
+       "title": "U.S. House District 10",
+       "detail": "Marilyn Strickland (D, Inc.) · Chris D. Chung (R)"
       }
      ]
     },
@@ -24339,7 +24243,7 @@
    },
    "counts": {
     "federal_senate": 0,
-    "federal_house": 9,
+    "federal_house": 10,
     "state_governor": 0,
     "state_court": 5,
     "state_house": 98,
